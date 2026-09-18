@@ -1,0 +1,26 @@
+{
+  "arrived": true,
+  "pose": {
+    "x_cm": -24087.34,
+    "y_cm": 10488.7,
+    "yaw_deg": 15.0,
+    "z_cm": 100.0
+  },
+  "resolved": {
+    "accepted_target_cm": [
+      -24087.34,
+      10488.7
+    ],
+    "navmesh_adjustment_cm": 12.5,
+    "raw_world_hit_cm": [
+      -24099.84,
+      10488.7
+    ],
+    "rejection_reason": null
+  },
+  "sim_seconds": 19.4139,
+  "stuck": false,
+  "ticks": 583,
+  "timeout": false,
+  "walked_cm": 2717.95
+}

@@ -1,0 +1,13 @@
+{
+  "deliverybench_coordinate_system": "same XY origin and handedness",
+  "roads_units": "meters",
+  "rotation_deg": 0.0,
+  "scale": 1.0,
+  "source_coordinate_system": "Unreal Engine world XY; Z up; centimeters",
+  "translation_cm": {
+    "x": 0.0,
+    "y": 0.0,
+    "z": 0.0
+  },
+  "world_node_units": "centimeters"
+}

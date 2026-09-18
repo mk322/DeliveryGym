@@ -1,0 +1,465 @@
+--- a/Source/SimWorld/Public/SpHumanoidAgent.h
++++ b/Source/SimWorld/Public/SpHumanoidAgent.h
+@@ -45,6 +45,12 @@
+ class USpSceneCaptureComponent2D;
+ class UCameraComponent;
+ 
++namespace SpPixelGoal
++{
++    SIMWORLD_API bool IsSupportedCameraView(const FString& ViewId);
++    SIMWORLD_API FRotator CameraViewRelativeRotation(const FString& ViewId);
++}
++
+ UCLASS(BlueprintType, Blueprintable)
+ class SIMWORLD_API ASpHumanoidAgent : public ACharacter
+ {
+@@ -317,6 +323,15 @@
+     UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="SpHumanoidAgent")
+     USpSceneCaptureComponent2D* SceneCapture = nullptr;
+ 
++    UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category="SpObservation")
++    TObjectPtr<USpSceneCaptureComponent2D> RearSceneCapture = nullptr;
++
++    USpSceneCaptureComponent2D* GetObservationCamera(const FString& ViewId) const;
++    bool ConfigureObservationCamera(
++        const FString& ViewId, int32 InWidth, int32 InHeight, float InFovDegrees);
++    void InitializeObservationCamera(const FString& ViewId);
++    void TerminateObservationCamera(const FString& ViewId);
++
+     // ------------------ Action UFunctions ------------------
+     // Begin/continue walking forward (CharacterMovement->AddMovementInput).
+     UFUNCTION(BlueprintCallable, CallInEditor, Category="SpHumanoidAgent")
+--- a/Source/SimWorld/Private/SpHumanoidAgent.cpp
++++ b/Source/SimWorld/Private/SpHumanoidAgent.cpp
+@@ -30,6 +30,18 @@
+ 
+ #include "SpUnrealTypes/SpSceneCaptureComponent2D.h"
+ 
++bool SpPixelGoal::IsSupportedCameraView(const FString& ViewId)
++{
++    return ViewId == TEXT("front") || ViewId == TEXT("rear");
++}
++
++FRotator SpPixelGoal::CameraViewRelativeRotation(const FString& ViewId)
++{
++    return ViewId == TEXT("rear")
++        ? FRotator(0.f, 180.f, 0.f)
++        : FRotator::ZeroRotator;
++}
++
+ ASpHumanoidAgent::ASpHumanoidAgent()
+ {
+     PrimaryActorTick.bCanEverTick = true;
+@@ -148,6 +160,34 @@
+     SceneCapture->PrimitiveRenderMode =
+         ESceneCapturePrimitiveRenderMode::PRM_RenderScenePrimitives;
+ 
++    RearSceneCapture =
++        CreateDefaultSubobject<USpSceneCaptureComponent2D>(TEXT("RearSceneCapture"));
++    RearSceneCapture->SetupAttachment(SpringArm);
++    RearSceneCapture->bUseSharedMemory = false;
++    RearSceneCapture->BufferingMode = ESpBufferingMode::SingleBuffered;
++    RearSceneCapture->bCaptureEveryFrame = true;
++    RearSceneCapture->bCaptureOnMovement = false;
++    RearSceneCapture->bReadPixelsEveryFrame = false;
++    RearSceneCapture->CaptureSource = ESceneCaptureSource::SCS_FinalToneCurveHDR;
++    RearSceneCapture->bOverrideTextureRenderTargetFormat = true;
++    RearSceneCapture->TextureRenderTargetFormat =
++        ETextureRenderTargetFormat::RTF_RGBA8_SRGB;
++    RearSceneCapture->NumChannelsPerPixel = 4;
++    RearSceneCapture->ChannelDataType = ESpArrayDataType::UInt8;
++    RearSceneCapture->PostProcessSettings.bOverride_DynamicGlobalIlluminationMethod = true;
++    RearSceneCapture->PostProcessSettings.DynamicGlobalIlluminationMethod =
++        EDynamicGlobalIlluminationMethod::Lumen;
++    RearSceneCapture->PostProcessSettings.bOverride_ReflectionMethod = true;
++    RearSceneCapture->PostProcessSettings.ReflectionMethod = EReflectionMethod::Lumen;
++    RearSceneCapture->CaptureSource = ESceneCaptureSource::SCS_FinalColorLDR;
++    RearSceneCapture->Width = 640;
++    RearSceneCapture->Height = 360;
++    RearSceneCapture->FOVAngle = 90.f;
++    RearSceneCapture->ProjectionType = ECameraProjectionMode::Perspective;
++    RearSceneCapture->PrimitiveRenderMode =
++        ESceneCapturePrimitiveRenderMode::PRM_RenderScenePrimitives;
++    RearSceneCapture->SetRelativeRotation(FRotator(0.f, 180.f, 0.f));
++
+     // Walking-mode defaults.  Accept slopes up to 89 deg so the agent_test
+     // map's slightly-tilted street surfaces still classify as walkable.
+     if (UCharacterMovementComponent* CM = GetCharacterMovement())
+@@ -515,32 +555,57 @@
+     }
+ }
+ 
+-bool ASpHumanoidAgent::ConfigureCamera(int32 InWidth, int32 InHeight, float InFovDegrees)
++USpSceneCaptureComponent2D* ASpHumanoidAgent::GetObservationCamera(
++    const FString& ViewId) const
+ {
+-    if (!SceneCapture) return false;
+-    SceneCapture->Width = InWidth;
+-    SceneCapture->Height = InHeight;
+-    SceneCapture->FOVAngle = InFovDegrees;
+-    SceneCapture->ProjectionType = ECameraProjectionMode::Perspective;
++    if (ViewId == TEXT("front")) return SceneCapture;
++    if (ViewId == TEXT("rear")) return RearSceneCapture;
++    return nullptr;
++}
++
++bool ASpHumanoidAgent::ConfigureObservationCamera(
++    const FString& ViewId, int32 InWidth, int32 InHeight, float InFovDegrees)
++{
++    USpSceneCaptureComponent2D* Capture = GetObservationCamera(ViewId);
++    if (!Capture) return false;
++    Capture->Width = InWidth;
++    Capture->Height = InHeight;
++    Capture->FOVAngle = InFovDegrees;
++    Capture->ProjectionType = ECameraProjectionMode::Perspective;
+     return true;
+ }
+ 
+-void ASpHumanoidAgent::InitializeCamera()
++void ASpHumanoidAgent::InitializeObservationCamera(const FString& ViewId)
+ {
+-    if (SceneCapture)
++    if (USpSceneCaptureComponent2D* Capture = GetObservationCamera(ViewId))
+     {
+-        SceneCapture->Initialize();
++        Capture->Initialize();
+     }
+ }
+ 
+-void ASpHumanoidAgent::TerminateCamera()
++void ASpHumanoidAgent::TerminateObservationCamera(const FString& ViewId)
+ {
+-    if (SceneCapture)
++    if (USpSceneCaptureComponent2D* Capture = GetObservationCamera(ViewId))
+     {
+-        SceneCapture->Terminate();
++        Capture->Terminate();
+     }
+ }
+ 
++bool ASpHumanoidAgent::ConfigureCamera(int32 InWidth, int32 InHeight, float InFovDegrees)
++{
++    return ConfigureObservationCamera(TEXT("front"), InWidth, InHeight, InFovDegrees);
++}
++
++void ASpHumanoidAgent::InitializeCamera()
++{
++    InitializeObservationCamera(TEXT("front"));
++}
++
++void ASpHumanoidAgent::TerminateCamera()
++{
++    TerminateObservationCamera(TEXT("front"));
++}
++
+ bool ASpHumanoidAgent::MoveTo(FVector Target)
+ {
+     // Tier C #7: drive the auto-spawned AAIController to path-find along
+--- a/Source/SimWorld/Public/SpCameraCapturePool.h
++++ b/Source/SimWorld/Public/SpCameraCapturePool.h
+@@ -39,6 +39,14 @@
+ class AActor;
+ class AActor;
+ 
++namespace SpCameraCapture
++{
++    SIMWORLD_API bool NormalizeCameraView(
++        const FString& Requested,
++        FString& OutView,
++        FString& OutError);
++}
++
+ UENUM(BlueprintType)
+ enum class ESpCameraQualityTier : uint8
+ {
+--- a/Source/SimWorld/Private/SpCameraCapturePool.cpp
++++ b/Source/SimWorld/Private/SpCameraCapturePool.cpp
+@@ -29,6 +29,7 @@
+ #include "ShowFlags.h"
+ #include "SpCore/UnrealUtils.h"
+ #include "SpHumanoidAgent.h"
++#include "SpPixelGoalSubsystem.h"
+ #include "SpPedestrianAgentBase.h"
+ #include "SpUnrealTypes/SpSceneCaptureComponent2D.h"
+ #include "SpUnrealTypes/SpMeshProxyComponentManager.h"
+@@ -37,6 +38,32 @@
+ 
+ #include <initializer_list>
+ 
++bool SpCameraCapture::NormalizeCameraView(
++    const FString& Requested,
++    FString& OutView,
++    FString& OutError)
++{
++    OutView.Reset();
++    OutError.Reset();
++    FString Canonical;
++    if (Requested.IsEmpty() ||
++        Requested.Equals(TEXT("front"), ESearchCase::IgnoreCase))
++    {
++        Canonical = TEXT("front");
++    }
++    else if (Requested.Equals(TEXT("rear"), ESearchCase::IgnoreCase))
++    {
++        Canonical = TEXT("rear");
++    }
++    if (Canonical.IsEmpty() || !SpPixelGoal::IsSupportedCameraView(Canonical))
++    {
++        OutError = TEXT("unsupported_camera_view");
++        return false;
++    }
++    OutView = Canonical;
++    return true;
++}
++
+ namespace
+ {
+     // Tier preset table — RT side length + post-process suppression.
+@@ -83,6 +110,8 @@
+     {
+         FString CameraId;
+         FString AgentTag;
++        FString CameraView = TEXT("front");
++        FString CameraViewError;
+         ESpCameraSourceType SourceType = ESpCameraSourceType::Agent;
+         FVector LocationCm = FVector::ZeroVector;
+         FRotator RotationDegrees = FRotator::ZeroRotator;
+@@ -655,6 +684,21 @@
+                 TSharedPtr<FJsonObject> SourceObject = Value->AsObject();
+                 if (SourceObject.IsValid())
+                 {
++                    FString RequestedCameraView;
++                    if (SourceObject->HasField(TEXT("camera_view")) &&
++                        !SourceObject->TryGetStringField(
++                            TEXT("camera_view"), RequestedCameraView))
++                    {
++                        Source.CameraView.Reset();
++                        Source.CameraViewError = TEXT("unsupported_camera_view");
++                    }
++                    else
++                    {
++                        SpCameraCapture::NormalizeCameraView(
++                            RequestedCameraView,
++                            Source.CameraView,
++                            Source.CameraViewError);
++                    }
+                     FString TypeText;
+                     TryGetJsonStringAliases(
+                         SourceObject,
+@@ -1603,6 +1647,7 @@
+         {
+             ImageJson->SetStringField(TEXT("source_agent_tag"), Source.AgentTag);
+         }
++        ImageJson->SetStringField(TEXT("camera_view"), Source.CameraView);
+         AddTransformOverrideMetadata(
+             ImageJson,
+             Source.bHasLocation,
+@@ -2863,6 +2908,14 @@
+     UWorld* World = GetWorld();
+     if (!World)
+     {
++        for (const FSpCameraSourceRequest& Source : CameraSources)
++        {
++            if (!Source.CameraViewError.IsEmpty())
++            {
++                ErrorValues.Add(MakeShared<FJsonValueObject>(
++                    MakeErrorObject(Source.CameraId, Source.CameraViewError)));
++            }
++        }
+         Root->SetStringField(TEXT("error"), TEXT("no_world"));
+     }
+     else if (CameraSources.IsEmpty())
+@@ -2886,6 +2939,12 @@
+         Jobs.Reserve(CameraSources.Num());
+         for (const FSpCameraSourceRequest& Source : CameraSources)
+         {
++            if (!Source.CameraViewError.IsEmpty())
++            {
++                ErrorValues.Add(MakeShared<FJsonValueObject>(
++                    MakeErrorObject(Source.CameraId, Source.CameraViewError)));
++                continue;
++            }
+             if (Source.SourceType == ESpCameraSourceType::World)
+             {
+                 if (!Source.bHasLocation)
+@@ -2924,7 +2983,8 @@
+                     MakeErrorObject(Source.CameraId, TEXT("agent_not_visible_on_this_client"))));
+                 continue;
+             }
+-            USpSceneCaptureComponent2D* SceneCapture = Agent->SceneCapture;
++            USpSceneCaptureComponent2D* SceneCapture =
++                Agent->GetObservationCamera(Source.CameraView);
+             if (!SceneCapture)
+             {
+                 ErrorValues.Add(MakeShared<FJsonValueObject>(
+@@ -3044,9 +3104,10 @@
+                     !FMath::IsNearlyEqual(SceneCapture->FOVAngle, Fov, 0.01f);
+                 if (SceneCapture->IsInitialized() && bSizeChanged)
+                 {
+-                    Agent->TerminateCamera();
++                    Agent->TerminateObservationCamera(Job.Source.CameraView);
+                 }
+-                if (!Agent->ConfigureCamera(Width, Height, Fov))
++                if (!Agent->ConfigureObservationCamera(
++                        Job.Source.CameraView, Width, Height, Fov))
+                 {
+                     ErrorValues.Add(MakeShared<FJsonValueObject>(
+                         MakeErrorObject(Job.TagText, TEXT("configure_camera_failed"))));
+@@ -3055,11 +3116,14 @@
+                 }
+                 if (!SceneCapture->IsInitialized())
+                 {
+-                    Agent->InitializeCamera();
++                    Agent->InitializeObservationCamera(Job.Source.CameraView);
+                 }
+                 InitMs += (FPlatformTime::Seconds() - InitStart) * 1000.0;
+ 
+                 FString CaptureError;
++                const double CaptureReadBefore = CaptureReadMs;
++                const double EncodeBefore = EncodeMs;
++                const double WallStart = FPlatformTime::Seconds();
+                 TSharedPtr<FJsonObject> ImageJson = CaptureOneAgentModalityJson(
+                     Job.TagText,
+                     Agent,
+@@ -3074,12 +3138,31 @@
+                     CaptureReadMs,
+                     EncodeMs,
+                     CaptureError);
++                const double ImageWallMs =
++                    (FPlatformTime::Seconds() - WallStart) * 1000.0;
+                 if (!ImageJson.IsValid())
+                 {
+                     ErrorValues.Add(MakeShared<FJsonValueObject>(
+                         MakeErrorObject(Job.TagText, CaptureError)));
+                     continue;
+                 }
++                TSharedPtr<FJsonObject> ImageTiming = MakeShared<FJsonObject>();
++                ImageTiming->SetNumberField(
++                    TEXT("capture_read_ms"),
++                    FMath::Max(0.0, CaptureReadMs - CaptureReadBefore));
++                ImageTiming->SetNumberField(
++                    TEXT("encode_ms"),
++                    FMath::Max(0.0, EncodeMs - EncodeBefore));
++                ImageTiming->SetNumberField(
++                    TEXT("wall_ms"),
++                    FMath::Max(0.0, ImageWallMs));
++                ImageJson->SetObjectField(TEXT("timing"), ImageTiming);
++                if (USpPixelGoalSubsystem* PixelGoal =
++                        World->GetSubsystem<USpPixelGoalSubsystem>())
++                {
++                    PixelGoal->RecordCameraSnapshot(
++                        SceneCapture, Agent, Width, Height, ImageJson);
++                }
+                 ImageJson->SetStringField(TEXT("capture_mode"), CaptureMode);
+                 AddCameraSourceMetadata(ImageJson, Job.Source);
+                 ImageValues.Add(MakeShared<FJsonValueObject>(ImageJson));
+@@ -3282,6 +3365,19 @@
+                                         ModalityToString(Modality) + TEXT(": ") + CaptureError)));
+                                 continue;
+                             }
++                            if (Modality == ESpAgentCaptureModality::RGB)
++                            {
++                                if (USpPixelGoalSubsystem* PixelGoal =
++                                        World->GetSubsystem<USpPixelGoalSubsystem>())
++                                {
++                                    PixelGoal->RecordCameraSnapshot(
++                                        CaptureComponent,
++                                        Agent,
++                                        Width,
++                                        Height,
++                                        ImageJson);
++                                }
++                            }
+                             ImageJson->SetStringField(TEXT("capture_mode"), CaptureMode);
+                             AddCameraSourceMetadata(ImageJson, Job.Source);
+                             ImageValues.Add(MakeShared<FJsonValueObject>(ImageJson));
+@@ -3330,6 +3426,7 @@
+         SourceObject->SetStringField(
+             TEXT("source_type"),
+             CameraSourceTypeToString(Source.SourceType));
++        SourceObject->SetStringField(TEXT("camera_view"), Source.CameraView);
+         if (!Source.AgentTag.IsEmpty())
+         {
+             SourceObject->SetStringField(TEXT("agent_tag"), Source.AgentTag);
+--- a/Source/SimWorld/Public/SpNavMeshHelper.h
++++ b/Source/SimWorld/Public/SpNavMeshHelper.h
+@@ -105,6 +105,21 @@
+     UFUNCTION(BlueprintCallable, Category="SpNavMesh")
+     bool ForceDynamicRuntimeGeneration();
+ 
++    // Runtime proof used by the live Paris Pixel Goal PoC.  These query the
++    // registered default NavData after BuildNavMesh() rather than assuming
++    // that the project config was applied to a serialized/runtime instance.
++    UFUNCTION(BlueprintCallable, BlueprintPure, Category="SpNavMesh")
++    bool IsDynamicRuntimeGeneration() const;
++
++    UFUNCTION(BlueprintCallable, BlueprintPure, Category="SpNavMesh")
++    bool SupportsRuntimeNavGeneration() const;
++
++    UFUNCTION(BlueprintCallable, BlueprintPure, Category="SpNavMesh")
++    bool HasValidNavMeshData() const;
++
++    UFUNCTION(BlueprintCallable, BlueprintPure, Category="SpNavMesh")
++    int32 GetNumActiveNavMeshTiles() const;
++
+     // Diagnostic: force a rebuild on the NavData directly (bypassing
+     // NavSys-level logic).  Returns true if rebuild was dispatched.
+     UFUNCTION(BlueprintCallable, Category="SpNavMesh")
+--- a/Source/SimWorld/Private/SpNavMeshHelper.cpp
++++ b/Source/SimWorld/Private/SpNavMeshHelper.cpp
+@@ -186,6 +186,55 @@
+     return false;
+ }
+ 
++bool ASpNavMeshHelper::IsDynamicRuntimeGeneration() const
++{
++    UWorld* World = GetWorld();
++    const UNavigationSystemV1* NavSys = World
++        ? UNavigationSystemV1::GetNavigationSystem(World)
++        : nullptr;
++    const ANavigationData* NavData = NavSys
++        ? NavSys->GetDefaultNavDataInstance()
++        : nullptr;
++    return NavData &&
++        NavData->GetRuntimeGenerationMode() == ERuntimeGenerationType::Dynamic;
++}
++
++bool ASpNavMeshHelper::SupportsRuntimeNavGeneration() const
++{
++    UWorld* World = GetWorld();
++    const UNavigationSystemV1* NavSys = World
++        ? UNavigationSystemV1::GetNavigationSystem(World)
++        : nullptr;
++    const ANavigationData* NavData = NavSys
++        ? NavSys->GetDefaultNavDataInstance()
++        : nullptr;
++    return NavData && NavData->SupportsRuntimeGeneration();
++}
++
++bool ASpNavMeshHelper::HasValidNavMeshData() const
++{
++    UWorld* World = GetWorld();
++    const UNavigationSystemV1* NavSys = World
++        ? UNavigationSystemV1::GetNavigationSystem(World)
++        : nullptr;
++    const ARecastNavMesh* Recast = NavSys
++        ? Cast<ARecastNavMesh>(NavSys->GetDefaultNavDataInstance())
++        : nullptr;
++    return Recast && Recast->HasValidNavmesh();
++}
++
++int32 ASpNavMeshHelper::GetNumActiveNavMeshTiles() const
++{
++    UWorld* World = GetWorld();
++    const UNavigationSystemV1* NavSys = World
++        ? UNavigationSystemV1::GetNavigationSystem(World)
++        : nullptr;
++    const ARecastNavMesh* Recast = NavSys
++        ? Cast<ARecastNavMesh>(NavSys->GetDefaultNavDataInstance())
++        : nullptr;
++    return Recast ? Recast->GetNumActiveTiles() : 0;
++}
++
+ bool ASpNavMeshHelper::ForceNavDataRebuild()
+ {
+     UWorld* World = GetWorld();

@@ -1,0 +1,18 @@
+envs:
+  - name: DeliveryBench # registered env name
+    n_envs: 1000
+    data_source: deliverybench # nickname for logging
+    seed: [1, 1000, 1] # sample n_env seeds from seed[0] to seed[1] with each seed repeat at most seed[2] times
+    max_turns: 15 # max number of interaction turns per episode
+    response_length_per_turn: 512 # max response length per turn
+    config: # env-specific config
+      # base_dir uses default (local vlm_delivery and maps in this package)
+      map_name: medium-city-22
+      render_mode: text
+      max_steps: 100
+      prompt_format: free_think
+      format_reward: 0
+      delivery_reward: 1
+      enable_map_images: true
+      map_renderer: pil
+      map_poi_in_system_prompt: true

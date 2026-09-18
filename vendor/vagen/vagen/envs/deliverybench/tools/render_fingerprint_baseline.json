@@ -1,0 +1,18 @@
+{
+  "map": "small-city-15",
+  "seed": 9000,
+  "anchor_pos": [
+    -58300.0,
+    -21700.0
+  ],
+  "classic_n_images": 2,
+  "classic_fpv_cross": "6b5018edfb3d",
+  "classic_map": "e2e05ec2b1b7",
+  "classic_obs_text": "5022bf30a569",
+  "classic_sys_prompt": "30f9d064f86d",
+  "marks_n_images": 2,
+  "marks_fpv_cross": "c27034be1740",
+  "marks_obs_text": "27b31eb8a32f",
+  "marks_sys_prompt": "4b61b40e73ff",
+  "marks_block_present": true
+}

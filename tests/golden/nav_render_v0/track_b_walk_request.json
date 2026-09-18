@@ -1,0 +1,11 @@
+{
+  "arrive_cm": 50.0,
+  "episode_id": "courier-citycore-paris-s0",
+  "max_sim_seconds": 120.0,
+  "protocol": "nav-render/v0",
+  "target": {
+    "x_cm": -24041.35,
+    "y_cm": 10501.02
+  },
+  "tick_chunk": 10
+}

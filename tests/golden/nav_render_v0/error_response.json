@@ -1,0 +1,6 @@
+{
+  "error": {
+    "code": "engine_down",
+    "message": "SPEAR RPC connection refused"
+  }
+}

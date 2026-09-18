@@ -1,0 +1,11 @@
+{
+  "camera": {
+    "fov_deg": 90.0,
+    "height": 480,
+    "width": 640
+  },
+  "episode_id": "courier-citycore-paris-s0",
+  "protocol": "nav-render/v0",
+  "return_mode": "path",
+  "yaw_deg": null
+}

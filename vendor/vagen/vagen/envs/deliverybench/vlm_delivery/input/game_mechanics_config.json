@@ -1,0 +1,92 @@
+{
+  "avg_speed_cm_s": {
+    "walk": 200,
+    "e-scooter": 600,
+    "drag_scooter": 150,
+    "car": 1200,
+    "bus": 1000
+  },
+  "pace_scales": {
+    "accel": 1.25,
+    "normal": 1.0,
+    "decel": 0.75
+  },
+  "bus": {
+    "waiting_time_s": 5,
+    "speed_cm_s": 1000,
+    "num_buses": 1
+  },
+  "energy_pct_decay_per_m_by_mode": {
+    "walk": 0.08,
+    "drag_scooter": 0.1,
+    "e-scooter": 0.01,
+    "car": 0.008,
+    "bus": 0.006
+  },
+  "scooter_batt_decay_pct_per_m": 0.04,
+  "energy_pct_max": 100,
+  "rest_rate_pct_per_min": 7.5,
+  "rest_target_pct": 100,
+  "low_energy_threshold_pct": 30,
+  "hospital_duration_s": 900,
+  "hospital_rescue_fee": 5.0,
+  "ambient_temp_c": 22.0,
+  "k_food_per_s": 0.004166666666666667,
+  "initial_earnings": 100,
+  "charge_price_per_percent": 0.05,
+  "escooter_defaults": {
+    "initial_battery_pct": 15,
+    "charge_rate_pct_per_min": 7.5,
+    "charge_target_pct": 100
+  },
+  "rent_car_defaults": {
+    "avg_speed_cm_s": 1200,
+    "rate_per_min": 1
+  },
+  "items": {
+    "energy_drink": { "energy_gain_pct": 50 },
+    "escooter_battery_pack": { "target_charge_pct": 100 }
+  },
+  "settlement": {},
+  "tolerance_cm": {
+    "nearby": 500.0,
+    "arrive": 500.0,
+    "scooter": 500.0,
+    "tempbox": 500.0
+  },
+  "routing": {
+    "snap_cm": 120.0
+  },
+  "ui": {
+    "show_path_ms": 2000
+  },
+  "map_snapshot_limits": {
+    "next": 20,
+    "s": 40,
+    "poi": 800
+  },
+  "vlm": {
+    "next_action_delay_ms": 300,
+    "retry_max": 5
+  },
+  "map": {
+    "sidewalk_offset_cm": 1700,
+    "drive_lane_offset_cm": 1000,
+    "drive_waypoint_spacing_cm": 5000
+  },
+  "ue_models": {
+    "delivery_man": "/Game/TrafficSystem/Pedestrian/BP_DeliveryMan.BP_DeliveryMan_C",
+    "delivery_manager": "/Game/TrafficSystem/DeliveryManager.DeliveryManager_C",
+    "scooter": "/Game/ScooterAssets/Blueprints/BP_Scooter_Pawn.BP_Scooter_Pawn_C",
+    "customer": "/Game/TrafficSystem/Pedestrian/Base_Pedestrian.Base_Pedestrian_C"
+  },
+  "gym_env": {
+    "sim_tick_ms": 100,
+    "vlm_pump_ms": 100
+  },
+  "lifecycle": {
+    "duration_hours": 2,
+    "realtime_stop_hours": 2,
+    "vlm_call_limit": 200
+  }
+}

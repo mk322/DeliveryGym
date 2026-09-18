@@ -1,0 +1,9 @@
+{
+  "engine_connected": true,
+  "episodes_active": 0,
+  "instance_id": "ue-0",
+  "map_name": "citycore-paris",
+  "protocol": "nav-render/v0",
+  "status": "ok",
+  "uptime_s": 12.5
+}

@@ -1,0 +1,7454 @@
+{
+  "base_map": {
+    "name": "map_1",
+    "env_bin": "gym_citynav\\Binaries\\Win64\\gym_citynav.exe",
+    "width": 1000,
+    "height": 1000
+  },
+  "nodes": [
+    {
+      "id": "GEN_Road_0",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 10000.0,
+          "y": 0.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_1",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": -10000.0,
+          "y": 0.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_2",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 20000.0,
+          "y": 10000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_3",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 20000.0,
+          "y": -10000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_4",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 30000.0,
+          "y": 20000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_5",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 10000.0,
+          "y": 20000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_6",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 50000.0,
+          "y": 20000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_7",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 40000.0,
+          "y": 30000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_8",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 0.0,
+          "y": 10000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_9",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 0.0,
+          "y": 30000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_Road_10",
+      "instance_name": "BP_Road1_C",
+      "properties": {
+        "location": {
+          "x": 70000.0,
+          "y": 20000.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 0.95,
+          "y": 0.9,
+          "z": 1.0
+        }
+      }
+    },
+    {
+      "id": "GEN_BP_Building_109_C_11",
+      "instance_name": "BP_Building_109_C",
+      "properties": {
+        "location": {
+          "x": 3332.51,
+          "y": -6148.4,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 6665.026420593262,
+          "y": 6896.80029296875,
+          "z": 7649.6973876953125
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_75_C_12",
+      "instance_name": "BP_Building_75_C",
+      "properties": {
+        "location": {
+          "x": 7330.43,
+          "y": -3336.4,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1272.7906494140625,
+          "y": 1272.792236328125,
+          "z": 7080.45068359375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_75_C_13",
+      "instance_name": "BP_Building_75_C",
+      "properties": {
+        "location": {
+          "x": 8638.45,
+          "y": -3336.4,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1272.7906494140625,
+          "y": 1272.792236328125,
+          "z": 7080.45068359375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_24_C_14",
+      "instance_name": "BP_Building_24_C",
+      "properties": {
+        "location": {
+          "x": 11218.94,
+          "y": -4166.31,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3888.177673550781,
+          "y": 2932.615890002926,
+          "z": 2439.947052095703
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_83_C_15",
+      "instance_name": "BP_Building_83_C",
+      "properties": {
+        "location": {
+          "x": 15228.71,
+          "y": -3541.24,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 4131.369140625,
+          "y": 1682.4879150390625,
+          "z": 2702.3421630859375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_44_C_16",
+      "instance_name": "BP_Building_44_C",
+      "properties": {
+        "location": {
+          "x": 4572.62,
+          "y": 4582.05,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3745.2489586188967,
+          "y": 3764.104267151619,
+          "z": 8629.672160776123
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_75_C_17",
+      "instance_name": "BP_Building_75_C",
+      "properties": {
+        "location": {
+          "x": 7089.76,
+          "y": 3336.4,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1272.7906494140625,
+          "y": 1272.792236328125,
+          "z": 7080.45068359375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_43_C_18",
+      "instance_name": "BP_Building_43_C",
+      "properties": {
+        "location": {
+          "x": 11421.54,
+          "y": 4638.92,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 7390.762741416991,
+          "y": 3877.8413398261764,
+          "z": 9718.266853586427
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_75_C_19",
+      "instance_name": "BP_Building_75_C",
+      "properties": {
+        "location": {
+          "x": 15764.98,
+          "y": 3336.4,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1272.7906494140625,
+          "y": 1272.792236328125,
+          "z": 7080.45068359375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_115_C_20",
+      "instance_name": "BP_Building_115_C",
+      "properties": {
+        "location": {
+          "x": -8020.0,
+          "y": 6420.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "store",
+        "bbox": {
+          "x": 10640.0048828125,
+          "y": 7439.99560546875,
+          "z": 23643.57373046875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_59_C_21",
+      "instance_name": "BP_Building_59_C",
+      "properties": {
+        "location": {
+          "x": -15129.79,
+          "y": 4398.38,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3579.568603515625,
+          "y": 3396.7683260283156,
+          "z": 7919.1840131875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_75_C_22",
+      "instance_name": "BP_Building_75_C",
+      "properties": {
+        "location": {
+          "x": -17606.16,
+          "y": 3336.4,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1272.7906494140625,
+          "y": 1272.792236328125,
+          "z": 7080.45068359375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_36_C_23",
+      "instance_name": "BP_Building_36_C",
+      "properties": {
+        "location": {
+          "x": -18969.02,
+          "y": 3968.63,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1424.988281093756,
+          "y": 2537.255974503416,
+          "z": 4755.332157771729
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_36_C_24",
+      "instance_name": "BP_Building_36_C",
+      "properties": {
+        "location": {
+          "x": -3412.49,
+          "y": -3968.63,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1424.988281093756,
+          "y": 2537.255974503416,
+          "z": 4755.332157771729
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_36_C_25",
+      "instance_name": "BP_Building_36_C",
+      "properties": {
+        "location": {
+          "x": -4855.29,
+          "y": -3968.63,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1424.988281093756,
+          "y": 2537.255974503416,
+          "z": 4755.332157771729
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_07_C_26",
+      "instance_name": "BP_Building_07_C",
+      "properties": {
+        "location": {
+          "x": -6759.05,
+          "y": -3891.26,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2382.5126953125,
+          "y": 2382.5126953125,
+          "z": 9145.854125976562
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_37_C_27",
+      "instance_name": "BP_Building_37_C",
+      "properties": {
+        "location": {
+          "x": -9809.05,
+          "y": -4299.71,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3717.4972532148404,
+          "y": 3199.4265661088866,
+          "z": 2531.298458256592
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_80_C_28",
+      "instance_name": "BP_Building_80_C",
+      "properties": {
+        "location": {
+          "x": -13252.79,
+          "y": -3797.31,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3169.979248046875,
+          "y": 2194.6201171875,
+          "z": 5192.470886230469
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_36_C_29",
+      "instance_name": "BP_Building_36_C",
+      "properties": {
+        "location": {
+          "x": -15553.81,
+          "y": -3968.63,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1424.988281093756,
+          "y": 2537.255974503416,
+          "z": 4755.332157771729
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_85_C_30",
+      "instance_name": "BP_Building_85_C",
+      "properties": {
+        "location": {
+          "x": -17744.11,
+          "y": -3756.7,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2955.606201171875,
+          "y": 2113.39013671875,
+          "z": 3791.4136962890625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_36_C_31",
+      "instance_name": "BP_Building_36_C",
+      "properties": {
+        "location": {
+          "x": -19956.28,
+          "y": -3968.63,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1424.988281093756,
+          "y": 2537.255974503416,
+          "z": 4755.332157771729
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_107_C_32",
+      "instance_name": "BP_Building_107_C",
+      "properties": {
+        "location": {
+          "x": 26848.74,
+          "y": 6401.44,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 12802.87890625,
+          "y": 8297.486328125,
+          "z": 18631.31591796875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_126_C_33",
+      "instance_name": "BP_Building_126_C",
+      "properties": {
+        "location": {
+          "x": 26220.0,
+          "y": 15122.88,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 4639.99853515625,
+          "y": 7039.998046875,
+          "z": 21200.96142578125
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_62_C_34",
+      "instance_name": "BP_Building_62_C",
+      "properties": {
+        "location": {
+          "x": 15900.92,
+          "y": 7525.45,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "restaurant",
+        "bbox": {
+          "x": 1826.3813940419932,
+          "y": 2798.1592485942383,
+          "z": 4994.330872316405
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_52_C_35",
+      "instance_name": "BP_Building_52_C",
+      "properties": {
+        "location": {
+          "x": 15187.79,
+          "y": 9845.21,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2813.14453125,
+          "y": 4224.4284053789015,
+          "z": 10188.498535125
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_11_C_36",
+      "instance_name": "BP_Building_11_C",
+      "properties": {
+        "location": {
+          "x": 15030.49,
+          "y": 14183.17,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "store",
+        "bbox": {
+          "x": 5862.765625,
+          "y": 4539.02734375,
+          "z": 6388.936034202576
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_62_C_37",
+      "instance_name": "BP_Building_62_C",
+      "properties": {
+        "location": {
+          "x": 15900.92,
+          "y": -5373.07,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1826.3813940419932,
+          "y": 2798.1592485942383,
+          "z": 4994.330872316405
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_07_C_38",
+      "instance_name": "BP_Building_07_C",
+      "properties": {
+        "location": {
+          "x": 16108.74,
+          "y": -7477.52,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2382.5126953125,
+          "y": 2382.5126953125,
+          "z": 9145.854125976562
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_09_C_39",
+      "instance_name": "BP_Building_09_C",
+      "properties": {
+        "location": {
+          "x": 13486.87,
+          "y": -15014.49,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 12691.4296875,
+          "y": 7626.2666015625,
+          "z": 33903.726654052734
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_24_C_40",
+      "instance_name": "BP_Building_24_C",
+      "properties": {
+        "location": {
+          "x": 24166.31,
+          "y": -1944.09,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3888.177673550781,
+          "y": 2932.615890002926,
+          "z": 2439.947052095703
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_82_C_41",
+      "instance_name": "BP_Building_82_C",
+      "properties": {
+        "location": {
+          "x": 24205.83,
+          "y": -6487.19,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "hospital",
+        "bbox": {
+          "x": 5198.03173828125,
+          "y": 3011.652877807617,
+          "z": 5083.369873046875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_77_C_42",
+      "instance_name": "BP_Building_77_C",
+      "properties": {
+        "location": {
+          "x": 23622.33,
+          "y": -10069.5,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1966.575927734375,
+          "y": 1844.655517578125,
+          "z": 4620.371337890625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_87_C_43",
+      "instance_name": "BP_Building_87_C",
+      "properties": {
+        "location": {
+          "x": 26066.87,
+          "y": -15872.79,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 9640.0078125,
+          "y": 6733.7449951171875,
+          "z": 2880.5
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_62_C_44",
+      "instance_name": "BP_Building_62_C",
+      "properties": {
+        "location": {
+          "x": 30674.93,
+          "y": 15900.92,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1826.3813940419932,
+          "y": 2798.1592485942383,
+          "z": 4994.330872316405
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_62_C_45",
+      "instance_name": "BP_Building_62_C",
+      "properties": {
+        "location": {
+          "x": 32544.6,
+          "y": 15900.92,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1826.3813940419932,
+          "y": 2798.1592485942383,
+          "z": 4994.330872316405
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_62_C_46",
+      "instance_name": "BP_Building_62_C",
+      "properties": {
+        "location": {
+          "x": 34403.76,
+          "y": 15900.92,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1826.3813940419932,
+          "y": 2798.1592485942383,
+          "z": 4994.330872316405
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_56_C_47",
+      "instance_name": "BP_Building_56_C",
+      "properties": {
+        "location": {
+          "x": 36279.23,
+          "y": 15818.93,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "rest_area",
+        "bbox": {
+          "x": 1868.2357752595199,
+          "y": 2962.139701851076,
+          "z": 5276.2854155107425
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_56_C_48",
+      "instance_name": "BP_Building_56_C",
+      "properties": {
+        "location": {
+          "x": 38172.55,
+          "y": 15818.93,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1868.2357752595199,
+          "y": 2962.139701851076,
+          "z": 5276.2854155107425
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_54_C_49",
+      "instance_name": "BP_Building_54_C",
+      "properties": {
+        "location": {
+          "x": 21956.54,
+          "y": 24818.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3913.0870364609364,
+          "y": 4236.000450298336,
+          "z": 7844.971572754883
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_34_C_50",
+      "instance_name": "BP_Building_34_C",
+      "properties": {
+        "location": {
+          "x": 25066.33,
+          "y": 24392.55,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2306.483277242187,
+          "y": 3385.099213396483,
+          "z": 12558.904083939453
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_56_C_51",
+      "instance_name": "BP_Building_56_C",
+      "properties": {
+        "location": {
+          "x": 27189.45,
+          "y": 24181.07,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1868.2357752595199,
+          "y": 2962.139701851076,
+          "z": 5276.2854155107425
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_66_C_52",
+      "instance_name": "BP_Building_66_C",
+      "properties": {
+        "location": {
+          "x": 29146.27,
+          "y": 24024.88,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2045.4011376806666,
+          "y": 2649.764427302245,
+          "z": 5269.437149000976
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_100_C_53",
+      "instance_name": "BP_Building_100_C",
+      "properties": {
+        "location": {
+          "x": 32688.98,
+          "y": 24120.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 5040.0224609375,
+          "y": 2839.997802734375,
+          "z": 4371.60888671875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_56_C_54",
+      "instance_name": "BP_Building_56_C",
+      "properties": {
+        "location": {
+          "x": 36204.09,
+          "y": 24181.07,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1868.2357752595199,
+          "y": 2962.139701851076,
+          "z": 5276.2854155107425
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_56_C_55",
+      "instance_name": "BP_Building_56_C",
+      "properties": {
+        "location": {
+          "x": 16365.88,
+          "y": 24181.07,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1868.2357752595199,
+          "y": 2962.139701851076,
+          "z": 5276.2854155107425
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_07_C_56",
+      "instance_name": "BP_Building_07_C",
+      "properties": {
+        "location": {
+          "x": 14240.51,
+          "y": 23891.26,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2382.5126953125,
+          "y": 2382.5126953125,
+          "z": 9145.854125976562
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_77_C_57",
+      "instance_name": "BP_Building_77_C",
+      "properties": {
+        "location": {
+          "x": 11991.42,
+          "y": 23622.33,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1966.575927734375,
+          "y": 1844.655517578125,
+          "z": 4620.371337890625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_77_C_58",
+      "instance_name": "BP_Building_77_C",
+      "properties": {
+        "location": {
+          "x": 9944.42,
+          "y": 23622.33,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1966.575927734375,
+          "y": 1844.655517578125,
+          "z": 4620.371337890625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_67_C_59",
+      "instance_name": "BP_Building_67_C",
+      "properties": {
+        "location": {
+          "x": 5809.32,
+          "y": 28180.75,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 6303.625488281257,
+          "y": 10961.507812500007,
+          "z": 21353.528014503907
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_77_C_60",
+      "instance_name": "BP_Building_77_C",
+      "properties": {
+        "location": {
+          "x": 11740.02,
+          "y": 16377.67,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1966.575927734375,
+          "y": 1844.655517578125,
+          "z": 4620.371337890625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_03_C_61",
+      "instance_name": "BP_Building_03_C",
+      "properties": {
+        "location": {
+          "x": 9502.27,
+          "y": 16120.68,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2508.927734375,
+          "y": 2358.631103515625,
+          "z": 3323.157958984375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_121_C_62",
+      "instance_name": "BP_Building_121_C",
+      "properties": {
+        "location": {
+          "x": 5527.8,
+          "y": 13580.0,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 5440.00439453125,
+          "y": 7440.00146484375,
+          "z": 23120.500366210938
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_38_C_63",
+      "instance_name": "BP_Building_38_C",
+      "properties": {
+        "location": {
+          "x": 43621.65,
+          "y": 15770.48,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "restaurant",
+        "bbox": {
+          "x": 7243.297363921871,
+          "y": 3059.045242231441,
+          "z": 5788.2489768325195
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_77_C_64",
+      "instance_name": "BP_Building_77_C",
+      "properties": {
+        "location": {
+          "x": 48235.86,
+          "y": 16377.67,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 1966.575927734375,
+          "y": 1844.655517578125,
+          "z": 4620.371337890625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_96_C_65",
+      "instance_name": "BP_Building_96_C",
+      "properties": {
+        "location": {
+          "x": 51239.15,
+          "y": 14779.99,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 4039.998046875,
+          "y": 5040.0107421875,
+          "z": 4752.9888916015625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_66_C_66",
+      "instance_name": "BP_Building_66_C",
+      "properties": {
+        "location": {
+          "x": 54284.37,
+          "y": 15975.12,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2045.4011376806666,
+          "y": 2649.764427302245,
+          "z": 5269.437149000976
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_111_C_67",
+      "instance_name": "BP_Building_111_C",
+      "properties": {
+        "location": {
+          "x": 59762.09,
+          "y": 14866.95,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 8910.052764892578,
+          "y": 4866.092727661133,
+          "z": 16382.534606933594
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_32_C_68",
+      "instance_name": "BP_Building_32_C",
+      "properties": {
+        "location": {
+          "x": 45614.55,
+          "y": 24316.59,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 5829.107558907228,
+          "y": 3233.186393460448,
+          "z": 14507.708289983399
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_66_C_69",
+      "instance_name": "BP_Building_66_C",
+      "properties": {
+        "location": {
+          "x": 49598.03,
+          "y": 24024.88,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2045.4011376806666,
+          "y": 2649.764427302245,
+          "z": 5269.437149000976
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_59_C_70",
+      "instance_name": "BP_Building_59_C",
+      "properties": {
+        "location": {
+          "x": 52410.52,
+          "y": 24398.38,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3579.568603515625,
+          "y": 3396.7683260283156,
+          "z": 7919.1840131875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_73_C_71",
+      "instance_name": "BP_Building_73_C",
+      "properties": {
+        "location": {
+          "x": 55303.58,
+          "y": 23859.68,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2206.5556640625,
+          "y": 2319.36669921875,
+          "z": 7104.7373046875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_41_C_72",
+      "instance_name": "BP_Building_41_C",
+      "properties": {
+        "location": {
+          "x": 58357.65,
+          "y": 28020.32,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3901.5914306640625,
+          "y": 10640.646484375,
+          "z": 16591.148436849122
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_66_C_73",
+      "instance_name": "BP_Building_66_C",
+      "properties": {
+        "location": {
+          "x": 44024.88,
+          "y": 26960.56,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2045.4011376806666,
+          "y": 2649.764427302245,
+          "z": 5269.437149000976
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_42_C_74",
+      "instance_name": "BP_Building_42_C",
+      "properties": {
+        "location": {
+          "x": 44523.49,
+          "y": 30644.91,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 5323.280609427735,
+          "y": 3646.978386003422,
+          "z": 14532.070068425783
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_04_C_75",
+      "instance_name": "BP_Building_04_C",
+      "properties": {
+        "location": {
+          "x": 43958.51,
+          "y": 34565.05,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2517.0126953125,
+          "y": 2517.010498046875,
+          "z": 3146.65926361084
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_61_C_76",
+      "instance_name": "BP_Building_61_C",
+      "properties": {
+        "location": {
+          "x": 44537.03,
+          "y": 37842.54,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 4037.9611665966804,
+          "y": 3674.0695648271503,
+          "z": 10189.076110819336
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_66_C_77",
+      "instance_name": "BP_Building_66_C",
+      "properties": {
+        "location": {
+          "x": 35975.12,
+          "y": 26761.55,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2045.4011376806666,
+          "y": 2649.764427302245,
+          "z": 5269.437149000976
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_118_C_78",
+      "instance_name": "BP_Building_118_C",
+      "properties": {
+        "location": {
+          "x": 32780.0,
+          "y": 36504.26,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 17440.005859375,
+          "y": 9040.005859375,
+          "z": 44291.986328125
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_73_C_79",
+      "instance_name": "BP_Building_73_C",
+      "properties": {
+        "location": {
+          "x": -3859.68,
+          "y": 16196.72,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "restaurant",
+        "bbox": {
+          "x": 2206.5556640625,
+          "y": 2319.36669921875,
+          "z": 7104.7373046875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_73_C_80",
+      "instance_name": "BP_Building_73_C",
+      "properties": {
+        "location": {
+          "x": -3859.68,
+          "y": 13946.33,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2206.5556640625,
+          "y": 2319.36669921875,
+          "z": 7104.7373046875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_73_C_81",
+      "instance_name": "BP_Building_73_C",
+      "properties": {
+        "location": {
+          "x": -3859.68,
+          "y": 11718.14,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "store",
+        "bbox": {
+          "x": 2206.5556640625,
+          "y": 2319.36669921875,
+          "z": 7104.7373046875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_73_C_82",
+      "instance_name": "BP_Building_73_C",
+      "properties": {
+        "location": {
+          "x": 3859.68,
+          "y": 8734.19,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2206.5556640625,
+          "y": 2319.36669921875,
+          "z": 7104.7373046875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_34_C_83",
+      "instance_name": "BP_Building_34_C",
+      "properties": {
+        "location": {
+          "x": 4392.55,
+          "y": 34847.56,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2306.483277242187,
+          "y": 3385.099213396483,
+          "z": 12558.904083939453
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_25_C_84",
+      "instance_name": "BP_Building_25_C",
+      "properties": {
+        "location": {
+          "x": 4807.17,
+          "y": 37470.96,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 90.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "restaurant",
+        "bbox": {
+          "x": 2940.310951943846,
+          "y": 4214.342696870117,
+          "z": 8882.890975631835
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_23_C_85",
+      "instance_name": "BP_Building_23_C",
+      "properties": {
+        "location": {
+          "x": -7895.85,
+          "y": 25658.41,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 11316.82421875,
+          "y": 10391.703125,
+          "z": 12028.431962907314
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_34_C_86",
+      "instance_name": "BP_Building_34_C",
+      "properties": {
+        "location": {
+          "x": -4392.55,
+          "y": 32478.81,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2306.483277242187,
+          "y": 3385.099213396483,
+          "z": 12558.904083939453
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_85_C_87",
+      "instance_name": "BP_Building_85_C",
+      "properties": {
+        "location": {
+          "x": -3756.7,
+          "y": 35109.85,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2955.606201171875,
+          "y": 2113.39013671875,
+          "z": 3791.4136962890625
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_72_C_88",
+      "instance_name": "BP_Building_72_C",
+      "properties": {
+        "location": {
+          "x": -4572.26,
+          "y": 38306.88,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 270.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3438.4462890625,
+          "y": 3744.515380859375,
+          "z": 6220.43310546875
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_34_C_89",
+      "instance_name": "BP_Building_34_C",
+      "properties": {
+        "location": {
+          "x": 65391.24,
+          "y": 15607.45,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2306.483277242187,
+          "y": 3385.099213396483,
+          "z": 12558.904083939453
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_11_C_90",
+      "instance_name": "BP_Building_11_C",
+      "properties": {
+        "location": {
+          "x": 69475.86,
+          "y": 15030.49,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 5862.765625,
+          "y": 4539.02734375,
+          "z": 6388.936034202576
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_34_C_91",
+      "instance_name": "BP_Building_34_C",
+      "properties": {
+        "location": {
+          "x": 73584.73,
+          "y": 15607.45,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2306.483277242187,
+          "y": 3385.099213396483,
+          "z": 12558.904083939453
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_07_C_92",
+      "instance_name": "BP_Building_07_C",
+      "properties": {
+        "location": {
+          "x": 75982.97,
+          "y": 16108.74,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 0.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "car_rental",
+        "bbox": {
+          "x": 2382.5126953125,
+          "y": 2382.5126953125,
+          "z": 9145.854125976562
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_07_C_93",
+      "instance_name": "BP_Building_07_C",
+      "properties": {
+        "location": {
+          "x": 63891.26,
+          "y": 23891.26,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2382.5126953125,
+          "y": 2382.5126953125,
+          "z": 9145.854125976562
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_58_C_94",
+      "instance_name": "BP_Building_58_C",
+      "properties": {
+        "location": {
+          "x": 66688.83,
+          "y": 24368.88,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 3212.6434247612324,
+          "y": 3337.758971589843,
+          "z": 6754.907715490233
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_15_C_95",
+      "instance_name": "BP_Building_15_C",
+      "properties": {
+        "location": {
+          "x": 69671.5,
+          "y": 24365.72,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2752.68359375,
+          "y": 3331.44140625,
+          "z": 16500.93075567484
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_03_C_96",
+      "instance_name": "BP_Building_03_C",
+      "properties": {
+        "location": {
+          "x": 72399.21,
+          "y": 23879.32,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 2508.927734375,
+          "y": 2358.631103515625,
+          "z": 3323.157958984375
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_80_C_97",
+      "instance_name": "BP_Building_80_C",
+      "properties": {
+        "location": {
+          "x": 75238.67,
+          "y": 23797.31,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "poi_type": "store",
+        "bbox": {
+          "x": 3169.979248046875,
+          "y": 2194.6201171875,
+          "z": 5192.470886230469
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_BP_Building_106_C_98",
+      "instance_name": "BP_Building_106_C",
+      "properties": {
+        "location": {
+          "x": 79859.52,
+          "y": 24378.31,
+          "z": 0
+        },
+        "orientation": {
+          "pitch": 0,
+          "yaw": 180.0,
+          "roll": 0
+        },
+        "scale": {
+          "x": 1.0,
+          "y": 1.0,
+          "z": 1.0
+        },
+        "bbox": {
+          "x": 6071.7236328125,
+          "y": 3356.6173095703125,
+          "z": 11321.961791992188
+        }
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "id": "GEN_POI_BusStation_0_262",
+      "instance_name": "POI_BusStation",
+      "properties": {
+        "poi_type": "bus_station",
+        "location": {
+          "x": 4920.345710721317,
+          "y": -800.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_BusStation_1_740",
+      "instance_name": "POI_BusStation",
+      "properties": {
+        "poi_type": "bus_station",
+        "location": {
+          "x": 20800.0,
+          "y": 5363.874762924514,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 270.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_BusStation_2_403",
+      "instance_name": "POI_BusStation",
+      "properties": {
+        "poi_type": "bus_station",
+        "location": {
+          "x": 14592.65628994795,
+          "y": 20800.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 360.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_BusStation_3_806",
+      "instance_name": "POI_BusStation",
+      "properties": {
+        "poi_type": "bus_station",
+        "location": {
+          "x": 800.0,
+          "y": 16942.959879640046,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": -270.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_0_586",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": -13928.71953095183,
+          "y": 1200.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_1_675",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 26405.830252725762,
+          "y": 21200.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_2_536",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 21200.0,
+          "y": 14370.148348478366,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 90.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_3_841",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 41200.0,
+          "y": 30157.058331831122,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 90.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_4_530",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 26167.663636506193,
+          "y": 18800.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_5_838",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 28791.026651206845,
+          "y": 18800.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_6_356",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 64036.26512948106,
+          "y": 21200.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_7_864",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 28253.943444500896,
+          "y": 18800.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_8_818",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 14192.10469326178,
+          "y": 21200.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_POI_ChargingStation_Road_9_383",
+      "instance_name": "POI_ChargingStation_Road",
+      "properties": {
+        "poi_type": "charging_station",
+        "location": {
+          "x": 47773.68905526088,
+          "y": 18800.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        }
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_000_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": -19845.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 0
+          }
+        },
+        "waiting_point": {
+          "x": -19845.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": -20000.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": -200.0,
+            "y": 0.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 0,
+          "intersection_index": 0,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "east"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": -20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": -200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 0,
+            "intersection_index": 0,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "east"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_000_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": -19845.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 0
+          }
+        },
+        "waiting_point": {
+          "x": -19845.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": -20000.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": -200.0,
+            "y": 0.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 0,
+          "intersection_index": 0,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "east"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": -20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": -200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 0,
+            "intersection_index": 0,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "east"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_001_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": -155.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 1
+          }
+        },
+        "waiting_point": {
+          "x": -155.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 1,
+          "intersection_index": 1,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 1,
+            "intersection_index": 1,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_001_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 155.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 1
+          }
+        },
+        "waiting_point": {
+          "x": 155.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 1,
+          "intersection_index": 1,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 1,
+            "intersection_index": 1,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_001_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 155.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 1
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 1
+          }
+        },
+        "waiting_point": {
+          "x": 155.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 1,
+          "intersection_index": 1,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 1,
+            "intersection_index": 1,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "north_east"
+          },
+          {
+            "center": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 1,
+            "intersection_index": 1,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_001_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": -155.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 1
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 1
+          }
+        },
+        "waiting_point": {
+          "x": -155.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 1,
+          "intersection_index": 1,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 1,
+            "intersection_index": 1,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "north_west"
+          },
+          {
+            "center": {
+              "x": 0.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 1,
+            "intersection_index": 1,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_002_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": -155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 270.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 2
+          }
+        },
+        "waiting_point": {
+          "x": -155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "east",
+          "far_side_sidewalk_direction": "west",
+          "crossing_center_index": 2,
+          "intersection_index": 2,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "south"
+          ],
+          "crosswalk_side_direction": "south",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 2,
+            "intersection_index": 2,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "south"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_002_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 2
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 2
+          }
+        },
+        "waiting_point": {
+          "x": 155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 2,
+          "intersection_index": 2,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "south"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 2,
+            "intersection_index": 2,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "south"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "south_east"
+          },
+          {
+            "center": {
+              "x": 0.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 2,
+            "intersection_index": 2,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "south"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_002_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 2
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 2
+          }
+        },
+        "waiting_point": {
+          "x": 155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 2,
+          "intersection_index": 2,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "south"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 2,
+            "intersection_index": 2,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "south"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "north_east"
+          },
+          {
+            "center": {
+              "x": 0.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 2,
+            "intersection_index": 2,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "south"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_002_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": -155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 270.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 2
+          }
+        },
+        "waiting_point": {
+          "x": -155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "east",
+          "far_side_sidewalk_direction": "west",
+          "crossing_center_index": 2,
+          "intersection_index": 2,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "south"
+          ],
+          "crosswalk_side_direction": "north",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 2,
+            "intersection_index": 2,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "south"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_003_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": -155.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 270.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 3
+          }
+        },
+        "waiting_point": {
+          "x": -155.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 40000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 400.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "east",
+          "far_side_sidewalk_direction": "west",
+          "crossing_center_index": 3,
+          "intersection_index": 3,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "south"
+          ],
+          "crosswalk_side_direction": "south",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 40000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 400.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 3,
+            "intersection_index": 3,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "south"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_003_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 155.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 90.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 3
+          }
+        },
+        "waiting_point": {
+          "x": 155.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 0.0,
+            "y": 40000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 0.0,
+            "y": 400.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "west",
+          "far_side_sidewalk_direction": "east",
+          "crossing_center_index": 3,
+          "intersection_index": 3,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "south"
+          ],
+          "crosswalk_side_direction": "south",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 0.0,
+              "y": 40000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 0.0,
+              "y": 400.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 3,
+            "intersection_index": 3,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "south"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_004_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 20155.0,
+          "y": -19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 90.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 4
+          }
+        },
+        "waiting_point": {
+          "x": 20155.0,
+          "y": -19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": -20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": -200.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "west",
+          "far_side_sidewalk_direction": "east",
+          "crossing_center_index": 4,
+          "intersection_index": 4,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "north"
+          ],
+          "crosswalk_side_direction": "north",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": -20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": -200.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 4,
+            "intersection_index": 4,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "north"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_004_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 19845.0,
+          "y": -19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 270.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 4
+          }
+        },
+        "waiting_point": {
+          "x": 19845.0,
+          "y": -19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": -20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": -200.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "east",
+          "far_side_sidewalk_direction": "west",
+          "crossing_center_index": 4,
+          "intersection_index": 4,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "north"
+          ],
+          "crosswalk_side_direction": "north",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": -20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": -200.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 4,
+            "intersection_index": 4,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "north"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_005_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 19845.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 5
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 5
+          }
+        },
+        "waiting_point": {
+          "x": 19845.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 5,
+          "intersection_index": 5,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "north",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 5,
+            "intersection_index": 5,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "north",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "south_west"
+          },
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 5,
+            "intersection_index": 5,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "north",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_005_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 20155.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 90.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 5
+          }
+        },
+        "waiting_point": {
+          "x": 20155.0,
+          "y": -155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "west",
+          "far_side_sidewalk_direction": "east",
+          "crossing_center_index": 5,
+          "intersection_index": 5,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "north",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "south",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 5,
+            "intersection_index": 5,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "north",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_005_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 20155.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 90.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 5
+          }
+        },
+        "waiting_point": {
+          "x": 20155.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "west",
+          "far_side_sidewalk_direction": "east",
+          "crossing_center_index": 5,
+          "intersection_index": 5,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "north",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "north",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 5,
+            "intersection_index": 5,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "north",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_005_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 19845.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 5
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 5
+          }
+        },
+        "waiting_point": {
+          "x": 19845.0,
+          "y": 155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 0.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 0.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 5,
+          "intersection_index": 5,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "north",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 5,
+            "intersection_index": 5,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "north",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "north_west"
+          },
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 0.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 0.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 5,
+            "intersection_index": 5,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "north",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_006_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 19845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 6
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 6
+          }
+        },
+        "waiting_point": {
+          "x": 19845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 6,
+          "intersection_index": 6,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 6,
+            "intersection_index": 6,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "south_west"
+          },
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 6,
+            "intersection_index": 6,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_006_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 20155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 6
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 6
+          }
+        },
+        "waiting_point": {
+          "x": 20155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 6,
+          "intersection_index": 6,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 6,
+            "intersection_index": 6,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "south_east"
+          },
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 6,
+            "intersection_index": 6,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_006_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 20155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 6
+          }
+        },
+        "waiting_point": {
+          "x": 20155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 6,
+          "intersection_index": 6,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 6,
+            "intersection_index": 6,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_006_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 19845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 6
+          }
+        },
+        "waiting_point": {
+          "x": 19845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 20000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 200.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 6,
+          "intersection_index": 6,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "south",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 20000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 200.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 6,
+            "intersection_index": 6,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "south",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_007_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 39845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 7
+          }
+        },
+        "waiting_point": {
+          "x": 39845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 40000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 400.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 7,
+          "intersection_index": 7,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 7,
+            "intersection_index": 7,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_007_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 40155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 7
+          }
+        },
+        "waiting_point": {
+          "x": 40155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 40000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 400.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 7,
+          "intersection_index": 7,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 7,
+            "intersection_index": 7,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_007_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 40155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 7
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 7
+          }
+        },
+        "waiting_point": {
+          "x": 40155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 40000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 400.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 7,
+          "intersection_index": 7,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 7,
+            "intersection_index": 7,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "north_east"
+          },
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 7,
+            "intersection_index": 7,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_007_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 39845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green",
+          "right": "red"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 7
+          },
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "north",
+            "state": "red",
+            "controlled_crossing_index": 7
+          }
+        },
+        "waiting_point": {
+          "x": 39845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 40000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 400.0,
+            "y": 200.0
+          },
+          "crossing_kind": "intersection_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 7,
+          "intersection_index": 7,
+          "intersection_degree": 3,
+          "intersection_approach_directions": [
+            "east",
+            "north",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 7,
+            "intersection_index": 7,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "north_west"
+          },
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 200.0
+            },
+            "crossing_kind": "intersection_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 7,
+            "intersection_index": 7,
+            "intersection_degree": 3,
+            "intersection_approach_directions": [
+              "east",
+              "north",
+              "west"
+            ],
+            "crosswalk_side_direction": "north",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_008_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 39845.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 270.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": 1.0,
+              "y": 0.0
+            },
+            "facing_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 8
+          }
+        },
+        "waiting_point": {
+          "x": 39845.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 40000.0,
+            "y": 40000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 400.0,
+            "y": 400.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "east",
+          "far_side_sidewalk_direction": "west",
+          "crossing_center_index": 8,
+          "intersection_index": 8,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "south"
+          ],
+          "crosswalk_side_direction": "south",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 40000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 400.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "east",
+            "far_side_sidewalk_direction": "west",
+            "crossing_center_index": 8,
+            "intersection_index": 8,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "south"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_008_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 40155.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 90.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "red",
+        "face_states": {
+          "right": "red"
+        },
+        "faces": {
+          "right": {
+            "component_side": "_r_",
+            "face_index": 1,
+            "facing": {
+              "x": -1.0,
+              "y": 0.0
+            },
+            "facing_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crosswalk_side_direction": "south",
+            "state": "red",
+            "controlled_crossing_index": 8
+          }
+        },
+        "waiting_point": {
+          "x": 40155.0,
+          "y": 39845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 40000.0,
+            "y": 40000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 400.0,
+            "y": 400.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "east-west",
+          "controlled_approach_direction": "west",
+          "far_side_sidewalk_direction": "east",
+          "crossing_center_index": 8,
+          "intersection_index": 8,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "south"
+          ],
+          "crosswalk_side_direction": "south",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 40000.0,
+              "y": 40000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 400.0,
+              "y": 400.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "east-west",
+            "controlled_approach_direction": "west",
+            "far_side_sidewalk_direction": "east",
+            "crossing_center_index": 8,
+            "intersection_index": 8,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "south"
+            ],
+            "crosswalk_side_direction": "south",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_009_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 59845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 9
+          }
+        },
+        "waiting_point": {
+          "x": 59845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 60000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 600.0,
+            "y": 200.0
+          },
+          "crossing_kind": "road_joint_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 9,
+          "intersection_index": 9,
+          "intersection_degree": 2,
+          "intersection_approach_directions": [
+            "east",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 60000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 600.0,
+              "y": 200.0
+            },
+            "crossing_kind": "road_joint_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 9,
+            "intersection_index": 9,
+            "intersection_degree": 2,
+            "intersection_approach_directions": [
+              "east",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_009_01",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 60155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 9
+          }
+        },
+        "waiting_point": {
+          "x": 60155.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 60000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 600.0,
+            "y": 200.0
+          },
+          "crossing_kind": "road_joint_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 9,
+          "intersection_index": 9,
+          "intersection_degree": 2,
+          "intersection_approach_directions": [
+            "east",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "south_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 60000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 600.0,
+              "y": 200.0
+            },
+            "crossing_kind": "road_joint_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 9,
+            "intersection_index": 9,
+            "intersection_degree": 2,
+            "intersection_approach_directions": [
+              "east",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "south_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_009_02",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 60155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "east",
+            "state": "green",
+            "controlled_crossing_index": 9
+          }
+        },
+        "waiting_point": {
+          "x": 60155.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 60000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 600.0,
+            "y": 200.0
+          },
+          "crossing_kind": "road_joint_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 9,
+          "intersection_index": 9,
+          "intersection_degree": 2,
+          "intersection_approach_directions": [
+            "east",
+            "west"
+          ],
+          "crosswalk_side_direction": "east",
+          "corner": "north_east"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 60000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 600.0,
+              "y": 200.0
+            },
+            "crossing_kind": "road_joint_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 9,
+            "intersection_index": 9,
+            "intersection_degree": 2,
+            "intersection_approach_directions": [
+              "east",
+              "west"
+            ],
+            "crosswalk_side_direction": "east",
+            "corner": "north_east"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_009_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 59845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 9
+          }
+        },
+        "waiting_point": {
+          "x": 59845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 60000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 600.0,
+            "y": 200.0
+          },
+          "crossing_kind": "road_joint_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 9,
+          "intersection_index": 9,
+          "intersection_degree": 2,
+          "intersection_approach_directions": [
+            "east",
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 60000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 600.0,
+              "y": 200.0
+            },
+            "crossing_kind": "road_joint_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 9,
+            "intersection_index": 9,
+            "intersection_degree": 2,
+            "intersection_approach_directions": [
+              "east",
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_010_00",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 79845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 0.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": 1.0
+            },
+            "facing_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 10
+          }
+        },
+        "waiting_point": {
+          "x": 79845.0,
+          "y": 19845.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 80000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 800.0,
+            "y": 200.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "north",
+          "far_side_sidewalk_direction": "south",
+          "crossing_center_index": 10,
+          "intersection_index": 10,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "south_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 80000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 800.0,
+              "y": 200.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "north",
+            "far_side_sidewalk_direction": "south",
+            "crossing_center_index": 10,
+            "intersection_index": 10,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "south_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    },
+    {
+      "id": "GEN_PedestrianLight_small_city_11_crossing_010_03",
+      "instance_name": "RT_BP_street_light_ped",
+      "properties": {
+        "poi_type": "pedestrian_light",
+        "type": "pedestrian_light",
+        "ue_asset_path": "/Game/RealTimeBench/Traffic/RT_BP_street_light_ped",
+        "location": {
+          "x": 79845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "orientation": {
+          "pitch": 0.0,
+          "yaw": 180.0,
+          "roll": 0.0
+        },
+        "signal_phase": "north_south_green_east_west_red",
+        "signal_state": "green",
+        "face_states": {
+          "left": "green"
+        },
+        "faces": {
+          "left": {
+            "component_side": "_l_",
+            "face_index": 0,
+            "facing": {
+              "x": 0.0,
+              "y": -1.0
+            },
+            "facing_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crosswalk_side_direction": "west",
+            "state": "green",
+            "controlled_crossing_index": 10
+          }
+        },
+        "waiting_point": {
+          "x": 79845.0,
+          "y": 20155.0,
+          "z": 0.0
+        },
+        "controlled_crossing": {
+          "center": {
+            "x": 80000.0,
+            "y": 20000.0,
+            "z": 0.0
+          },
+          "center_m": {
+            "x": 800.0,
+            "y": 200.0
+          },
+          "crossing_kind": "road_end_crosswalk",
+          "crossing_axis": "south-north",
+          "controlled_approach_direction": "south",
+          "far_side_sidewalk_direction": "north",
+          "crossing_center_index": 10,
+          "intersection_index": 10,
+          "intersection_degree": 1,
+          "intersection_approach_directions": [
+            "west"
+          ],
+          "crosswalk_side_direction": "west",
+          "corner": "north_west"
+        },
+        "controlled_crossings": [
+          {
+            "center": {
+              "x": 80000.0,
+              "y": 20000.0,
+              "z": 0.0
+            },
+            "center_m": {
+              "x": 800.0,
+              "y": 200.0
+            },
+            "crossing_kind": "road_end_crosswalk",
+            "crossing_axis": "south-north",
+            "controlled_approach_direction": "south",
+            "far_side_sidewalk_direction": "north",
+            "crossing_center_index": 10,
+            "intersection_index": 10,
+            "intersection_degree": 1,
+            "intersection_approach_directions": [
+              "west"
+            ],
+            "crosswalk_side_direction": "west",
+            "corner": "north_west"
+          }
+        ],
+        "placement_model": "sidewalk_corner_square",
+        "placement_note": "Generated two-face pedestrian signal at a sidewalk corner. Four poles form a square around each road crossing/intersection; each pole sits on the far side sidewalk corner and its visible faces point back across the road toward approaching pedestrians."
+      }
+    }
+  ],
+  "bus_routes": [
+    {
+      "type": "bus_route",
+      "id": "route_bus_1",
+      "station_ids": [
+        "GEN_POI_BusStation_0_262",
+        "GEN_POI_BusStation_1_740",
+        "GEN_POI_BusStation_2_403",
+        "GEN_POI_BusStation_3_806"
+      ],
+      "path": [
+        {
+          "x": 0.0,
+          "y": 0.0
+        },
+        {
+          "x": 200.0,
+          "y": 0.0
+        },
+        {
+          "x": 200.0,
+          "y": 200.0
+        },
+        {
+          "x": 0.0,
+          "y": 200.0
+        },
+        {
+          "x": 0.0,
+          "y": 0.0
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+env_registry:
+  Sokoban: vagen.envs.sokoban.sokoban_env.Sokoban
+  FrozenLake: vagen.envs.frozenlake.frozenlake_env.FrozenLake
+  DeliveryBench: vagen.envs.deliverybench.deliverybench_env.DeliveryBench

@@ -1,0 +1,15 @@
+{
+  "height": 480,
+  "key": "observe/000001",
+  "path": "/abs/path/frame.png",
+  "png_base64": null,
+  "pose": {
+    "x_cm": -24087.34,
+    "y_cm": 10488.7,
+    "yaw_deg": 15.0,
+    "z_cm": 100.0
+  },
+  "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "status": "ok",
+  "width": 640
+}

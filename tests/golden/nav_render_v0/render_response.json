@@ -1,0 +1,13 @@
+{
+  "results": [
+    {
+      "height": 480,
+      "key": "s000_n000/toward_s000_n001",
+      "path": "/abs/path/frame.png",
+      "png_base64": null,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "status": "ok",
+      "width": 640
+    }
+  ]
+}

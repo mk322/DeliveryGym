@@ -1,0 +1,259 @@
+# vendor/vagen @ b93deaacba0c27eef4f26ffadc06710a5221c180 (dev/env_v2)
+diff --git a/vagen/agent_loop/gym_agent_loop.py b/vagen/agent_loop/gym_agent_loop.py
+index 982c6a0..9f3b334 100644
+--- a/vagen/agent_loop/gym_agent_loop.py
++++ b/vagen/agent_loop/gym_agent_loop.py
+@@ -251,13 +251,20 @@ class GymAgentLoop(AgentLoopBase):
+                 f"In env:{agent_data.env_name}, response_ids length {len(response_ids)} exceeds response_length {self.response_length}",
+             )
+ 
++        # Patched by embodiedbench/training/vagen/patches/: cutting the ids
++        # without cutting the images leaves image_grid_thw describing frames
++        # that are no longer in the sequence.
++        keep_prompt, keep_response, images = self._cut_on_image_boundaries(
++            prompt_ids, response_ids, agent_data.image_data)
++        multi_modal_data = {"image": images} if images else {}
++
+         output = AgentLoopOutput(
+-            prompt_ids=prompt_ids[-self.prompt_length:],
+-            response_ids=response_ids[: self.response_length],
+-            response_mask=agent_data.response_mask[: self.response_length],
++            prompt_ids=prompt_ids[len(prompt_ids) - keep_prompt:],
++            response_ids=response_ids[:keep_response],
++            response_mask=agent_data.response_mask[:keep_response],
+             multi_modal_data=multi_modal_data,
+             response_logprobs=(
+-                agent_data.response_logprobs[: self.response_length] if agent_data.response_logprobs else None
++                agent_data.response_logprobs[:keep_response] if agent_data.response_logprobs else None
+             ),
+             reward_score=sum(agent_data.env_rewards) if agent_data.env_rewards else 0.0,
+             num_turns=agent_data.env_turns,
+@@ -266,6 +273,75 @@ class GymAgentLoop(AgentLoopBase):
+         )
+         return output
+ 
++    def _cut_on_image_boundaries(self, prompt_ids, response_ids, images):
++        """How much of each segment to keep so no image is half in it.
++
++        Returns (prompt_kept, response_kept, images_kept). Falls back to the
++        plain lengths whenever the sequence cannot be read as one image block
++        per image, which is the text-only case and any processor whose pad
++        token is not <|image_pad|>.
++        """
++        prompt_kept = min(self.prompt_length, len(prompt_ids))
++        response_kept = min(self.response_length, len(response_ids))
++        if not images or self.processor is None:
++            return prompt_kept, response_kept, images
++        if prompt_kept == len(prompt_ids) and response_kept == len(response_ids):
++            return prompt_kept, response_kept, images
++
++        pad_id = self.tokenizer.convert_tokens_to_ids("<|image_pad|>")
++        if pad_id is None or pad_id < 0:
++            return prompt_kept, response_kept, images
++        # An image is written <|vision_start|> <|image_pad|>... <|vision_end|>,
++        # and get_rope_index reads the token after every <|vision_start|> it
++        # finds. Ending the sequence on one indexes off the end of it, so the
++        # opening token goes with the image it opens.
++        start_id = self.tokenizer.convert_tokens_to_ids("<|vision_start|>")
++
++        sequence = list(prompt_ids) + list(response_ids)
++        blocks, index, length = [], 0, len(sequence)
++        while index < length:
++            if sequence[index] == pad_id:
++                end = index
++                while end < length and sequence[end] == pad_id:
++                    end += 1
++                blocks.append((index, end))
++                index = end
++            else:
++                index += 1
++        # One contiguous run of pad tokens per image, or this is not a
++        # sequence we know how to cut.
++        if len(blocks) != len(images):
++            return prompt_kept, response_kept, images
++
++        low = len(prompt_ids) - prompt_kept
++        high = len(prompt_ids) + response_kept
++
++        first = 0
++        for position, (start, end) in enumerate(blocks):
++            if end <= low:
++                first = position + 1
++            elif start < low:
++                low = end          # the cut split this one; drop it whole
++                first = position + 1
++            else:
++                break
++
++        last = len(blocks)
++        for position in range(len(blocks) - 1, -1, -1):
++            start, end = blocks[position]
++            if start >= high:
++                last = position
++            elif end > high:
++                high = start       # same, from the other end
++                last = position
++            else:
++                break
++        while high > len(prompt_ids) and sequence[high - 1] == start_id:
++            high -= 1
++
++        return (len(prompt_ids) - low, high - len(prompt_ids),
++                images[first:last])
++
+     async def _handle_pending_state(self, agent_data: AgentData, sampling_params: Dict[str, Any]) -> AgentState:
+         """Encode initial (system + first user) messages into prompt_ids."""
+         if self.processor is not None:
+@@ -318,6 +394,17 @@ class GymAgentLoop(AgentLoopBase):
+         sampling_params_for_turn = sampling_params.copy()
+         max_new_tokens=sampling_params_for_turn.get("max_new_tokens", None) or agent_data.response_limit
+         max_new_tokens = min(max_new_tokens, agent_data.response_limit)
++        # Patched by embodiedbench/training/vagen/patches/: the engine serves
++        # at most prompt_length + response_length tokens in total and sizes
++        # each request as that minus len(prompt_ids). The response-budget rule
++        # alone does not imply that bound -- an initial prompt past
++        # prompt_length is only warned about -- and an unclamped request at
++        # the ceiling asks vLLM for a negative allowance and kills the run.
++        engine_remaining = (self.prompt_length + self.response_length
++                            - len(agent_data.prompt_ids))
++        if engine_remaining < 16:
++            return AgentState.TERMINATED
++        max_new_tokens = min(max_new_tokens, engine_remaining)
+         sampling_params_for_turn["max_new_tokens"] = max_new_tokens
+             
+ 
+
+# vendor/vagen/verl @ 3fe0a29975e1b02ae2bd1dec249f7807dd7966f5 (vagen-lite)
+diff --git a/verl/experimental/agent_loop/agent_loop.py b/verl/experimental/agent_loop/agent_loop.py
+index 274259cc..748c3849 100644
+--- a/verl/experimental/agent_loop/agent_loop.py
++++ b/verl/experimental/agent_loop/agent_loop.py
+@@ -464,7 +464,13 @@ class AgentLoopWorkerBase:
+                 self.processor is not None
+                 and "Qwen2VLImageProcessor" in self.processor.image_processor.__class__.__name__
+             ):
+-                from verl.models.transformers.qwen2_vl import get_rope_index
++                # Qwen3-VL has its own mrope; rl_dataset.py dispatches on
++                # the processor and this path did not. Patched by
++                # embodiedbench/training/vagen/patches/.
++                if "Qwen3VLProcessor" in self.processor.__class__.__name__:
++                    from verl.models.transformers.qwen3_vl import get_rope_index
++                else:
++                    from verl.models.transformers.qwen2_vl import get_rope_index
+ 
+                 images = getattr(output, "multi_modal_data", {}).get("image", None)
+                 current_text = self.tokenizer.decode(input_ids.squeeze(0), skip_special_tokens=True)
+diff --git a/verl/models/transformers/qwen3_vl.py b/verl/models/transformers/qwen3_vl.py
+index 6d696735..0e15194a 100644
+--- a/verl/models/transformers/qwen3_vl.py
++++ b/verl/models/transformers/qwen3_vl.py
+@@ -121,6 +121,23 @@ def get_rope_index(
+             llm_pos_ids_list.append(torch.arange(text_len).view(1, -1).expand(3, -1) + st_idx)
+ 
+         llm_positions = torch.cat(llm_pos_ids_list, dim=1).reshape(3, -1)
++        # DIAGNOSTIC (temporary): say what disagrees before the assignment
++        # raises. The error alone gives two totals and no way to tell which of
++        # the images, or which of the two counts, is wrong.
++        _want = int((attention_mask == 1).sum())
++        if llm_positions.shape[1] != _want:
++            import sys as _sys
++            _pad_id = image_token_id
++            _n_pad = int((input_ids == _pad_id).sum())
++            _implied = 0
++            if image_grid_thw is not None:
++                _implied = int(sum(int(g[0]) * int(g[1]) * int(g[2])
++                                   for g in image_grid_thw)) // (spatial_merge_size ** 2)
++            print(f"[ROPE MISMATCH] positions={llm_positions.shape[1]} "
++                  f"attended={_want} short_by={_want - llm_positions.shape[1]} "
++                  f"image_pads_in_ids={_n_pad} implied_by_grid={_implied} "
++                  f"grids={[] if image_grid_thw is None else [list(map(int, g)) for g in image_grid_thw]} "
++                  f"n_images_counted={int(image_nums)}", file=_sys.stderr, flush=True)
+         position_ids[..., attention_mask == 1] = llm_positions.to(position_ids.device)
+     else:
+         if attention_mask is not None:
+diff --git a/verl/workers/config/actor.py b/verl/workers/config/actor.py
+index 59e43462..1b2f68ff 100644
+--- a/verl/workers/config/actor.py
++++ b/verl/workers/config/actor.py
+@@ -49,6 +49,11 @@ class PolicyLossConfig(BaseConfig):
+     clip_cov_ub: float = 5.0
+     kl_cov_ratio: float = 0.0002
+     ppo_kl_coef: float = 0.1
++    # Written at runtime by apply_rollout_correction, which cannot add a key
++    # omegaconf's struct mode does not already know. Patched in by
++    # embodiedbench/training/vagen/patches/. None leaves every run that does
++    # not enable the bypass untouched.
++    rollout_correction: Any = None
+ 
+ 
+ @dataclass
+diff --git a/verl/workers/rollout/schemas.py b/verl/workers/rollout/schemas.py
+index b640ba64..8195e70e 100644
+--- a/verl/workers/rollout/schemas.py
++++ b/verl/workers/rollout/schemas.py
+@@ -655,9 +655,65 @@ class AsyncRolloutRequest(BaseModel):
+         ), f"""Request {self.request_id} has different length of {self.input_ids.shape[-1]=}, 
+             {self.attention_mask.shape[-1]=}, {self.position_ids.shape[-1]=}, {self.loss_mask.shape[-1]=}"""
+ 
++    def _pull_cut_back_off_images(self, processing_class) -> None:
++        """Move an over-long trajectory's cut off an image block.
++
++        Patched in by embodiedbench/training/vagen/patches/. Later turns'
++        observations live in the response segment, so the slice below can land
++        inside an image and leave fewer <|image_pad|> tokens than
++        image_grid_thw describes; get_rope_index then computes positions for a
++        sequence that no longer exists.
++        """
++        multi_modal = self.multi_modal_inputs or {}
++        grids = multi_modal.get("image_grid_thw")
++        if grids is None or len(grids) == 0:
++            return
++
++        # Both caps can cut: the trajectory's own, and the response's.
++        limit = min(self.max_model_len, self.prompt_ids.shape[-1] + self.max_response_len)
++        if self.input_ids.shape[-1] <= limit:
++            return
++
++        tokenizer = getattr(processing_class, "tokenizer", processing_class)
++        pad_id = tokenizer.convert_tokens_to_ids("<|image_pad|>")
++        image_processor = getattr(processing_class, "image_processor", None)
++        merge = int(getattr(image_processor, "merge_size", 2) or 2)
++
++        pad_at = (self.input_ids.reshape(-1) == pad_id).nonzero(as_tuple=True)[0]
++        if pad_at.numel() == 0:
++            return
++
++        per_image = [int(g[0]) * int(g[1]) * int(g[2]) // (merge * merge) for g in grids]
++        survived = int((pad_at < limit).sum())
++
++        kept = seen = 0
++        for count in per_image:
++            if seen + count > survived:
++                break
++            seen += count
++            kept += 1
++
++        cut = limit
++        if kept < len(per_image):
++            # `seen` pads belong to whole images, so the next one is the first
++            # pad of the image the cut would have split. End the sequence there.
++            cut = int(pad_at[seen])
++
++        self.input_ids = self.input_ids[..., :cut]
++        self.attention_mask = self.attention_mask[..., :cut]
++        self.position_ids = self.position_ids[..., :cut]
++        self.loss_mask = self.loss_mask[..., :cut]
++
++        multi_modal["image_grid_thw"] = grids[:kept]
++        pixels = multi_modal.get("pixel_values")
++        if pixels is not None:
++            rows = sum(int(g[0]) * int(g[1]) * int(g[2]) for g in grids[:kept])
++            multi_modal["pixel_values"] = pixels[:rows]
++
+     def truncate_output_ids(
+         self, processing_class: PreTrainedTokenizer | PreTrainedTokenizerFast | ProcessorMixin
+     ) -> None:
++        self._pull_cut_back_off_images(processing_class)
+         self.input_ids = self.input_ids[..., : self.max_model_len]
+         self.attention_mask = self.attention_mask[..., : self.max_model_len]
+         self.position_ids = self.position_ids[..., : self.max_model_len]

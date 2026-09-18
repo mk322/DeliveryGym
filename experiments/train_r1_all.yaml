@@ -1,0 +1,158 @@
+# RQ1 arm R1-all: earnings + red fine + barrier fine. The all-constraints
+# recipe; candidate to replace env_return's four unjustified constants.
+# Experiment training set: 4000 seeds, none repeated within a run.
+#
+# Seeds are consumed at TRAIN_BS per step (GROUP samples the SAME seed, so the
+# group costs one). 400 steps needs 2400 at TRAIN_BS=6 and 3200 at the
+# TRAIN_BS=8 speed setting; 4000 covers both with headroom (666 / 500 steps
+# to first repeat). Two ranges, because the pool must JUMP OVER the immutable
+# validation seeds (1000-1063): [0,999] and [1200,4199], with 1064-1199 a
+# buffer nobody may quietly grow into.
+#
+# Everything below the seed lines is the baseline config, verbatim -- the
+# experiment axes are reward/curriculum, never the task.
+envs:
+  - name: Courier
+    n_envs: 1000
+    data_source: courier_paris
+    seed: [0, 999, 1]
+    max_turns: 60
+    # A cap, not a target: 48 truncated a 4B's reasoning before its fenced
+    # call. But a reply is one THOUGHT line and one call -- about 80 tokens,
+    # measured as 4.4k of a 39.5k trajectory over 55 turns -- so 1024 asks the
+    # scheduler to reserve twelve times what is ever produced, on every one of
+    # 4400 generate calls a step. 256 is still three times the longest reply
+    # seen and leaves the reasoning intact.
+    response_length_per_turn: 512
+    config:
+      # ENDLESS, one order at a time: the dispatcher refills after every
+      # delivery and the shift ends on the clock or the turn cap. The reward
+      # is then TOTAL earnings inside a fixed budget -- two deliveries beat
+      # one beats none -- which varies within a GRPO group where the same
+      # order's fee, paid identically for any successful route, did not.
+      #
+      # Chosen over earnings_per_hour after its runs held-out score went
+      # 2.1625 -> 1.9861 -> 0.6950 over twenty steps while entropy climbed
+      # from 0.21 to 0.66: a rate is maximised by making the denominator
+      # small as much as by earning, and the policy destabilised. A total
+      # under a cap has no denominator to game.
+      difficulty: endless
+      queue_depth: 1
+      stride: block
+      embodiment: human_on_foot
+      hazards: true
+      reward_basis: earnings
+      # RQ1: money plus both constraint fines.
+      red_penalty: 1.0
+      block_penalty: 0.5
+      # Dense term: metres closed on the target, potential-based, never in
+      # env_return. Without it GRPO's first step logged reward_variance 0.0
+      # and grad_norm 0.0 -- a 3B never delivers, so every sample in the
+      # group scores the same and there is no advantage to push on.
+      # Off. The ladder was for a policy that never delivered: a group of
+      # four all scoring zero has no advantage to push on. Success is now
+      # 17.2% held-out, so 53% of groups contain at least one paying episode
+      # and the money has variance of its own.
+      #
+      # Left on, it drowns the objective. Distance accumulates over forty
+      # turns while a fee is one payment that rarely lands, so even at 0.2 the
+      # split at step 20 was 2.22 shaping against 0.077 earnings -- 96.7% of
+      # the gradient was "walk closer". Training score rose to its maximum
+      # while held-out earnings fell 90% and deliveries went 17.2% -> 1.6%.
+      # The policy learned exactly what it was paid to learn.
+      progress_weight: 0.0
+      max_images: 3
+      # Street views per turn; a pedestrian lamp rides along with its street.
+      #
+      # Was 1, which completely covered 4% of this map's junctions -- almost
+      # every choice was made without seeing most of the candidates. 3 covers
+      # 93% (the junctions have 1-6 streets, median 2). Measured cost: 1.05
+      # images a turn becomes 2.65, so about 3.4k image tokens over a 40-turn
+      # episode becomes 8.5k, against a 36.8k response budget and a measured
+      # 14.6k in use. It fits.
+      #
+      # This also closes a gap between training and evaluation, which sends
+      # every frame: the two were choosing streets from different amounts of
+      # evidence and their numbers were being compared anyway.
+      #
+      # The original reason for 1 was a 640x480 frame at ~380 tokens and an
+      # mrope crash when a truncated prompt left multi_modal_data listing
+      # images the tokens no longer covered. The frames are 320px now, at
+      # roughly 80 tokens, and clip_ratio has been 0.0 throughout.
+      # "320px now" is this key; it must match val_courier.yaml.
+      image_max_side: 320
+      album_root: /data/albums/paris_streets_v2/citycore-paris
+      # ^ uncomment for the sighted task. Without it the episode is text-only,
+      #   which is the blind control, not the benchmark.
+  - name: Courier
+    n_envs: 3000
+    data_source: courier_paris
+    seed: [1200, 4199, 1]
+    max_turns: 60
+    # A cap, not a target: 48 truncated a 4B's reasoning before its fenced
+    # call. But a reply is one THOUGHT line and one call -- about 80 tokens,
+    # measured as 4.4k of a 39.5k trajectory over 55 turns -- so 1024 asks the
+    # scheduler to reserve twelve times what is ever produced, on every one of
+    # 4400 generate calls a step. 256 is still three times the longest reply
+    # seen and leaves the reasoning intact.
+    response_length_per_turn: 512
+    config:
+      # ENDLESS, one order at a time: the dispatcher refills after every
+      # delivery and the shift ends on the clock or the turn cap. The reward
+      # is then TOTAL earnings inside a fixed budget -- two deliveries beat
+      # one beats none -- which varies within a GRPO group where the same
+      # order's fee, paid identically for any successful route, did not.
+      #
+      # Chosen over earnings_per_hour after its runs held-out score went
+      # 2.1625 -> 1.9861 -> 0.6950 over twenty steps while entropy climbed
+      # from 0.21 to 0.66: a rate is maximised by making the denominator
+      # small as much as by earning, and the policy destabilised. A total
+      # under a cap has no denominator to game.
+      difficulty: endless
+      queue_depth: 1
+      stride: block
+      embodiment: human_on_foot
+      hazards: true
+      reward_basis: earnings
+      # RQ1: money plus both constraint fines.
+      red_penalty: 1.0
+      block_penalty: 0.5
+      # Dense term: metres closed on the target, potential-based, never in
+      # env_return. Without it GRPO's first step logged reward_variance 0.0
+      # and grad_norm 0.0 -- a 3B never delivers, so every sample in the
+      # group scores the same and there is no advantage to push on.
+      # Off. The ladder was for a policy that never delivered: a group of
+      # four all scoring zero has no advantage to push on. Success is now
+      # 17.2% held-out, so 53% of groups contain at least one paying episode
+      # and the money has variance of its own.
+      #
+      # Left on, it drowns the objective. Distance accumulates over forty
+      # turns while a fee is one payment that rarely lands, so even at 0.2 the
+      # split at step 20 was 2.22 shaping against 0.077 earnings -- 96.7% of
+      # the gradient was "walk closer". Training score rose to its maximum
+      # while held-out earnings fell 90% and deliveries went 17.2% -> 1.6%.
+      # The policy learned exactly what it was paid to learn.
+      progress_weight: 0.0
+      max_images: 3
+      # Street views per turn; a pedestrian lamp rides along with its street.
+      #
+      # Was 1, which completely covered 4% of this map's junctions -- almost
+      # every choice was made without seeing most of the candidates. 3 covers
+      # 93% (the junctions have 1-6 streets, median 2). Measured cost: 1.05
+      # images a turn becomes 2.65, so about 3.4k image tokens over a 40-turn
+      # episode becomes 8.5k, against a 36.8k response budget and a measured
+      # 14.6k in use. It fits.
+      #
+      # This also closes a gap between training and evaluation, which sends
+      # every frame: the two were choosing streets from different amounts of
+      # evidence and their numbers were being compared anyway.
+      #
+      # The original reason for 1 was a 640x480 frame at ~380 tokens and an
+      # mrope crash when a truncated prompt left multi_modal_data listing
+      # images the tokens no longer covered. The frames are 320px now, at
+      # roughly 80 tokens, and clip_ratio has been 0.0 throughout.
+      # "320px now" is this key; it must match val_courier.yaml.
+      image_max_side: 320
+      album_root: /data/albums/paris_streets_v2/citycore-paris
+      # ^ uncomment for the sighted task. Without it the episode is text-only,
+      #   which is the blind control, not the benchmark.

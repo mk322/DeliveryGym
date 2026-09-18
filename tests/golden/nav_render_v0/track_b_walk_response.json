@@ -1,0 +1,14 @@
+{
+  "arrived": true,
+  "pose": {
+    "x_cm": -24087.34,
+    "y_cm": 10488.7,
+    "yaw_deg": 15.0,
+    "z_cm": 100.0
+  },
+  "sim_seconds": 19.4139,
+  "stuck": false,
+  "ticks": 583,
+  "timeout": false,
+  "walked_cm": 2717.95
+}
