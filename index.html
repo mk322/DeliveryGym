@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DeliveryGym trains embodied agents across complete courier shifts with persistent consequences, verifiable rewards, and an adaptive curriculum.">
+  <meta name="theme-color" content="#0b1318">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://mk322.github.io/DeliveryGym/">
+  <meta property="og:title" content="DeliveryGym — Train agents for the whole shift">
+  <meta property="og:description" content="An RL environment for long-horizon embodied agent planning with adaptive curriculum.">
+  <meta property="og:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="DeliveryGym — Train agents for the whole shift">
+  <meta name="twitter:description" content="Persistent city work. Verifiable rewards. Adaptive practice.">
+  <meta name="twitter:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
+  <title>DeliveryGym — Train agents for the whole shift</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/hero-paris.png" as="image" fetchpriority="high">
+  <link rel="stylesheet" href="styles.css">
+  <script src="results-data.js" defer></script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" aria-label="Page navigation">
+  <a class="wordmark" href="#top"><span class="wordmark-dot" aria-hidden="true"></span>DeliveryGym</a>
+  <div class="nav-links"><a href="#film">Film</a><a href="#overview">Environment</a><a href="#results">Results</a><a href="#citation">Cite</a></div>
+  <a class="nav-paper" href="https://arxiv.org/abs/2609.19801">Read paper <span aria-hidden="true">↗</span></a>
+</nav>
+
+<main id="main">
+  <header class="hero" id="top">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-content">
+      <p class="eyebrow hero-eyebrow"><span></span> Long-horizon embodied reinforcement learning</p>
+      <h1>Train agents<br>for the whole shift<span>.</span></h1>
+      <p class="hero-deck">DeliveryGym turns persistent city work into an executable RL environment—where every order changes what is possible next.</p>
+      <div class="resource-links">
+        <a class="pill primary" href="#film"><span class="play" aria-hidden="true">▶</span> Watch the 72s film</a>
+        <a class="pill glass" href="https://arxiv.org/abs/2609.19801">Paper <span aria-hidden="true">↗</span></a>
+        <a class="pill glass" href="https://github.com/mk322/DeliveryGym">Code <span aria-hidden="true">↗</span></a>
+      </div>
+    </div>
+    <div class="hero-proof" aria-label="Project highlights">
+      <div><strong>13</strong><span>city maps</span></div>
+      <div><strong>130</strong><span>test shifts</span></div>
+      <div><strong>+54.3%</strong><span>test income with RL</span></div>
+    </div>
+    <div class="hero-scroll" aria-hidden="true"><span></span> A delivery ends. Its consequences do not.</div>
+  </header>
+
+  <section class="paper-identity wrap" aria-label="Paper title and authors">
+    <p class="paper-label">ICLR 2027 submission · arXiv:2609.19801</p>
+    <h2>DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum</h2>
+    <p class="authors"><span>Haoqiang Kang<sup>1</sup></span><span>Yiming Zhang<sup>2</sup></span><span>Yiyang Guo<sup>1</sup></span><span>Chuying Li<sup>1</sup></span><span>Jianzhi Shen<sup>3</sup></span><span>Tianruo Rose Xu<sup>4</sup></span><span>Xiaokang Ye<sup>1</sup></span><span><a href="https://lianhui.ucsd.edu/">Lianhui Qin</a><sup>1</sup></span></p>
+    <p class="affiliations"><span><sup>1</sup> UC San Diego</span><span><sup>2</sup> Independent</span><span><sup>3</sup> Johns Hopkins University</span><span><sup>4</sup> Cornell University</span></p>
+  </section>
+
+  <section class="thesis dark-section" aria-labelledby="thesis-title">
+    <div class="wrap">
+      <div class="section-heading inverse"><div><p class="eyebrow">Why a gym for delivery?</p><h2 id="thesis-title">One world. One clock.<br>A continuing shift.</h2></div><p>Single deliveries hide the hard part. DeliveryGym makes agents live with the downstream effects of each decision.</p></div>
+      <div class="constraint-rail" aria-label="Six persistent constraints">
+        <article><span>01</span><strong>Time</strong><p>A detour can make the next delivery late.</p></article>
+        <article><span>02</span><strong>Energy</strong><p>Recovery consumes time and money.</p></article>
+        <article><span>03</span><strong>Money</strong><p>Revenue is only part of the ledger.</p></article>
+        <article><span>04</span><strong>Food</strong><p>Delay and handling change its value.</p></article>
+        <article><span>05</span><strong>Safety</strong><p>Signals and obstacles constrain progress.</p></article>
+        <article><span>06</span><strong>Distance</strong><p>Every finish is the next starting point.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="film" class="film wrap" aria-labelledby="video-title">
+    <div class="section-heading"><div><p class="eyebrow">The launch film</p><h2 id="video-title">See the shift unfold.</h2></div><p>From multimodal action to simulator-verified reward, then back into targeted practice.</p></div>
+    <div class="video-shell" id="video-container">
+      <video controls playsinline preload="metadata" poster="assets/video-poster.jpg" aria-label="DeliveryGym demo film">
+        <source src="assets/deliverygym-demo.mp4" type="video/mp4">
+        Your browser does not support embedded video. <a href="assets/deliverygym-demo.mp4">Download the MP4.</a>
+      </video>
+      <div class="video-meta"><span>01:12</span><span>1080p</span><a href="assets/deliverygym-demo.mp4" download>Download MP4 ↓</a></div>
+    </div>
+  </section>
+
+  <section class="overview-shot wrap" aria-labelledby="world-title">
+    <div class="section-heading"><div><p class="eyebrow">The environment</p><h2 id="world-title">A complete shift is<br>the unit of learning.</h2></div><p>Agents see street views, route maps, and structured state. They choose orders, navigate, deliver, recover resources, and continue working.</p></div>
+    <figure class="lead-figure"><button class="image-button" data-zoom="assets/overview.png" aria-label="Enlarge the complete DeliveryGym overview"><img src="assets/overview.png" width="1706" height="922" alt="A continuing courier shift in Paris: choose orders, deliver, recharge, and preserve time, energy, food quality, and safety." loading="lazy"></button><figcaption><span>DeliveryGym overview.</span><span class="enlarge-hint">Open full figure ↗</span></figcaption></figure>
+    <div class="headline-results" aria-label="Core findings">
+      <div><span class="metric-kicker">Environment</span><strong>13 <small>maps</small></strong><p>10 familiar · 3 excluded from training</p></div>
+      <div class="rl"><span class="metric-kicker">Reward learning</span><strong id="rl-headline">+54.3% <small>income</small></strong><p>Safety RL vs. initialization · fixed test</p></div>
+      <div class="adaptive"><span class="metric-kicker">Adaptive practice</span><strong id="adaptive-headline">+16.5% <small>income</small></strong><p>Adaptive vs. uniform · separate fixed test</p></div>
+    </div>
+  </section>
+
+  <section class="abstract dark-section" aria-labelledby="abstract-title"><div class="wrap reading-width"><p class="eyebrow">The idea</p><h2 id="abstract-title">Persistent consequences.<br><span>Verifiable feedback.</span></h2><p>DeliveryGym turns continuous courier shifts into an executable learning environment for embodied agents. Each decision changes the time, energy, money, and order commitments available for later work. Agents observe street views, maps, and structured state, then use tools to choose orders, navigate, deliver, and recover resources. Simulator events verify what happened and provide trajectory rewards for reinforcement learning. Across 13 city maps, evaluation reveals that reliable single-order execution does not guarantee profitable shift-level planning. Training Qwen3-VL-4B with safety-aware rewards improves test income by 54.3% over initialization. In a separate comparison with the same rollout budget, an adaptive curriculum improves test income by 16.5% over uniform sampling. The curriculum changes future training tasks to target measured weaknesses; evaluation remains fixed. Together, these results connect persistent consequences, verifiable feedback, and targeted practice in one environment.</p></div></section>
+
+  <section id="overview" class="overview wrap" aria-labelledby="overview-title">
+    <div class="section-heading"><div><p class="eyebrow">Environment → reward → curriculum</p><h2 id="overview-title">Experience becomes feedback.<br><span class="adaptive">Feedback shapes experience.</span></h2></div><p>The curriculum changes future training tasks to target measured weaknesses. The evaluation suite stays fixed.</p></div>
+    <figure class="framework-figure"><button class="image-button" data-zoom="assets/figure2_framework.png" aria-label="Enlarge the training framework"><img src="assets/figure2_framework.png" width="1900" height="1183" loading="lazy" alt="Five-stage framework: observations, multi-turn rollout, verifiable rewards, policy update, and adaptive curriculum."></button><figcaption>Online learning from simulator-verified consequences. <a href="assets/figure2_framework.pdf">View original PDF ↗</a></figcaption></figure>
+    <div class="step-controls" aria-label="Explore the training loop"><button data-step="0" aria-pressed="true"><span>01</span> Observe</button><button data-step="1" aria-pressed="false"><span>02</span> Act</button><button data-step="2" aria-pressed="false"><span>03</span> Verify</button><button data-step="3" aria-pressed="false"><span>04</span> Update</button><button data-step="4" aria-pressed="false"><span>05</span> Adapt</button></div>
+    <p class="step-explanation" id="step-explanation" aria-live="polite">Read street views, a route map, and structured state—including the resources and commitments left by earlier decisions.</p>
+    <p class="fixed-evaluation"><span aria-hidden="true">↻</span> <strong>Training experience adapts to the learner.</strong> The task distribution changes. The evaluation suite stays fixed.</p>
+  </section>
+
+  <section id="results" class="results wrap" aria-labelledby="results-title"><div class="section-heading"><div><p class="eyebrow">Evidence, explored</p><h2 id="results-title">Learning to make<br>the whole shift count.</h2></div><p>Inspect four views of what agents learn—and what remains difficult.</p></div>
+    <div class="result-tabs" role="tablist" aria-label="Results perspectives"><button id="tab-learn" role="tab" aria-controls="results-panel" aria-selected="true" data-view="learn">Learn from experience</button><button id="tab-adapt" role="tab" aria-controls="results-panel" aria-selected="false" tabindex="-1" data-view="adapt">Adapt the curriculum</button><button id="tab-scale" role="tab" aria-controls="results-panel" aria-selected="false" tabindex="-1" data-view="scale">Scale the environment</button><button id="tab-beyond" role="tab" aria-controls="results-panel" aria-selected="false" tabindex="-1" data-view="beyond">Beyond one delivery</button></div>
+    <div id="results-panel" role="tabpanel" aria-labelledby="tab-learn" tabindex="0">
+      <div class="explorer-top"><h3 id="finding"></h3><div class="segmented" id="view-controls" role="group" aria-label="Comparison options"></div></div>
+      <div class="explorer-body"><div class="chart-area"><p class="chart-label" id="chart-label"></p><div id="chart" aria-label="Interactive results chart"></div><p class="chart-help">Hover or focus to inspect. Click or press Enter to pin a selection.</p></div><aside class="readout" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="selection-label"></p><strong id="selection-value"></strong><p id="selection-delta"></p><p id="selection-explanation"></p><p class="pin-state" id="pin-state"></p></aside></div>
+      <p class="conditions" id="conditions"></p>
+      <details id="source-figure"><summary>Explore the original paper figure <span aria-hidden="true">↗</span></summary><figure><button class="image-button" id="source-zoom"><img id="source-image" loading="lazy" alt=""></button><figcaption id="source-caption"></figcaption></figure></details>
+    </div>
+    <noscript><p>Enable JavaScript to explore the reported results and comparison table. All results are also available in the <a href="https://arxiv.org/abs/2609.19801">paper</a>.</p></noscript>
+  </section>
+
+  <section class="benchmark wrap" aria-labelledby="benchmark-title"><div class="section-heading"><div><p class="eyebrow">The improvement. The remaining gap.</p><h2 id="benchmark-title">Training helps.<br>There is further to go.</h2></div><div class="segmented" role="group" aria-label="Movement interface"><button data-mode="waypoint" aria-pressed="true">Waypoint</button><button data-mode="anypoint" aria-pressed="false">Any-Point</button></div></div>
+    <p id="table-protocol" class="table-protocol"></p>
+    <div class="table-scroll" tabindex="0" role="region" aria-label="Benchmark results; scroll horizontally on small screens"><table><caption class="sr-only">Model performance on matched test shifts</caption><thead><tr><th scope="col">Agent / base model</th><th scope="col">Net income ↑<small>USD / shift</small></th><th scope="col">Delivered ↑<small>orders / shift</small></th><th scope="col">On time ↑<small>% of handoffs</small></th><th scope="col">Red light ↓<small>events / shift</small></th><th scope="col">Obstacle ↓<small>events / shift</small></th></tr></thead><tbody id="benchmark-body"></tbody></table></div>
+    <p class="table-takeaway" id="table-takeaway" aria-live="polite"></p>
+    <div class="table-notes"><p><span class="oracle">Oracle</span> is a <strong>simulator-assisted search reference</strong> with access to cloned simulator branches, not a guarantee of global optimality.</p><p id="missing-note">“—” means not reported for the selected policy on test. Validation safety and service values are not substituted.</p><p>Sources: paper Table 1 and Appendix B. Repeats are averaged within each shift, then shifts are weighted equally.</p></div>
+  </section>
+
+  <section id="citation" class="citation dark-section" aria-labelledby="citation-title"><div class="wrap reading-width"><div class="citation-header"><div><p class="eyebrow">Build on this work</p><h2 id="citation-title">Citation</h2></div><button id="copy-citation" class="pill glass">Copy BibTeX</button></div><pre><code id="bibtex"></code></pre><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></div></section>
+</main>
+
+<footer><div class="wrap footer-inner"><a class="wordmark" href="#top"><span class="wordmark-dot" aria-hidden="true"></span>DeliveryGym</a><p>Built on the delivery task and city simulation of <a href="https://deliverybench.github.io/">DeliveryBench</a>.</p><div class="institution-links"><a href="https://ucsd.edu/">UC San Diego ↗</a><a href="https://www.jhu.edu/">Johns Hopkins ↗</a><a href="https://www.cornell.edu/">Cornell ↗</a></div></div></footer>
+<dialog id="image-dialog" aria-label="Enlarged paper figure"><div class="dialog-toolbar"><p id="dialog-title">Paper figure</p><a id="full-image" href="assets/overview.png" target="_blank" rel="noopener">Open full resolution ↗</a><button id="close-dialog" aria-label="Close enlarged figure">Close ×</button></div><div class="dialog-image-scroll"><img id="dialog-image" alt=""></div></dialog>
+</body>
+</html>
