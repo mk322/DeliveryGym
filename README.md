@@ -37,7 +37,7 @@ The diagnostics explorer preserves the integer percentage labels printed in the 
 
 ## Demo film
 
-`assets/deliverygym-demo.mp4` is the 72-second, 1080p launch film used by the native HTML video player. `assets/video-poster.jpg` is its poster. `meta.youtubeId` remains empty so the page never replaces the local film with a third-party embed. Re-render the source in `../demo/remotion`, mux the approved audio track, and replace the MP4 at the same path to update both playback and the download link.
+`assets/deliverygym-demo.mp4` is the 78-second, 1080p launch film used by the native HTML video player. It introduces DeliveryGym as an embodied agent RL environment, then moves through the courier task, persistent constraints, adaptive curriculum, results, and task/environment scaling. `assets/video-poster.jpg` is its poster. `meta.youtubeId` remains empty so the page never replaces the local film with a third-party embed. Re-render the source in `../demo/remotion`, mux the approved audio track, and replace the MP4 at the same path to update both playback and the download link.
 
 ## Refresh figures
 
@@ -51,4 +51,4 @@ Update image dimensions if the source aspect ratio changes. Do not substitute th
 
 ## Validation status
 
-Static data/source/link checks and the video export checks pass. A visual browser was unavailable in the authoring session, so desktop/mobile browser QA, clipboard permissions, and remote link behavior remain the main runtime checks. The project is published from the `gh-pages` branch of `mk322/DeliveryGym`.
+Static data/source/link checks and the video export checks pass. The project is published from the `gh-pages` branch of `mk322/DeliveryGym` at `https://mk322.github.io/DeliveryGym/`.

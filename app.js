@@ -20,8 +20,10 @@
     $$('[data-step]').forEach(x => x.setAttribute('aria-pressed',String(x === b)));
     $('#step-explanation').textContent = stepText[Number(b.dataset.step)];
   }));
-  $('#rl-headline').innerHTML = `+${gain(policy('safety').all,policy('base').all)}% <span>income with RL</span>`;
-  $('#adaptive-headline').innerHTML = `+${gain(policy('adaptive').all,policy('uniform').all)}% <span>with adaptive curriculum</span>`;
+  const rlHeadline=$('#rl-headline');
+  const adaptiveHeadline=$('#adaptive-headline');
+  if(rlHeadline)rlHeadline.innerHTML = `+${gain(policy('safety').all,policy('base').all)}% <span>income with RL</span>`;
+  if(adaptiveHeadline)adaptiveHeadline.innerHTML = `+${gain(policy('adaptive').all,policy('uniform').all)}% <span>with adaptive curriculum</span>`;
 
   function options(items, selected) {
     $('#view-controls').innerHTML = items.map(([id,label]) => `<button data-option="${id}" aria-pressed="${id===selected}">${label}</button>`).join('');
