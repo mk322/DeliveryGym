@@ -1,6 +1,6 @@
 # DeliveryGym project website
 
-An English, single-page academic website. Plain HTML, CSS, and JavaScript; no build step, server-side code, fonts, chart libraries, or external runtime dependencies. All local assets use relative URLs, including when hosted at a GitHub Pages subpath.
+An English academic project website with a dedicated leaderboard page. Plain HTML, CSS, and JavaScript; no build step, server-side code, fonts, chart libraries, or external runtime dependencies. All local assets use relative URLs, including when hosted at a GitHub Pages subpath.
 
 ## Open locally
 
@@ -18,8 +18,9 @@ Then visit `http://127.0.0.1:8765/website/`. Stop with Ctrl+C. Copying BibTeX re
 | --- | --- |
 | `index.html` | Page structure, authors, affiliations, overview text, resource links |
 | `styles.css` | Responsive layout, chart styles, research color palette, reduced-motion rules |
-| `results-data.js` | Authoritative numerical dataset; source labels, splits, units, comparison conditions, and video configuration |
-| `app.js` | Four explorer views, table, five training stages, accessible figure dialog, citation copy |
+| `leaderboard.html`, `leaderboard.js` | Dedicated Waypoint/Any-Point leaderboard and trained-policy comparison |
+| `results-data.js` | Authoritative numerical dataset; source labels, splits, units, and comparison conditions |
+| `app.js` | Accessible figure dialog and citation copy |
 | `assets/` | Launch-film MP4 and poster, hero/social artwork, exact source overview, rendered active paper figures, original figure PDFs, favicon |
 | `tests/check-static.cjs` | Dependency-free source/data consistency check; does not launch a browser |
 | `docs/PLAN.md` | Current implementation decisions and remaining verification |
@@ -37,7 +38,7 @@ The diagnostics explorer preserves the integer percentage labels printed in the 
 
 ## Demo film
 
-`assets/deliverygym-demo.mp4` is the 78-second, 1080p launch film used by the native HTML video player. It introduces DeliveryGym as an embodied agent RL environment, then moves through the courier task, persistent constraints, adaptive curriculum, results, and task/environment scaling. `assets/video-poster.jpg` is its poster. `meta.youtubeId` remains empty so the page never replaces the local film with a third-party embed. Re-render the source in `../demo/remotion`, mux the approved audio track, and replace the MP4 at the same path to update both playback and the download link.
+`assets/deliverygym-demo.mp4` is the 90-second, 1080p launch film used by the native HTML video player. It begins with why an embodied RL environment must provide executable transitions and grounded feedback, follows a complete courier trajectory, then explains the training loop, constraints, adaptive curriculum, measured gains, and scaling. `assets/video-poster.jpg` is its poster. Re-render the source in `../demo/remotion`, mux the approved audio track, and replace the MP4 at the same path to update playback and the download link.
 
 ## Refresh figures
 

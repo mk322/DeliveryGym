@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="DeliveryGym leaderboard for embodied agents under one fixed, simulator-verified evaluation protocol.">
+  <meta name="theme-color" content="#ffffff">
+  <title>Leaderboard — DeliveryGym</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css?v=20260919-3">
+  <script src="results-data.js?v=20260919-3" defer></script>
+  <script src="leaderboard.js?v=20260919-3" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+<nav class="site-nav" aria-label="Page navigation">
+  <a class="wordmark" href="index.html"><span class="brand-mark" aria-hidden="true">D</span> DeliveryGym</a>
+  <div><a href="index.html#demo">Demo</a><a href="index.html#environment">Environment</a><a href="index.html#adaptive">Adaptive Curriculum</a><a class="current" href="leaderboard.html">Leaderboard</a></div>
+  <a class="nav-link" href="https://arxiv.org/abs/2609.19801">Paper ↗</a>
+</nav>
+
+<main id="main">
+  <header class="leaderboard-hero wrap">
+    <p class="eyebrow">DeliveryGym leaderboard</p>
+    <h1>Evaluate embodied agents in the same executable world.</h1>
+    <p>Every model receives the same replayable delivery tasks. UE5 executes each tool action, and simulator events measure earnings, completion, timeliness, and safety.</p>
+    <div class="protocol-pills" aria-label="Evaluation protocol"><span>130 replayable tasks</span><span>13 city maps</span><span>60-turn cap</span><span>3 repeats per task</span></div>
+  </header>
+
+  <section class="section section-tint"><div class="wrap">
+    <div class="section-intro row"><div><p class="eyebrow">Foundation models</p><h2>Zero-shot agent performance</h2><p>Switch the movement interface while keeping tasks, simulator dynamics, and metrics fixed.</p></div><div class="segmented" role="group" aria-label="Movement interface"><button data-mode="waypoint" aria-pressed="true">Waypoint</button><button data-mode="anypoint" aria-pressed="false">Any-Point</button></div></div>
+    <p class="table-protocol" id="protocol"></p>
+    <div class="table-scroll"><table>
+      <thead><tr><th scope="col">Agent</th><th scope="col">Net income<small>USD / task ↑</small></th><th scope="col">Delivered<small>orders / task ↑</small></th><th scope="col">On time<small>% ↑</small></th><th scope="col">Red light<small>events / task ↓</small></th><th scope="col">Obstacle<small>events / task ↓</small></th></tr></thead>
+      <tbody id="leaderboard-body"></tbody>
+    </table></div>
+    <p class="table-takeaway">The movement interface changes the difficulty of grounding and navigation; DeliveryGym measures the resulting trajectory, not a model’s verbal plan.</p>
+    <div class="leaderboard-insights"><article><span>Execution</span><strong id="best-income">$18.3</strong><p>Best zero-shot net income under waypoint control.</p></article><article><span>Reference</span><strong>$24.0</strong><p>Simulator-assisted search provides a bounded planning reference.</p></article><article><span>Evaluation</span><strong>Fixed</strong><p>Replayable tasks keep policy comparisons controlled.</p></article></div>
+  </div></section>
+
+  <section class="section wrap" aria-labelledby="trained-title">
+    <div class="section-intro"><p class="eyebrow">Policies trained in DeliveryGym</p><h2 id="trained-title">The environment improves the policy</h2><p>Qwen3-VL-4B policies are selected on validation data and reported once on the fixed test suite.</p></div>
+    <div class="trained-grid" id="trained-grid"></div>
+    <p class="table-notes"><span>Familiar: 100 tasks · Unseen: 30 tasks · All: 130 tasks.</span> Reward-trained and curriculum-trained policies are separate runs.</p>
+  </section>
+
+  <section class="leaderboard-cta section section-tint"><div class="wrap"><div><p class="eyebrow">Build and train</p><h2>Use the same environment for online RL.</h2><p>Executable dynamics, native verification, resettable workers, and adaptive task generation are part of the environment.</p></div><div class="resource-links"><a class="button primary" href="https://github.com/mk322/DeliveryGym">Code</a><a class="button" href="index.html#demo">Watch demo</a></div></div></section>
+</main>
+
+<footer><div class="wrap"><a class="wordmark" href="index.html"><span class="brand-mark" aria-hidden="true">D</span> DeliveryGym</a><p>A verifiable 3D RL environment for embodied agents · 2026</p><div><a href="https://arxiv.org/abs/2609.19801">Paper</a><a href="https://github.com/mk322/DeliveryGym">Code</a><a href="index.html">Project</a></div></div></footer>
+</body>
+</html>
