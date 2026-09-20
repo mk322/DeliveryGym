@@ -1,0 +1,4450 @@
+{
+  "buildings": [
+    {
+      "center": {
+        "x": 15.6652,
+        "y": -41.0206
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_76_C",
+      "bounds": {
+        "x": 0.0,
+        "y": -55.0413,
+        "width": 31.3304,
+        "height": 28.0413,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 60.5885,
+        "y": -49.4408
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_13_C",
+      "bounds": {
+        "x": 31.3304,
+        "y": -71.8817,
+        "width": 58.5162,
+        "height": 44.8817,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 96.9659,
+        "y": -33.364
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_75_C",
+      "bounds": {
+        "x": 90.6019,
+        "y": -39.7279,
+        "width": 12.7279,
+        "height": 12.7279,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 110.0078,
+        "y": -33.364
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_75_C",
+      "bounds": {
+        "x": 103.6439,
+        "y": -39.7279,
+        "width": 12.7279,
+        "height": 12.7279,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 129.8158,
+        "y": -41.7929
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_06_C",
+      "bounds": {
+        "x": 116.3718,
+        "y": -56.5858,
+        "width": 26.8881,
+        "height": 29.5858,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 149.8532,
+        "y": -33.364
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_75_C",
+      "bounds": {
+        "x": 143.4892,
+        "y": -39.7279,
+        "width": 12.7279,
+        "height": 12.7279,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 162.656,
+        "y": -33.364
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_75_C",
+      "bounds": {
+        "x": 156.292,
+        "y": -39.7279,
+        "width": 12.7279,
+        "height": 12.7279,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 18.0548,
+        "y": 35.5159
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_86_C",
+      "bounds": {
+        "x": 0.0,
+        "y": 27.0,
+        "width": 36.1097,
+        "height": 17.0317,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 42.6883,
+        "y": 33.364
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_75_C",
+      "bounds": {
+        "x": 36.3243,
+        "y": 27.0,
+        "width": 12.7279,
+        "height": 12.7279,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 68.4931,
+        "y": 41.6631
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_24_C",
+      "bounds": {
+        "x": 49.0522,
+        "y": 27.0,
+        "width": 38.8818,
+        "height": 29.3262,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 95.3543,
+        "y": 39.6863
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_36_C",
+      "bounds": {
+        "x": 88.2294,
+        "y": 27.0,
+        "width": 14.2499,
+        "height": 25.3726,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 110.0353,
+        "y": 39.6863
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_36_C",
+      "bounds": {
+        "x": 102.9103,
+        "y": 27.0,
+        "width": 14.2499,
+        "height": 25.3726,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 144.3882,
+        "y": 61.653
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_19_C",
+      "bounds": {
+        "x": 117.1602,
+        "y": 27.0,
+        "width": 54.456,
+        "height": 69.306,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -13.0893,
+        "y": 38.5094
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_02_C",
+      "bounds": {
+        "x": -26.1785,
+        "y": 27.0,
+        "width": 26.1785,
+        "height": 23.0188,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -63.1323,
+        "y": 46.3892
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_43_C",
+      "bounds": {
+        "x": -100.0861,
+        "y": 27.0,
+        "width": 73.9076,
+        "height": 38.7784,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -136.6668,
+        "y": 93.5472
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_89_C",
+      "bounds": {
+        "x": -173.2474,
+        "y": 27.0,
+        "width": 73.1612,
+        "height": 133.0943,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -34.1249,
+        "y": -39.6863
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_36_C",
+      "bounds": {
+        "x": -41.2499,
+        "y": -52.3726,
+        "width": 14.2499,
+        "height": 25.3726,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -77.4664,
+        "y": -42.2952
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_38_C",
+      "bounds": {
+        "x": -113.6829,
+        "y": -57.5905,
+        "width": 72.433,
+        "height": 30.5905,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -142.9967,
+        "y": -49.6951
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_11_C",
+      "bounds": {
+        "x": -172.3105,
+        "y": -72.3903,
+        "width": 58.6277,
+        "height": 45.3903,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0,
+          "y": 0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 239.5446,
+        "y": -38.7932
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_03_C",
+      "bounds": {
+        "x": 227.0,
+        "y": -50.5863,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 269.9871,
+        "y": -43.9838
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_59_C",
+      "bounds": {
+        "x": 252.0893,
+        "y": -60.9677,
+        "width": 35.7957,
+        "height": 33.9677,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 295.0688,
+        "y": -39.6863
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_36_C",
+      "bounds": {
+        "x": 287.9439,
+        "y": -52.3726,
+        "width": 14.2499,
+        "height": 25.3726,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 309.6401,
+        "y": -39.6863
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_36_C",
+      "bounds": {
+        "x": 302.5151,
+        "y": -52.3726,
+        "width": 14.2499,
+        "height": 25.3726,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 326.0052,
+        "y": -40.9908
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_62_C",
+      "bounds": {
+        "x": 316.8733,
+        "y": -54.9816,
+        "width": 18.2638,
+        "height": 27.9816,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 347.7221,
+        "y": -39.5851
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_04_C",
+      "bounds": {
+        "x": 335.1371,
+        "y": -52.1701,
+        "width": 25.1701,
+        "height": 25.1701,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 374.2337,
+        "y": -43.9161
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_27_C",
+      "bounds": {
+        "x": 360.3072,
+        "y": -60.8323,
+        "width": 27.8531,
+        "height": 33.8323,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 268.8873,
+        "y": 48.5915
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_30_C",
+      "bounds": {
+        "x": 227.0,
+        "y": 27.0,
+        "width": 83.7745,
+        "height": 43.1831,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 341.1331,
+        "y": 43.7831
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_106_C",
+      "bounds": {
+        "x": 310.7745,
+        "y": 27.0,
+        "width": 60.7172,
+        "height": 33.5662,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 240.9908,
+        "y": 80.2471
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_62_C",
+      "bounds": {
+        "x": 231.8589,
+        "y": 66.2563,
+        "width": 18.2638,
+        "height": 27.9816,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 265.0065,
+        "y": 106.6319
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_71_C",
+      "bounds": {
+        "x": 247.7536,
+        "y": 68.6254,
+        "width": 34.5057,
+        "height": 76.013,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 252.1227,
+        "y": 149.0074
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_70_C",
+      "bounds": {
+        "x": 227.0001,
+        "y": 123.8847,
+        "width": 50.2452,
+        "height": 50.2453,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 159.0092,
+        "y": 105.5624
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_62_C",
+      "bounds": {
+        "x": 149.8773,
+        "y": 91.5716,
+        "width": 18.2638,
+        "height": 27.9816,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 154.4425,
+        "y": 151.0506
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_29_C",
+      "bounds": {
+        "x": 118.0862,
+        "y": 132.4931,
+        "width": 72.7126,
+        "height": 37.115,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 159.0092,
+        "y": -48.9228
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_62_C",
+      "bounds": {
+        "x": 149.8773,
+        "y": -62.9136,
+        "width": 18.2638,
+        "height": 27.9816,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 159.7512,
+        "y": -68.2817
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_66_C",
+      "bounds": {
+        "x": 149.5242,
+        "y": -81.5305,
+        "width": 20.454,
+        "height": 26.4976,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 151.729,
+        "y": -118.898
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_108_C",
+      "bounds": {
+        "x": 111.3397,
+        "y": -140.169,
+        "width": 80.7786,
+        "height": 42.5421,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 160.8482,
+        "y": -173.2169
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_81_C",
+      "bounds": {
+        "x": 146.9186,
+        "y": -185.3687,
+        "width": 27.8591,
+        "height": 24.3037,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 159.0092,
+        "y": -196.6792
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_62_C",
+      "bounds": {
+        "x": 149.8773,
+        "y": -210.67,
+        "width": 18.2638,
+        "height": 27.9816,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 241.8107,
+        "y": -71.1881
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_56_C",
+      "bounds": {
+        "x": 232.4695,
+        "y": -85.9988,
+        "width": 18.6824,
+        "height": 29.6214,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 251.4515,
+        "y": -124.4683
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_69_C",
+      "bounds": {
+        "x": 207.5126,
+        "y": -148.9198,
+        "width": 87.8779,
+        "height": 48.903,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 241.8107,
+        "y": -178.2541
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_56_C",
+      "bounds": {
+        "x": 232.4695,
+        "y": -193.0647,
+        "width": 18.6824,
+        "height": 29.6214,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 241.8107,
+        "y": -197.0932
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_56_C",
+      "bounds": {
+        "x": 232.4695,
+        "y": -211.9039,
+        "width": 18.6824,
+        "height": 29.6214,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -243.6888,
+        "y": 16.0632
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_58_C",
+      "bounds": {
+        "x": -259.752,
+        "y": -0.6256,
+        "width": 32.1264,
+        "height": 33.3776,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -242.0583,
+        "y": 58.1166
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_82_C",
+      "bounds": {
+        "x": -268.0484,
+        "y": 43.0583,
+        "width": 51.9803,
+        "height": 30.1165,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -243.0034,
+        "y": 128.3091
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_47_C",
+      "bounds": {
+        "x": -287.2057,
+        "y": 112.3057,
+        "width": 88.4046,
+        "height": 32.0067,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -241.8107,
+        "y": -36.3412
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_56_C",
+      "bounds": {
+        "x": -251.1519,
+        "y": -51.1519,
+        "width": 18.6824,
+        "height": 29.6214,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -238.9962,
+        "y": -108.4929
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_12_C",
+      "bounds": {
+        "x": -301.8067,
+        "y": -120.4891,
+        "width": 125.6211,
+        "height": 23.9923,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -241.8107,
+        "y": -180.866
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_56_C",
+      "bounds": {
+        "x": -251.1519,
+        "y": -195.6767,
+        "width": 18.6824,
+        "height": 29.6214,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -163.7767,
+        "y": -82.4271
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_77_C",
+      "bounds": {
+        "x": -173.6096,
+        "y": -91.6504,
+        "width": 19.6658,
+        "height": 18.4466,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -152.8,
+        "y": -127.4708
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_104_C",
+      "bounds": {
+        "x": -188.0108,
+        "y": -147.6707,
+        "width": 70.4215,
+        "height": 40.4,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": 442.2,
+        "y": -68.2
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_116_C",
+      "bounds": {
+        "x": 400.0,
+        "y": -109.4,
+        "width": 84.4,
+        "height": 82.4,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 520.3521,
+        "y": -41.9355
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_78_C",
+      "bounds": {
+        "x": 484.4,
+        "y": -56.8709,
+        "width": 71.9041,
+        "height": 29.8709,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 566.5586,
+        "y": -36.2233
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_77_C",
+      "bounds": {
+        "x": 556.7257,
+        "y": -45.4466,
+        "width": 19.6658,
+        "height": 18.4466,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 586.6942,
+        "y": -36.2233
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_77_C",
+      "bounds": {
+        "x": 576.8613,
+        "y": -45.4466,
+        "width": 19.6658,
+        "height": 18.4466,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 479.3314,
+        "y": 50.7668
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_35_C",
+      "bounds": {
+        "x": 427.0,
+        "y": 27.0,
+        "width": 104.6629,
+        "height": 47.5336,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 552.4806,
+        "y": 66.6043
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_31_C",
+      "bounds": {
+        "x": 531.6629,
+        "y": 27.0,
+        "width": 41.6354,
+        "height": 79.2085,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 436.2233,
+        "y": 84.7069
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_77_C",
+      "bounds": {
+        "x": 426.3904,
+        "y": 75.4836,
+        "width": 19.6658,
+        "height": 18.4466,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 436.2233,
+        "y": 104.623
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_77_C",
+      "bounds": {
+        "x": 426.3904,
+        "y": 95.3998,
+        "width": 19.6658,
+        "height": 18.4466,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 445.2349,
+        "y": 141.0723
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_42_C",
+      "bounds": {
+        "x": 418.6185,
+        "y": 122.8374,
+        "width": 53.2328,
+        "height": 36.4698,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 359.7512,
+        "y": 70.9237
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_66_C",
+      "bounds": {
+        "x": 349.5242,
+        "y": 57.6749,
+        "width": 20.454,
+        "height": 26.4976,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 362.433,
+        "y": 95.9287
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_85_C",
+      "bounds": {
+        "x": 347.655,
+        "y": 85.3618,
+        "width": 29.5561,
+        "height": 21.1339,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 356.3428,
+        "y": 124.4702
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_15_C",
+      "bounds": {
+        "x": 342.5794,
+        "y": 107.813,
+        "width": 27.5268,
+        "height": 33.3144,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 354.2774,
+        "y": 155.4258
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_72_C",
+      "bounds": {
+        "x": 337.0852,
+        "y": 136.7033,
+        "width": 34.3845,
+        "height": 37.4452,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 237.567,
+        "y": 241.778
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_85_C",
+      "bounds": {
+        "x": 222.7889,
+        "y": 231.2111,
+        "width": 29.5561,
+        "height": 21.1339,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 273.4726,
+        "y": 289.8756
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_114_C",
+      "bounds": {
+        "x": 240.1531,
+        "y": 243.4029,
+        "width": 66.639,
+        "height": 92.9453,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 240.2488,
+        "y": 334.2453
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_66_C",
+      "bounds": {
+        "x": 230.0218,
+        "y": 320.9965,
+        "width": 20.454,
+        "height": 26.4976,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 260.99,
+        "y": 378.4623
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_08_C",
+      "bounds": {
+        "x": 227.0001,
+        "y": 344.4723,
+        "width": 67.9799,
+        "height": 67.9801,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 158.2071,
+        "y": 213.444
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_06_C",
+      "bounds": {
+        "x": 144.7631,
+        "y": 198.6511,
+        "width": 26.8881,
+        "height": 29.5858,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 159.7512,
+        "y": 237.227
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_66_C",
+      "bounds": {
+        "x": 149.5242,
+        "y": 223.9782,
+        "width": 20.454,
+        "height": 26.4976,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 141.8,
+        "y": 310.6821
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_103_C",
+      "bounds": {
+        "x": 78.5719,
+        "y": 279.4821,
+        "width": 126.4562,
+        "height": 62.4,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 287.9592,
+        "y": 159.7512
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_66_C",
+      "bounds": {
+        "x": 277.7322,
+        "y": 146.5024,
+        "width": 20.454,
+        "height": 26.4976,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 309.2409,
+        "y": 161.4032
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_73_C",
+      "bounds": {
+        "x": 298.2081,
+        "y": 149.8063,
+        "width": 22.0656,
+        "height": 23.1937,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 259.3583,
+        "y": 238.5968
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_73_C",
+      "bounds": {
+        "x": 248.3255,
+        "y": 227.0,
+        "width": 22.0656,
+        "height": 23.1937,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 289.6254,
+        "y": 238.9253
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_84_C",
+      "bounds": {
+        "x": 270.3911,
+        "y": 227.0,
+        "width": 38.4686,
+        "height": 23.8506,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 334.0598,
+        "y": 241.2
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_100_C",
+      "bounds": {
+        "x": 308.8597,
+        "y": 227.0,
+        "width": 50.4002,
+        "height": 28.4,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 370.7923,
+        "y": 243.9255
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_34_C",
+      "bounds": {
+        "x": 359.2599,
+        "y": 227.0,
+        "width": 23.0648,
+        "height": 33.851,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -154.1795,
+        "y": 245.7262
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_44_C",
+      "bounds": {
+        "x": -172.9057,
+        "y": 226.9057,
+        "width": 37.4525,
+        "height": 37.641,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -161.0874,
+        "y": 276.3651
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_07_C",
+      "bounds": {
+        "x": -173.0,
+        "y": 264.4525,
+        "width": 23.8251,
+        "height": 23.8251,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -161.4032,
+        "y": 299.4424
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_73_C",
+      "bounds": {
+        "x": -172.4359,
+        "y": 287.8455,
+        "width": 22.0656,
+        "height": 23.1937,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -161.4032,
+        "y": 321.9678
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_73_C",
+      "bounds": {
+        "x": -172.4359,
+        "y": 310.3709,
+        "width": 22.0656,
+        "height": 23.1937,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -161.4032,
+        "y": 344.3071
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_73_C",
+      "bounds": {
+        "x": -172.4359,
+        "y": 332.7102,
+        "width": 22.0656,
+        "height": 23.1937,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -245.7654,
+        "y": 256.5718
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_45_C",
+      "bounds": {
+        "x": -275.3373,
+        "y": 237.8064,
+        "width": 59.1436,
+        "height": 37.5309,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -243.9255,
+        "y": 297.711
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_34_C",
+      "bounds": {
+        "x": -255.4579,
+        "y": 280.7855,
+        "width": 23.0648,
+        "height": 33.851,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -248.0717,
+        "y": 323.945
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_25_C",
+      "bounds": {
+        "x": -262.7733,
+        "y": 302.8733,
+        "width": 29.4031,
+        "height": 42.1434,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -252.6728,
+        "y": 364.318
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_16_C",
+      "bounds": {
+        "x": -278.3443,
+        "y": 338.6452,
+        "width": 51.343,
+        "height": 51.3455,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -88.3576,
+        "y": 156.0745
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_34_C",
+      "bounds": {
+        "x": -99.89,
+        "y": 139.149,
+        "width": 23.0648,
+        "height": 33.851,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -50.413,
+        "y": 152.1028
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_39_C",
+      "bounds": {
+        "x": -76.8252,
+        "y": 131.2057,
+        "width": 52.8245,
+        "height": 41.7943,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -2.0963,
+        "y": 150.9936
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_22_C",
+      "bounds": {
+        "x": -24.0007,
+        "y": 128.9872,
+        "width": 43.8088,
+        "height": 44.0128,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -123.6232,
+        "y": 243.9255
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_34_C",
+      "bounds": {
+        "x": -135.1556,
+        "y": 227.0,
+        "width": 23.0648,
+        "height": 33.851,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -100.089,
+        "y": 243.9255
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_34_C",
+      "bounds": {
+        "x": -111.6214,
+        "y": 227.0,
+        "width": 23.0648,
+        "height": 33.851,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -57.0385,
+        "y": 281.8075
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_67_C",
+      "bounds": {
+        "x": -88.5566,
+        "y": 227.0,
+        "width": 63.0363,
+        "height": 109.6151,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -277.0055,
+        "y": 238.9126
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_07_C",
+      "bounds": {
+        "x": -288.9181,
+        "y": 227.0,
+        "width": 23.8251,
+        "height": 23.8251,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -300.8355,
+        "y": 238.9126
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_07_C",
+      "bounds": {
+        "x": -312.7481,
+        "y": 227.0,
+        "width": 23.8251,
+        "height": 23.8251,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -324.915,
+        "y": 238.9126
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_07_C",
+      "bounds": {
+        "x": -336.8275,
+        "y": 227.0,
+        "width": 23.8251,
+        "height": 23.8251,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -348.985,
+        "y": 238.9126
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_07_C",
+      "bounds": {
+        "x": -360.8976,
+        "y": 227.0,
+        "width": 23.8251,
+        "height": 23.8251,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -271.5728,
+        "y": 161.2068
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_03_C",
+      "bounds": {
+        "x": -284.1174,
+        "y": 149.4137,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -297.2576,
+        "y": 161.2068
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_03_C",
+      "bounds": {
+        "x": -309.8022,
+        "y": 149.4137,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -322.4375,
+        "y": 161.2068
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_03_C",
+      "bounds": {
+        "x": -334.9821,
+        "y": 149.4137,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -347.5903,
+        "y": 161.2068
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_03_C",
+      "bounds": {
+        "x": -360.1349,
+        "y": 149.4137,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -245.5892,
+        "y": -236.5926
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_33_C",
+      "bounds": {
+        "x": -282.1818,
+        "y": -255.1818,
+        "width": 73.1852,
+        "height": 37.1785,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -238.7932,
+        "y": -285.8004
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_01_C",
+      "bounds": {
+        "x": -251.3378,
+        "y": -297.5936,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -238.7932,
+        "y": -310.9802
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_01_C",
+      "bounds": {
+        "x": -251.3378,
+        "y": -322.7734,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -238.7932,
+        "y": -336.1271
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_01_C",
+      "bounds": {
+        "x": -251.3378,
+        "y": -347.9202,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -238.7932,
+        "y": -361.5674
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_01_C",
+      "bounds": {
+        "x": -251.3378,
+        "y": -373.3606,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -152.1028,
+        "y": -253.4122
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_39_C",
+      "bounds": {
+        "x": -178.5151,
+        "y": -274.3094,
+        "width": 52.8245,
+        "height": 41.7943,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -161.2068,
+        "y": -292.4415
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_01_C",
+      "bounds": {
+        "x": -173.7515,
+        "y": -304.2347,
+        "width": 25.0893,
+        "height": 23.5863,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -160.4149,
+        "y": -317.8497
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_04_C",
+      "bounds": {
+        "x": -173.0,
+        "y": -330.4347,
+        "width": 25.1701,
+        "height": 25.1701,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -160.4149,
+        "y": -343.2674
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_04_C",
+      "bounds": {
+        "x": -173.0,
+        "y": -355.8524,
+        "width": 25.1701,
+        "height": 25.1701,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -118.1387,
+        "y": -239.5851
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_04_C",
+      "bounds": {
+        "x": -130.7237,
+        "y": -252.1701,
+        "width": 25.1701,
+        "height": 25.1701,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -92.9297,
+        "y": -239.5851
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_04_C",
+      "bounds": {
+        "x": -105.5148,
+        "y": -252.1701,
+        "width": 25.1701,
+        "height": 25.1701,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -61.7571,
+        "y": -242.9971
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_37_C",
+      "bounds": {
+        "x": -80.3446,
+        "y": -258.9943,
+        "width": 37.175,
+        "height": 31.9943,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -30.1738,
+        "y": -239.7544
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_68_C",
+      "bounds": {
+        "x": -42.9282,
+        "y": -252.5088,
+        "width": 25.5088,
+        "height": 25.5088,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -119.8187,
+        "y": -160.2456
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_68_C",
+      "bounds": {
+        "x": -132.5731,
+        "y": -173.0,
+        "width": 25.5088,
+        "height": 25.5088,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -92.9986,
+        "y": -151.8779
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_52_C",
+      "bounds": {
+        "x": -107.0643,
+        "y": -173.0,
+        "width": 28.1314,
+        "height": 42.2443,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -15.4757,
+        "y": -134.8687
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_09_C",
+      "bounds": {
+        "x": -78.9329,
+        "y": -173.0,
+        "width": 126.9143,
+        "height": 76.2627,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 648.2,
+        "y": -60.6687
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_87_C",
+      "bounds": {
+        "x": 600.0,
+        "y": -94.3374,
+        "width": 96.4001,
+        "height": 67.3374,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 714.9876,
+        "y": -42.9971
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_37_C",
+      "bounds": {
+        "x": 696.4001,
+        "y": -58.9943,
+        "width": 37.175,
+        "height": 31.9943,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 753.8962,
+        "y": -38.4881
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_74_C",
+      "bounds": {
+        "x": 733.5751,
+        "y": -49.9763,
+        "width": 40.6424,
+        "height": 22.9763,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 714.2,
+        "y": 72.2
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_118_C",
+      "bounds": {
+        "x": 627.0,
+        "y": 27.0,
+        "width": 174.4001,
+        "height": 90.4001,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 800.0,
+          "y": 0.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 639.7544,
+        "y": 130.2222
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_68_C",
+      "bounds": {
+        "x": 627.0,
+        "y": 117.4678,
+        "width": 25.5088,
+        "height": 25.5088,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 640.9396,
+        "y": 156.3068
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_60_C",
+      "bounds": {
+        "x": 627.6094,
+        "y": 142.3672,
+        "width": 26.6605,
+        "height": 27.8793,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 642.0583,
+        "y": 195.6272
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_82_C",
+      "bounds": {
+        "x": 616.0681,
+        "y": 180.569,
+        "width": 51.9803,
+        "height": 30.1165,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 560.2456,
+        "y": 119.1748
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_68_C",
+      "bounds": {
+        "x": 547.4912,
+        "y": 106.4205,
+        "width": 25.5088,
+        "height": 25.5088,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 519.7968,
+        "y": 151.4372
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_41_C",
+      "bounds": {
+        "x": 500.2888,
+        "y": 98.234,
+        "width": 39.0159,
+        "height": 106.4065,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 600.0,
+          "y": 0.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 476.8374,
+        "y": 160.2456
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_68_C",
+      "bounds": {
+        "x": 464.0831,
+        "y": 147.4912,
+        "width": 25.5088,
+        "height": 25.5088,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 516.0176,
+        "y": 279.5224
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_94_C",
+      "bounds": {
+        "x": 400.0,
+        "y": 227.0,
+        "width": 232.0352,
+        "height": 105.0447,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 600.0,
+          "y": 200.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 181.1119,
+        "y": 436.116
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_55_C",
+      "bounds": {
+        "x": 162.2238,
+        "y": 427.0,
+        "width": 37.7762,
+        "height": 18.2319,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 149.0602,
+        "y": 438.5094
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_02_C",
+      "bounds": {
+        "x": 135.971,
+        "y": 427.0,
+        "width": 26.1785,
+        "height": 23.0188,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 122.5993,
+        "y": 438.5094
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_02_C",
+      "bounds": {
+        "x": 109.51,
+        "y": 427.0,
+        "width": 26.1785,
+        "height": 23.0188,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 95.9209,
+        "y": 438.5094
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_02_C",
+      "bounds": {
+        "x": 82.8316,
+        "y": 427.0,
+        "width": 26.1785,
+        "height": 23.0188,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 18.8172,
+        "y": 468.4874
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_107_C",
+      "bounds": {
+        "x": -45.1972,
+        "y": 427.0,
+        "width": 128.0288,
+        "height": 82.9749,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 97.0211,
+        "y": 361.4906
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_02_C",
+      "bounds": {
+        "x": 83.9319,
+        "y": 349.9812,
+        "width": 26.1785,
+        "height": 23.0188,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 69.2303,
+        "y": 351.9283
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_25_C",
+      "bounds": {
+        "x": 54.5288,
+        "y": 330.8566,
+        "width": 29.4031,
+        "height": 42.1434,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": 41.0911,
+        "y": 359.0604
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_60_C",
+      "bounds": {
+        "x": 27.7609,
+        "y": 345.1207,
+        "width": 26.6605,
+        "height": 27.8793,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -138.347,
+        "y": 454.228
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_19_C",
+      "bounds": {
+        "x": -165.575,
+        "y": 419.575,
+        "width": 54.456,
+        "height": 69.306,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 600.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -160.5031,
+        "y": 567.5792
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_14_C",
+      "bounds": {
+        "x": -246.6263,
+        "y": 555.0823,
+        "width": 172.2465,
+        "height": 24.9938,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 600.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -248.4609,
+        "y": 417.6985
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_53_C",
+      "bounds": {
+        "x": -266.1594,
+        "y": 396.2377,
+        "width": 35.3971,
+        "height": 42.9218,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 600.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -240.9396,
+        "y": 448.967
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_60_C",
+      "bounds": {
+        "x": -254.2699,
+        "y": 435.0274,
+        "width": 26.6605,
+        "height": 27.8793,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 600.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -255.7707,
+        "y": 497.0679
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_10_C",
+      "bounds": {
+        "x": -290.5414,
+        "y": 468.2972,
+        "width": 69.5414,
+        "height": 57.5414,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 600.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -240.9396,
+        "y": 545.3375
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_60_C",
+      "bounds": {
+        "x": -254.2699,
+        "y": 531.3978,
+        "width": 26.6605,
+        "height": 27.8793,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 600.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -240.7221,
+        "y": 573.139
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_05_C",
+      "bounds": {
+        "x": -255.1934,
+        "y": 559.4169,
+        "width": 28.9426,
+        "height": 27.4441,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": -200.0,
+          "y": 600.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -136.3157,
+        "y": 359.0604
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_60_C",
+      "bounds": {
+        "x": -149.6459,
+        "y": 345.1207,
+        "width": 26.6605,
+        "height": 27.8793,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -109.0178,
+        "y": 359.956
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_63_C",
+      "bounds": {
+        "x": -122.3802,
+        "y": 346.9119,
+        "width": 26.7247,
+        "height": 26.0881,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -81.6395,
+        "y": 359.956
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_63_C",
+      "bounds": {
+        "x": -95.0019,
+        "y": 346.9119,
+        "width": 26.7247,
+        "height": 26.0881,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -54.6047,
+        "y": 359.956
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_63_C",
+      "bounds": {
+        "x": -67.9671,
+        "y": 346.9119,
+        "width": 26.7247,
+        "height": 26.0881,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -89.6409,
+        "y": 440.044
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_63_C",
+      "bounds": {
+        "x": -103.0033,
+        "y": 427.0,
+        "width": 26.7247,
+        "height": 26.0881,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -61.7334,
+        "y": 442.6339
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_64_C",
+      "bounds": {
+        "x": -76.2786,
+        "y": 427.0,
+        "width": 29.0905,
+        "height": 31.2678,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": 400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": 40.0806,
+        "y": 252.6965
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_110_C",
+      "bounds": {
+        "x": -12.616,
+        "y": 239.616,
+        "width": 105.3931,
+        "height": 26.1612,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": 40.044,
+        "y": 318.7926
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_63_C",
+      "bounds": {
+        "x": 26.6817,
+        "y": 305.7486,
+        "width": 26.7247,
+        "height": 26.0881,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": 0.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": 400.0
+        },
+        "angle": 90.0
+      }
+    },
+    {
+      "center": {
+        "x": -442.9971,
+        "y": 181.4125
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_37_C",
+      "bounds": {
+        "x": -461.5846,
+        "y": 165.4154,
+        "width": 37.175,
+        "height": 31.9943,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -441.7929,
+        "y": 148.7974
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_06_C",
+      "bounds": {
+        "x": -455.2369,
+        "y": 134.0045,
+        "width": 26.8881,
+        "height": 29.5858,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -443.1659,
+        "y": 106.2078
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_32_C",
+      "bounds": {
+        "x": -472.3115,
+        "y": 90.0419,
+        "width": 58.2911,
+        "height": 32.3319,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -452.6728,
+        "y": 51.3908
+      },
+      "rotation": 270.0,
+      "type": "BP_Building_16_C",
+      "bounds": {
+        "x": -478.3443,
+        "y": 25.718,
+        "width": 51.343,
+        "height": 51.3455,
+        "rotation": 270.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -358.2071,
+        "y": 135.9343
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_06_C",
+      "bounds": {
+        "x": -371.6511,
+        "y": 121.1414,
+        "width": 26.8881,
+        "height": 29.5858,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -358.2071,
+        "y": 109.0368
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_06_C",
+      "bounds": {
+        "x": -371.6511,
+        "y": 94.2439,
+        "width": 26.8881,
+        "height": 29.5858,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -340.1643,
+        "y": 54.5697
+      },
+      "rotation": 90.0,
+      "type": "BP_Building_112_C",
+      "bounds": {
+        "x": -381.1874,
+        "y": 21.734,
+        "width": 82.0462,
+        "height": 65.6713,
+        "rotation": 90.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -400.0,
+          "y": 200.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": 0.0
+        },
+        "angle": -90.0
+      }
+    },
+    {
+      "center": {
+        "x": -264.9188,
+        "y": -356.3428
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_15_C",
+      "bounds": {
+        "x": -278.6822,
+        "y": -373.0,
+        "width": 27.5268,
+        "height": 33.3144,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": -400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -333.8345,
+        "y": -315.3841
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_88_C",
+      "bounds": {
+        "x": -388.9868,
+        "y": -373.0,
+        "width": 110.3046,
+        "height": 115.2318,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": -400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -236.3053,
+        "y": -444.0074
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_26_C",
+      "bounds": {
+        "x": -272.6107,
+        "y": -461.0149,
+        "width": 72.6107,
+        "height": 34.0149,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": -400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -287.0065,
+        "y": -443.6572
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_15_C",
+      "bounds": {
+        "x": -300.7699,
+        "y": -460.3144,
+        "width": 27.5268,
+        "height": 33.3144,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": -400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -326.9935,
+        "y": -446.0857
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_48_C",
+      "bounds": {
+        "x": -353.2171,
+        "y": -465.1714,
+        "width": 52.4472,
+        "height": 38.1714,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": -400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -367.0603,
+        "y": -443.6572
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_15_C",
+      "bounds": {
+        "x": -380.8237,
+        "y": -460.3144,
+        "width": 27.5268,
+        "height": 33.3144,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": -400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -395.2538,
+        "y": -443.6572
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_15_C",
+      "bounds": {
+        "x": -409.0172,
+        "y": -460.3144,
+        "width": 27.5268,
+        "height": 33.3144,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": -400.0,
+          "y": -400.0
+        },
+        "angle": 180.0
+      }
+    },
+    {
+      "center": {
+        "x": -159.0735,
+        "y": -443.9161
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_27_C",
+      "bounds": {
+        "x": -173.0,
+        "y": -460.8323,
+        "width": 27.8531,
+        "height": 33.8323,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -130.929,
+        "y": -443.9161
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_27_C",
+      "bounds": {
+        "x": -144.8556,
+        "y": -460.8323,
+        "width": 27.8531,
+        "height": 33.8323,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -102.7758,
+        "y": -443.9161
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_27_C",
+      "bounds": {
+        "x": -116.7024,
+        "y": -460.8323,
+        "width": 27.8531,
+        "height": 33.8323,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -52.2567,
+        "y": -445.5892
+      },
+      "rotation": 0.0,
+      "type": "BP_Building_33_C",
+      "bounds": {
+        "x": -88.8493,
+        "y": -464.1785,
+        "width": 73.1852,
+        "height": 37.1785,
+        "rotation": 0.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -133.7356,
+        "y": -356.0839
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_27_C",
+      "bounds": {
+        "x": -147.6621,
+        "y": -373.0,
+        "width": 27.8531,
+        "height": 33.8323,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -105.5445,
+        "y": -360.8482
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_81_C",
+      "bounds": {
+        "x": -119.474,
+        "y": -373.0,
+        "width": 27.8591,
+        "height": 24.3037,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -70.124,
+        "y": -351.5826
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_20_C",
+      "bounds": {
+        "x": -91.6149,
+        "y": -373.0,
+        "width": 42.9817,
+        "height": 42.8348,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    },
+    {
+      "center": {
+        "x": -34.4339,
+        "y": -360.8482
+      },
+      "rotation": 180.0,
+      "type": "BP_Building_81_C",
+      "bounds": {
+        "x": -48.3635,
+        "y": -373.0,
+        "width": 27.8591,
+        "height": 24.3037,
+        "rotation": 180.0
+      },
+      "segment_assignment": {
+        "start": {
+          "x": -200.0,
+          "y": -400.0
+        },
+        "end": {
+          "x": 0.0,
+          "y": -400.0
+        },
+        "angle": 0.0
+      }
+    }
+  ]
+}

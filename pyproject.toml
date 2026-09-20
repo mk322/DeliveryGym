@@ -1,0 +1,46 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "embodiedbench"
+version = "0.1.0"
+description = "SimWorld Courier: an embodied delivery-agent benchmark (rendered cities, GRPO training, live-engine any-point navigation)"
+readme = "README.md"
+license = {file = "LICENSE"}
+authors = [{name = "Murray Kang"}]
+requires-python = ">=3.11"
+# The evaluation path's whole closure. Training adds the pinned trainer
+# stack (docs/INSTALL.md 3); the compiler and album tools use numpy.
+dependencies = [
+    "pydantic>=2.9",
+    "numpy>=1.26",
+    "pillow>=10.0",
+    # The evaluator reads the task from the validation yaml and rasterises
+    # the phone's SVG map; both imports are lazy, which is exactly how a
+    # missing dependency waits until episode one to introduce itself.
+    # Declared, so pip install means eval works.
+    "pyyaml>=6.0",
+    "cairosvg>=2.7",
+]
+
+[project.urls]
+Repository = "https://github.com/mk322/DeliveryGym"
+
+[project.optional-dependencies]
+dev = ["pytest>=8.0", "pandas>=2.0", "pyarrow>=15.0"]
+
+[tool.setuptools.packages.find]
+include = ["embodiedbench*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+# The pixel-goal tests import the runner and backend from tools/, which is
+# not an installed package: the repository root has to be on sys.path.
+# `python -m pytest` puts the working directory there by itself; the
+# `pytest` console script does not, and that is how CI runs the suite.
+pythonpath = ["."]
+filterwarnings = ["error::DeprecationWarning:embodiedbench.*"]
+
+[project.scripts]
+embodiedbench-eval = "embodiedbench.eval.__main__:main"

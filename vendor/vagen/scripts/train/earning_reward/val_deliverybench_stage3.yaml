@@ -1,0 +1,18 @@
+envs:
+  - name: DeliveryBench
+    n_envs: 32
+    data_source: deliverybench
+    seed: [10001, 10128, 1]
+    max_turns: 15
+    response_length_per_turn: 512
+    config:
+      map_name: medium-city-22
+      render_mode: text
+      max_steps: 50
+      prompt_format: free_think
+      format_reward: 0
+      delivery_reward: 1
+      enable_map_images: true
+      map_renderer: pil
+      map_poi_in_system_prompt: true
+      # Stage 3: Full DeliveryBench (all defaults = true)

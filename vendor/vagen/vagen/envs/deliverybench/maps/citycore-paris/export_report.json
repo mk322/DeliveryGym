@@ -1,0 +1,97 @@
+{
+  "bounds": {
+    "max_x_cm": 20267.283512708316,
+    "max_y_cm": 37414.40559089369,
+    "min_x_cm": -40521.87586147866,
+    "min_y_cm": -34177.547821463064
+  },
+  "component_connectors": [
+    {
+      "end_cm": [
+        1747.1,
+        4489.5
+      ],
+      "gap_cm": 0.5,
+      "start_cm": [
+        1746.7,
+        4489.2
+      ]
+    },
+    {
+      "end_cm": [
+        1948.1,
+        4142.5
+      ],
+      "gap_cm": 1.029563014098382,
+      "start_cm": [
+        1948.6,
+        4141.6
+      ]
+    },
+    {
+      "end_cm": [
+        -5132.8,
+        20114.0
+      ],
+      "gap_cm": 3627.055141571465,
+      "start_cm": [
+        -5152.8,
+        23741.0
+      ]
+    },
+    {
+      "end_cm": [
+        -25670.6,
+        10946.0
+      ],
+      "gap_cm": 4528.477730982012,
+      "start_cm": [
+        -22349.0,
+        7868.0
+      ]
+    }
+  ],
+  "counts": {
+    "actors": 3290,
+    "buildings": 573,
+    "component_connectors": 4,
+    "deliverybench_buildings": 443,
+    "deliverybench_poi_types": {
+      "building": 414,
+      "restaurant": 18,
+      "store": 11
+    },
+    "deliverybench_road_segments": 190,
+    "poi_types": {
+      "building": 544,
+      "restaurant": 18,
+      "store": 11
+    },
+    "road_actors": 59,
+    "road_centerlines": 59,
+    "traffic_lights": 125,
+    "world_nodes": 568
+  },
+  "notes": [
+    "Roads are reconstructed from authored SM_Road spline/instance geometry.",
+    "Building footprints are component AABBs; entrance yaw points toward the nearest road.",
+    "All buildings remain in buildings.json; skyline/background shells without an entrance within 25 m of a road are omitted from progen_world_enriched.json.",
+    "Traffic-light nodes are exported for offline rendering; DeliveryBench runtime signal state still comes from the FPV manifest.",
+    "Disconnected authored road/cap groups within 50 m are joined by explicitly marked component_connector segments for DeliveryBench routing."
+  ],
+  "road_export_errors": [],
+  "road_graph": {
+    "component_sizes": [
+      144
+    ],
+    "components": 1,
+    "nodes": 144
+  },
+  "source": {
+    "coordinate_system": "Unreal Engine world XY; Z up",
+    "engine_version": "5.8.0-0+UE5",
+    "map": "/Game/CityCore_Paris/Scenes/ParisCity_FinalBlueprints",
+    "project": "CityCore_Paris.uproject",
+    "units": "centimeters"
+  }
+}

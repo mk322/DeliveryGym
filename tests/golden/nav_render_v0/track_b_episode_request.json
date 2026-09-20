@@ -1,0 +1,20 @@
+{
+  "agent": {
+    "camera": {
+      "fov_deg": 90.0,
+      "height": 480,
+      "width": 640
+    },
+    "eye_z_cm": 160.0,
+    "speed_cm_s": 140.0
+  },
+  "episode_id": "courier-citycore-paris-s0",
+  "map_name": "citycore-paris",
+  "protocol": "nav-render/v0",
+  "spawn": {
+    "x_cm": -26712.68,
+    "y_cm": 9785.27,
+    "yaw_deg": 0.0,
+    "z_cm": 100.0
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "camera": {
+    "fov_deg": 90.0,
+    "height": 480,
+    "width": 640
+  },
+  "episode_id": "courier-citycore-paris-s0",
+  "protocol": "nav-render/v0",
+  "requests": [
+    {
+      "key": "s000_n000/toward_s000_n001",
+      "render_kind": "street_view",
+      "x_cm": -26712.68,
+      "y_cm": 9785.27,
+      "yaw_deg": 165.0,
+      "z_cm": 160.0
+    },
+    {
+      "camera": {
+        "fov_deg": 40.0,
+        "height": 960,
+        "width": 1280
+      },
+      "key": "s013_n004/toward_s013_n005_red",
+      "render_kind": "lamp",
+      "signal": {
+        "approach": "s013_n004|s013_n005",
+        "state": "red"
+      },
+      "x_cm": 0.0,
+      "y_cm": 0.0,
+      "yaw_deg": 48.1,
+      "z_cm": 165.0
+    },
+    {
+      "key": "s004_n007/toward_s004_n008_road_block",
+      "obstacle": {
+        "a_cm": [
+          -1234.5,
+          678.9
+        ],
+        "b_cm": [
+          -1100.0,
+          700.0
+        ],
+        "kind": "road_block",
+        "street_width_cm": 600.0,
+        "viewpoint": "carriageway"
+      },
+      "render_kind": "obstacle",
+      "x_cm": -1234.5,
+      "y_cm": 678.9,
+      "yaw_deg": 165.0,
+      "z_cm": 160.0
+    }
+  ],
+  "return_mode": "path"
+}

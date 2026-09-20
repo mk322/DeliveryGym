@@ -1,0 +1,14 @@
+{
+  "gym_env": {
+    "base_dir": null,
+    "ue_ip": "127.0.0.1",
+    "ue_port": 9015,
+    "map_name": "medium-city-22"
+  },
+  "lifecycle": {
+    "export_path": "outputs/final_results"
+  },
+  "trajectory_output_dir": "outputs/trajectories",
+  "agent_count": 1,
+  "multi_agent": false
+}

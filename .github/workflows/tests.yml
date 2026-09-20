@@ -1,0 +1,42 @@
+name: tests
+
+# The suite runs without albums, without a GPU and without a live engine:
+# tests that need any of those skip and say so. What remains is the
+# environment logic, the harness contract, the evaluator, the compiler and
+# the pixel-goal tooling against fakes -- about two thousand tests.
+on:
+  push:
+  pull_request:
+
+jobs:
+  pytest:
+    runs-on: ubuntu-latest
+    # 12 minutes on a workstation; a hosted runner is two to three times
+    # slower, so leave room rather than fail a green suite on the clock.
+    timeout-minutes: 120
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: system libraries for cairosvg
+        run: sudo apt-get update && sudo apt-get install -y libcairo2 binutils
+      - name: install
+        run: |
+          python -m pip install --upgrade pip
+          pip install -e . pytest
+      - name: test
+        run: |
+          set -o pipefail
+          pytest tests -q -p no:cacheprovider -rfE --durations=15 2>&1 | tee pytest.log
+      # The failure list and the slowest tests land in the job summary and the
+      # whole log in an artifact, so a red run can be read without opening it.
+      - name: summary
+        if: always()
+        run: |
+          { echo '## pytest'; echo '```'; tail -n 60 pytest.log; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: pytest-log
+          path: pytest.log

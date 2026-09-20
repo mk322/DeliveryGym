@@ -1,0 +1,33 @@
+{
+  "items": [
+    { "name": "Burger",        "category": "HOT",     "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 300, "serving_temp_c": 60,  "heat_capacity": 1.05 },
+    { "name": "Fries",         "category": "HOT",     "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": true,  "prep_time_s": 210, "serving_temp_c": 60,  "heat_capacity": 0.95 },
+    { "name": "Noodles",       "category": "HOT",     "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": true,  "prep_time_s": 300, "serving_temp_c": 60,  "heat_capacity": 1.00 },
+    { "name": "Coffee",        "category": "HOT",     "odor": "strong",  "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 180, "serving_temp_c": 65,  "heat_capacity": 1.15 },
+
+    { "name": "Salad",         "category": "COLD",    "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": true,  "prep_time_s": 240, "serving_temp_c": 5,   "heat_capacity": 1.10 },
+    { "name": "Sushi",         "category": "COLD",    "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": true,  "prep_time_s": 420, "serving_temp_c": 5,   "heat_capacity": 1.05 },
+
+    { "name": "IceCream",      "category": "FROZEN",  "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 60,  "serving_temp_c": -12, "heat_capacity": 0.90 },
+    { "name": "FrozenYogurt",  "category": "FROZEN",  "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 60,  "serving_temp_c": -9,  "heat_capacity": 0.95 },
+
+    { "name": "Soup",          "category": "HOT",     "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": false, "prep_time_s": 180, "serving_temp_c": 65,  "heat_capacity": 1.20 },
+    { "name": "Cake",          "category": "AMBIENT", "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": false, "prep_time_s": 120, "serving_temp_c": 23,  "heat_capacity": 0.85 },
+    { "name": "Sandwich",      "category": "AMBIENT", "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 240, "serving_temp_c": 23,  "heat_capacity": 0.90 },
+    { "name": "Durian",        "category": "AMBIENT", "odor": "strong",  "motion_sensitive": true,  "nonthermal_time_sensitive": false, "prep_time_s": 120, "serving_temp_c": 23,  "heat_capacity": 0.90 },
+
+    { "name": "Pizza",         "category": "HOT",     "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": true,  "prep_time_s": 360, "serving_temp_c": 60,  "heat_capacity": 1.10 },
+    { "name": "Curry",         "category": "HOT",     "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": false, "prep_time_s": 420, "serving_temp_c": 60,  "heat_capacity": 1.10 },
+    { "name": "StinkyTofu",    "category": "HOT",     "odor": "strong",  "motion_sensitive": true,  "nonthermal_time_sensitive": false, "prep_time_s": 300, "serving_temp_c": 60,  "heat_capacity": 1.05 },
+    { "name": "Tea",           "category": "HOT",     "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 180, "serving_temp_c": 65,  "heat_capacity": 1.10 },
+
+    { "name": "PokeBowl",      "category": "COLD",    "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": true,  "prep_time_s": 300, "serving_temp_c": 5,   "heat_capacity": 1.05 },
+    { "name": "Milkshake",     "category": "COLD",    "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": true,  "prep_time_s": 150, "serving_temp_c": 5,   "heat_capacity": 1.00 },
+
+    { "name": "Popsicle",      "category": "FROZEN",  "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 30,  "serving_temp_c": -12, "heat_capacity": 0.85 },
+    { "name": "IceCreamCake",  "category": "FROZEN",  "odor": "none",    "motion_sensitive": true,  "nonthermal_time_sensitive": false, "prep_time_s": 120, "serving_temp_c": -12, "heat_capacity": 0.92 },
+
+    { "name": "Donut",         "category": "AMBIENT", "odor": "none",    "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 120, "serving_temp_c": 23,  "heat_capacity": 0.88 },
+    { "name": "BlueCheese",    "category": "AMBIENT", "odor": "strong",  "motion_sensitive": false, "nonthermal_time_sensitive": false, "prep_time_s": 60,  "serving_temp_c": 23,  "heat_capacity": 0.90 }
+  ]
+}

@@ -1,0 +1,10 @@
+{
+  "episode_id": "courier-citycore-paris-s0",
+  "fixed_dt": 0.0333,
+  "pose": {
+    "x_cm": -26712.68,
+    "y_cm": 9785.27,
+    "yaw_deg": 0.0,
+    "z_cm": 100.0
+  }
+}

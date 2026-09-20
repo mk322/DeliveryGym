@@ -1,0 +1,398 @@
+% =============================================================================
+%  DeliveryBench-RL --- paper outline / starting point
+%
+%  Self-contained `article` skeleton so it compiles anywhere:
+%      pdflatex deliverybench_rl.tex   (run twice for refs)
+%  To submit to a venue, swap the documentclass/preamble for the conference
+%  style (e.g. \documentclass{article}\usepackage{neurips_2025}) and keep the
+%  body below.
+%
+%  Prose is written out where the content is settled (Introduction,
+%  DeliveryBench 2.0). Experiments are placeholders with fully specified
+%  figures/tables --- search for \TODO and the "PLACEHOLDER" boxes.
+% =============================================================================
+\documentclass[11pt]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath,amssymb}
+\usepackage{graphicx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{xcolor}
+\usepackage{pifont}      % \ding for check / cross marks
+\usepackage{enumitem}
+\usepackage{subcaption}
+\usepackage{microtype}
+\usepackage[colorlinks=true,allcolors=blue!55!black]{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+
+% ---- shorthands -------------------------------------------------------------
+\newcommand{\ours}{\textsc{DeliveryBench-RL}\xspace}
+\usepackage{xspace}
+\newcommand{\dbone}{\textsc{DeliveryBench}\xspace}
+\newcommand{\TODO}[1]{{\color{red}\textbf{[TODO:} #1\textbf{]}}}
+\newcommand{\cmark}{\textcolor{green!55!black}{\ding{51}}}      % full support
+\newcommand{\xmark}{\textcolor{red!70!black}{\ding{55}}}        % no support
+\newcommand{\pmark}{\textcolor{orange!85!black}{$\sim$}}        % partial support
+\newcommand{\unit}[1]{\textsf{#1}}                              % a unit capability
+
+% gray placeholder box for figures not yet rendered
+\newcommand{\figplaceholder}[2][0.85\linewidth]{%
+  \begin{center}
+  \fbox{\begin{minipage}[c][#2][c]{#1}\centering
+    \color{gray}\itshape Figure placeholder --- render from results.
+  \end{minipage}}
+  \end{center}}
+
+\title{\ours: Reinforcement Learning for Long-Horizon,\\
+       Multimodal Embodied Agents under Realistic Constraints}
+\author{\TODO{author list} \\ \TODO{affiliation}}
+\date{}
+
+\begin{document}
+\maketitle
+
+% =============================================================================
+\begin{abstract}
+Coding agents have shown that strong autonomy, tool use, and proactive
+reasoning can be elicited through long-horizon harnesses and agentic training.
+We ask whether the same agentic capacity can be granted to a \emph{real-world,
+embodied} setting with multimodal input. \dbone introduced a long-horizon
+embodied delivery environment with realistic constraints---time, energy, and
+safety---and revealed two core deficiencies that persist even in frontier
+vision--language models (VLMs): a lack of long-horizon planning, and a failure
+to \emph{proactively} satisfy task constraints, including resource limits and
+\emph{implicit} commonsense rules (e.g.\ safety and traffic rules) that the
+same models recall reliably in isolated question answering.
+We present \ours, which turns this benchmark into a trainable environment for
+multimodal agentic reinforcement learning (RL) by adding step-wise reward
+shaping, an oracle planner, a multi-dimensional curriculum, tool calling, and
+adjustable action granularity. We train and compare RL baselines
+(PPO, GRPO, SUPO) against prompt-scaffolded frontier VLMs, and dissect the
+extent to which RL grants proactive mastery of individual implicit constraints.
+\TODO{1--2 sentence headline result.}
+\end{abstract}
+
+% =============================================================================
+\section{Introduction}
+\label{sec:intro}
+
+Recent progress in \emph{coding agents} has shown that strong autonomy, fluent
+tool use, and proactive, self-directed reasoning can be \emph{elicited and
+trained} rather than merely prompted, given a long-horizon harness and an
+agentic training loop. A natural question follows: can the same agentic
+capacity be granted in a \emph{real-world embodied} environment with
+\emph{multimodal} input, where an agent must perceive, plan over long horizons,
+and respect physical and social constraints?
+
+\dbone was, to our knowledge, the first long-horizon agentic environment for
+real-world embodied tasks to couple this multimodal, egocentric setting with
+\emph{realistic constraints}---a time budget (a fixed shift), energy and
+battery limits, and safety/social rules such as obstacles and traffic signals.
+Studying frontier VLMs in \dbone exposed two core deficiencies that survive
+even at the frontier:
+\begin{enumerate}[leftmargin=1.4em,itemsep=2pt,topsep=2pt]
+  \item \textbf{Weak long-horizon planning.} Models fail to compose the many
+        steps of a delivery (select, route, pick up, deliver, replan) into a
+        plan that respects a global time/energy budget.
+  \item \textbf{Non-proactive constraint handling.} Models do not
+        \emph{proactively} use task constraints---both resource limits and
+        \emph{implicit} commonsense rules---to guide their reasoning. Crucially,
+        these rules (e.g.\ ``do not cross on red'', ``go around an obstacle'')
+        are recalled reliably in \emph{direct question answering}, yet when the
+        same rule must be applied from within a complex, long-horizon task
+        state, the model fails to invoke it. This gap between
+        \emph{knowing} a rule and \emph{acting} on it is a latent robustness and
+        safety problem.
+\end{enumerate}
+
+\ours builds directly on this foundation and makes \emph{multimodal agentic RL
+training} in the environment feasible. We integrate (i) step-wise
+\textbf{reward shaping} with a customizable, environment-aware interface;
+(ii) an \textbf{oracle planner} that yields globally optimal trajectories;
+(iii) a multi-dimensional \textbf{curriculum}; (iv) \textbf{tool calling} for
+adaptive context loading; and (v) adjustable \textbf{action granularity}.
+The oracle planner in particular gives us infrastructure for imitation
+learning, reward normalization, automatic QA/unit-test construction, and
+fine-grained failure analysis, while action granularity lets the same
+environment probe high-level planning \emph{and} low-level visual navigation
+(spatial reasoning, safety, social navigation).
+
+\paragraph{Contributions.}
+\begin{enumerate}[leftmargin=1.4em,itemsep=2pt,topsep=2pt]
+  \item We extend \dbone into \ours, an RL-ready, long-horizon, multimodal
+        embodied environment with an oracle planner, multi-dimensional
+        curriculum, step-wise (and customizable) reward shaping, tool calling,
+        and adjustable action granularity (\cref{sec:env}).
+  \item We conduct, to our knowledge, the first study of multimodal agentic RL
+        in a real-world long-horizon embodied environment, training and
+        comparing baseline algorithms (PPO, GRPO, SUPO) and prompt-scaffolded
+        frontier VLMs (\cref{sec:exp-main}).
+  \item We analyze how well RL-trained models acquire \emph{proactive} handling
+        of distinct implicit constraints, and isolate the \emph{unit}
+        capabilities models still struggle to master (\cref{sec:exp-units}).
+\end{enumerate}
+
+% =============================================================================
+\section{Related Work}
+\label{sec:related}
+\TODO{Long-horizon / agentic RL environments; embodied \& navigation
+benchmarks (ALFWorld, Habitat, etc.); LLM/VLM agents and tool use; agentic RL
+(PPO/GRPO and variants); curriculum learning; imitation from oracle/expert.
+Position \ours against \cref{tab:env-comparison}.}
+
+% =============================================================================
+\section{\ours: An RL-Ready Embodied Agentic Environment}
+\label{sec:env}
+
+\ours starts from \dbone's simulated city-delivery task---a courier completes
+food deliveries within a two-hour shift under time, energy/battery, and
+safety constraints---and adds the machinery required to \emph{train} agents,
+not just evaluate them. \Cref{tab:env-comparison} contrasts \ours with \dbone
+and with other long-horizon agentic environments. The five additions below are
+ordered by their centrality to enabling RL.
+
+% ---- comparison table -------------------------------------------------------
+\begin{table}[t]
+\centering
+\caption{\ours versus \dbone and other long-horizon agentic environments.
+\cmark~full support, \pmark~partial, \xmark~none. The top block is the direct
+\dbone lineage; the bottom block (other environments) is \TODO{populate with
+verified entries}.}
+\label{tab:env-comparison}
+\setlength{\tabcolsep}{4pt}
+\renewcommand{\arraystretch}{1.15}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l ccc ccccc c}
+\toprule
+ & \rotatebox{55}{Multimodal (FPV+map)}
+ & \rotatebox{55}{Long-horizon}
+ & \rotatebox{55}{Realistic constraints}
+ & \rotatebox{55}{Oracle planner}
+ & \rotatebox{55}{Curriculum}
+ & \rotatebox{55}{Step-wise reward shaping}
+ & \rotatebox{55}{Tool calling}
+ & \rotatebox{55}{Adjustable action granularity}
+ & \rotatebox{55}{RL-ready} \\
+\midrule
+\textbf{\ours (ours)} & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark & \cmark \\
+\dbone (v1)           & \cmark & \cmark & \cmark & \xmark & \xmark & \pmark & \xmark & \pmark & \xmark \\
+\midrule
+\multicolumn{10}{l}{\emph{Other long-horizon agentic environments}}\\
+\TODO{Env A} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\TODO{Env B} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\TODO{Env C} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+% ---- 3.1 reward shaping -----------------------------------------------------
+\subsection{Reward Shaping: From Terminal Profit to Expressive Step-wise Signal}
+\label{sec:env-reward}
+In \dbone the only reward signal was the \emph{terminal} profit of a full
+trajectory---a sparse, high-variance target that is poorly suited to
+long-horizon RL. \ours decomposes this into a \textbf{step-wise} reward built
+from short-horizon \emph{partial-success} events: response/format-schema
+correctness, constraint violations (e.g.\ collisions, red-light crossings,
+deadline misses), and sub-task completions (order accepted, picked up, dropped
+off). This makes the training signal far more expressive and densely
+attributable. Importantly, we expose an \textbf{interface for customizing
+reward shaping from environment state}, so downstream work can define new
+shaping terms (or safety penalties) without touching the core loop.
+\TODO{State the default reward decomposition $r_t = \sum_k w_k\, \phi_k(s_t,a_t)$
+and list the terms $\phi_k$ in a table; note which are on by default.}
+
+% ---- 3.2 oracle planner -----------------------------------------------------
+\subsection{Oracle Planner: Optimal Trajectories for Normalization, Imitation, and Tests}
+\label{sec:env-oracle}
+Using full global information, a search-based planner computes a
+(near-)optimal trajectory for any task instance. This single component powers
+four capabilities: (i) \textbf{reward normalization}---scoring an agent against
+the optimal achievable profit/cost rather than an absolute scale;
+(ii) \textbf{imitation learning}---oracle rollouts become expert demonstrations
+for behavior cloning / SFT warm-start; (iii) \textbf{automatic QA and unit
+tests}---each oracle decision yields a labeled ``what is the correct next
+action / which constraint applies here'' probe; and (iv) \textbf{failure
+analysis}---an agent trajectory can be diffed against the oracle to localize
+\emph{where} and \emph{why} it diverged.
+\TODO{Specify the planner (graph search over the waypoint graph; objective =
+maximize profit / minimize time--energy s.t.\ deadlines and safety); note
+optimality guarantees / approximations.}
+
+% ---- 3.3 curriculum ---------------------------------------------------------
+\subsection{Multi-Dimensional Curriculum}
+\label{sec:env-curriculum}
+\ours warms the agent into the environment along three orthogonal axes:
+\begin{itemize}[leftmargin=1.4em,itemsep=2pt,topsep=2pt]
+  \item \textbf{Horizon curriculum}: progressively longer shifts and more
+        orders per episode, growing the planning horizon.
+  \item \textbf{Prompt curriculum}: the description of each constraint and the
+        action space is annealed from \emph{few-shot} examples, to explicit
+        \emph{instructions}, to \emph{proactive} (the agent must surface the
+        rule itself)---directly targeting the know-vs-act gap of
+        \cref{sec:intro}.
+  \item \textbf{Constraint curriculum}: realistic constraints and their
+        associated actions are introduced incrementally (e.g.\ energy/battery,
+        then obstacles/\textsc{bypass}, then traffic lights/\textsc{wait}).
+\end{itemize}
+\TODO{Table of curriculum stages $\times$ axis settings; which stage unlocks
+which constraint/action.}
+
+% ---- 3.4 tool calling -------------------------------------------------------
+\subsection{Tool Calling for Adaptive Context Loading}
+\label{sec:env-tools}
+Rather than dumping every observation channel into the step prompt, \ours
+exposes the four-direction first-person views, the top-down map, and
+\emph{query tools} (navigation/route, order pool, energy/battery, \dots) that
+the agent calls on demand. This \textbf{adaptive context loading} keeps each
+step's context small, which is what makes long-horizon rollouts tractable to
+\emph{scale}---context grows with what the agent chooses to inspect, not
+linearly with the horizon.
+\TODO{List the tools and their costs (if any); note which are query-only vs
+state-changing.}
+
+% ---- 3.5 action granularity -------------------------------------------------
+\subsection{Adjustable Action Granularity}
+\label{sec:env-granularity}
+Finally, \ours makes action granularity a configurable axis. At a coarse
+granularity the environment probes high-level \emph{long-horizon planning and
+constraint understanding}; at a fine granularity, navigation is driven directly
+from the egocentric FPV and map, letting the same environment evaluate
+\emph{spatial reasoning}, \emph{safety}, and \emph{social navigation}
+(e.g.\ noticing a road obstacle in the front view and choosing to go around it,
+or waiting at a red light). This is what lets a single benchmark span planning
+and perception-grounded control.
+\TODO{Define the granularity levels (e.g.\ macro \textsc{navigate} vs primitive
+\textsc{move(direction)}) and what each evaluates.}
+
+% =============================================================================
+\section{Experiments}
+\label{sec:exp}
+
+\paragraph{Setup.}
+\TODO{Backbone open-source VLM (e.g.\ Qwen3-VL-8B), frontier VLMs for the
+scaffolded baselines, RL framework, train/eval splits, seeds, compute,
+evaluation metrics (success / deliveries, hourly profit, constraint-violation
+rates, deadline misses), and which curriculum schedule is used.}
+
+% ---- 4.1 main table ---------------------------------------------------------
+\subsection{Main Results: Frontier Scaffolding vs.\ RL Baselines}
+\label{sec:exp-main}
+
+\begin{table}[t]
+\centering
+\caption{Main results. Prompt-scaffolded frontier VLMs vs.\ open-source RL
+baselines on \ours. Metrics: task success / \#deliveries, hourly profit
+(profit $/$ sim-hour), and constraint-violation rates (collisions, traffic
+violations, deadline misses); lower is better for violations.
+\TODO{fill all cells; bold the best per column; add std over seeds}.}
+\label{tab:main}
+\setlength{\tabcolsep}{6pt}
+\renewcommand{\arraystretch}{1.1}
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{l l ccc ccc}
+\toprule
+ & & \multicolumn{3}{c}{Task performance} & \multicolumn{3}{c}{Constraint violations ($\downarrow$)}\\
+\cmidrule(lr){3-5}\cmidrule(lr){6-8}
+Method & Type & Success & \#Deliv. & \$/h & Collisions & Traffic & Deadline \\
+\midrule
+\multicolumn{8}{l}{\emph{Prompt-scaffolded frontier VLMs (no training)}}\\
+\TODO{GPT-x}      & zero/few-shot & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\TODO{Claude}     & zero/few-shot & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\TODO{Gemini}     & zero/few-shot & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\midrule
+\multicolumn{8}{l}{\emph{Open-source backbone + RL (ours)}}\\
+\TODO{Qwen3-VL-8B} & base (no RL)  & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\quad + PPO        & RL            & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\quad + GRPO       & RL            & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\quad + SUPO       & RL            & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} & \TODO{} \\
+\bottomrule
+\end{tabular}}
+\end{table}
+
+\Cref{tab:main} compares prompt-scaffolded frontier VLMs against an open-source
+backbone trained with PPO, GRPO, and SUPO. \TODO{1--3 sentences of takeaway:
+does RL on a small open model close / exceed the gap to scaffolded frontier
+models, and on which metric (planning/profit vs.\ safety/violations)?}
+
+% ---- 4.2 curriculum emergence ----------------------------------------------
+\subsection{Curriculum Dynamics: Staged Emergence of Unit Tasks}
+\label{sec:exp-curriculum}
+
+\begin{figure}[t]
+\figplaceholder{6cm}
+\caption{\textbf{Reward / per-unit-task success vs.\ training steps}, annotated
+with curriculum-stage boundaries (vertical dashed lines).
+\emph{What to plot:} x-axis = environment / training steps; left y-axis =
+mean episode reward (or hourly profit); overlaid curves = success rate of each
+\emph{unit task} (\unit{accept}, \unit{navigate}, \unit{pickup},
+\unit{dropoff}, \unit{energy-management}, \unit{obstacle-avoidance},
+\unit{traffic-compliance}). The figure should show each unit capability
+\emph{emerging} in turn as the corresponding curriculum stage unlocks, rather
+than all at once. Optionally add an ablation curve (no curriculum) to show
+slower / non-emergent learning.}
+\label{fig:curriculum}
+\end{figure}
+
+\Cref{fig:curriculum} tracks reward and per-unit-task success across training.
+\TODO{Takeaway: which unit tasks emerge early vs.\ late; whether the curriculum
+is necessary for the hardest units (e.g.\ proactive safety) to emerge at all.}
+
+% ---- 4.3 unit tests / proactivity ------------------------------------------
+\subsection{Unit Tests: Proactive Mastery of Implicit Constraints}
+\label{sec:exp-units}
+
+\begin{figure}[t]
+\figplaceholder{6cm}
+\caption{\textbf{Direct-QA accuracy vs.\ in-task proactive use, per constraint /
+subtask.} \emph{What to plot:} grouped bars (or a radar) over constraints and
+subtasks---\unit{obstacle/safety}, \unit{traffic-light}, \unit{energy budget},
+\unit{deadline}, \unit{packing}, \unit{mode selection}, \dots---with two bars
+per group: (a) accuracy when the rule is asked in \emph{isolated QA}, and
+(b) the rate at which the model \emph{proactively} applies the rule from within
+a live long-horizon state (extracted via the oracle unit tests of
+\cref{sec:env-oracle}). The \emph{gap} (a)$-$(b) quantifies the
+know-vs-act deficiency; show it for the base model and after RL.}
+\label{fig:units}
+\end{figure}
+
+\Cref{fig:units} isolates, per constraint, the gap between \emph{knowing} a rule
+(direct QA) and \emph{proactively acting} on it inside a long-horizon task.
+\TODO{Takeaway: which implicit constraints RL teaches the model to use
+proactively, and which it still fails on (the residual unit capabilities);
+connect back to the safety/robustness framing in \cref{sec:intro}. Reference
+the obstacle-avoidance probe (e.g.\ proactive \textsc{bypass} vs.\ collision)
+as a concrete instance.}
+
+% =============================================================================
+\section{Analysis and Discussion}
+\label{sec:analysis}
+\TODO{Failure-mode taxonomy via oracle diffing (\cref{sec:env-oracle}); where RL
+helps (planning/profit) vs.\ where it lags (proactive safety); effect of action
+granularity on spatial reasoning; limitations (sim-to-real, single map,
+reward-hacking risks); broader impact (safety of embodied agents).}
+
+% =============================================================================
+\section{Conclusion}
+\label{sec:conclusion}
+\TODO{Restate: \ours makes long-horizon multimodal embodied RL feasible; RL
+baselines close part of the gap to scaffolded frontier VLMs but proactive
+implicit-constraint handling remains an open unit capability.}
+
+% =============================================================================
+\appendix
+\section{Environment Details}
+\TODO{Action/observation spaces, constraint definitions and costs, reward-term
+table, curriculum schedule, tool specifications, oracle-planner algorithm.}
+
+\section{Training Details}
+\TODO{Hyperparameters per algorithm (PPO/GRPO/SUPO), context management,
+compute, wall-clock, seeds.}
+
+% \bibliographystyle{plainnat}
+% \bibliography{references}
+
+\end{document}

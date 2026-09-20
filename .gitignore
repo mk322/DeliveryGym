@@ -1,0 +1,54 @@
+# The vendored trainer (VAGEN + verl) is tracked: see vendor/VENDOR_PINS.md for
+# why source rather than a pinned clone. Only the parts the training path never
+# reads are excluded -- they are large, and they still travel in the offline
+# bundle built by deploy/01_build_bundle.sh.
+#
+# Upstream's own .gitignore files are renamed to .gitignore.upstream inside
+# vendor/, because they were written for upstream's repository and govern this
+# one badly: an unanchored `models/` meant for checkpoints silently dropped
+# verl's models package, and `data/` dropped a hydra config directory. What
+# vendor/ excludes is decided here, and only here.
+/vendor/vagen/vagen/envs/deliverybench/deliverybench_fpv/
+/vendor/vagen/vagen/envs/deliverybench/outputs/
+/vendor/vagen/outputs/
+/vendor/vagen/vagen/log/
+/vendor/**/.git/
+/vendor/**/*.egg-info/
+/vendor/**/.pytest_cache/
+/vendor/**/.vscode/
+
+# Generated experiment outputs. Too large for GitHub (several files >100 MB).
+/artifacts/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+build/
+dist/
+
+# Editors / OS
+.DS_Store
+*.swp
+baseline_roots.local.json
+
+# Vendored engine writes per-episode trajectory folders relative to cwd
+/outputs/
+
+# Vendored engine writes these into the process cwd
+/log/
+
+# Pixel-goal tooling writes UE caches, locks and logs under tmp/ in the cwd
+/tmp/
+
+# Local symlink/copy of the SimWorld UE project used by the pixel-goal eval
+/.simworld-ue
+
+# Evaluation outputs (embodiedbench-eval --out results)
+/results/
+
+# Local training runs (examples/ default EXPERIMENT_DIR)
+/exps/

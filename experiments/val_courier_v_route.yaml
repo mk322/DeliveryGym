@@ -1,0 +1,120 @@
+# Narration-ladder validation (route): the untouched standard block
+# for cross-arm comparability, plus the same 64 seeds narrated.
+envs:
+  - name: Courier
+    n_envs: 64
+    data_source: courier_paris_val
+    # Fixed and never to be changed. 64 seeds, 1000-1063, one episode each.
+    # The training range stops at 800, so the two cannot overlap, and every
+    # number this project has reported is on exactly these 64 shifts -- moving
+    # them would silently invalidate the comparison with every run before.
+    seed: [1000, 1063, 1]
+    # Matched to training, deliberately.
+    #
+    # Validation ran solo/40 while training ran endless/60, so the held-out
+    # curve was measuring a task the policy was not being trained for: train
+    # score went 4.95 -> 10.17 -> 10.96 over thirty steps while held-out went
+    # 2.69 -> 2.83 -> 2.44 -> 2.55. That is not a policy failing to learn, it
+    # is two different jobs. The shift the courier is paid for is the shift it
+    # is scored on.
+    # 60 turns: the training horizon (train_courier.yaml), so the shift the
+    # courier is scored on is the shift it is trained for. Cumulative money
+    # is still photographed at turns 20/40/60 (the sim-time budget may end
+    # a shift sooner; later checkpoints then inherit the final figure). The
+    # runs before 2026-09-13 used a 100-turn readout and are labelled as
+    # such; a greedy policy walks the same first sixty turns either way, so
+    # their earnings_at_60 is this number.
+    max_turns: 60
+    response_length_per_turn: 512
+    config:
+      difficulty: endless
+      queue_depth: 1
+      stride: block
+      embodiment: human_on_foot
+      hazards: true
+      # What this project is for: the fee the job pays, not four constants
+      # chosen in this repository. Punctuality and job size are inside the
+      # number already -- full fee on time, a fraction late, 3.00 plus a cent
+      # a metre -- so a policy that maximises it is a courier that earns.
+      reward_basis: earnings
+      # Deliberately UNSHAPED, unlike the training set. val-core/.../reward
+      # is the number this run gets reported as, so it has to be the return
+      # the harness accumulated -- shaping the eval set is how a training
+      # trick gets quoted as a benchmark result.
+      progress_weight: 0.0
+      max_images: 3
+      # 320px long side is ~1/4 the tokens of the 640x480 frame,
+      # which is what pays for 12 turns instead of 4. Successful
+      # collections were measured on turns 2,3,5,5,8,14,14,17,26,36:
+      # a four-turn window saw two of them.
+      image_max_side: 320
+      # One picture per turn, and 8 turns, because the whole trajectory is
+      # concatenated into a single prompt. A 640x480 frame costs ~380 tokens
+      # after the vision merge, so the harness's usual five-per-turn over 20
+      # turns is ~38k image tokens against an 8k budget. When the prompt is
+      # truncated the image tokens go with it, but multi_modal_data still
+      # lists every image, and get_rope_index then walks one grid too many:
+      #   RuntimeError: shape mismatch: value tensor of shape [3, 8145]
+      #   cannot be broadcast to indexing result of shape [3, 7765]
+      # -- a difference of exactly one image. This is an image budget, not a
+      # cosmetic default.
+      album_root: /data/albums/paris_streets_v2/citycore-paris
+  - name: Courier
+    n_envs: 64
+    data_source: courier_paris_val_route
+    # Fixed and never to be changed. 64 seeds, 1000-1063, one episode each.
+    # The training range stops at 800, so the two cannot overlap, and every
+    # number this project has reported is on exactly these 64 shifts -- moving
+    # them would silently invalidate the comparison with every run before.
+    seed: [1000, 1063, 1]
+    # Matched to training, deliberately.
+    #
+    # Validation ran solo/40 while training ran endless/60, so the held-out
+    # curve was measuring a task the policy was not being trained for: train
+    # score went 4.95 -> 10.17 -> 10.96 over thirty steps while held-out went
+    # 2.69 -> 2.83 -> 2.44 -> 2.55. That is not a policy failing to learn, it
+    # is two different jobs. The shift the courier is paid for is the shift it
+    # is scored on.
+    # 60 turns: the training horizon (train_courier.yaml), so the shift the
+    # courier is scored on is the shift it is trained for. Cumulative money
+    # is still photographed at turns 20/40/60 (the sim-time budget may end
+    # a shift sooner; later checkpoints then inherit the final figure). The
+    # runs before 2026-09-13 used a 100-turn readout and are labelled as
+    # such; a greedy policy walks the same first sixty turns either way, so
+    # their earnings_at_60 is this number.
+    max_turns: 60
+    response_length_per_turn: 512
+    config:
+      difficulty: endless
+      narration: route
+      queue_depth: 1
+      stride: block
+      embodiment: human_on_foot
+      hazards: true
+      # What this project is for: the fee the job pays, not four constants
+      # chosen in this repository. Punctuality and job size are inside the
+      # number already -- full fee on time, a fraction late, 3.00 plus a cent
+      # a metre -- so a policy that maximises it is a courier that earns.
+      reward_basis: earnings
+      # Deliberately UNSHAPED, unlike the training set. val-core/.../reward
+      # is the number this run gets reported as, so it has to be the return
+      # the harness accumulated -- shaping the eval set is how a training
+      # trick gets quoted as a benchmark result.
+      progress_weight: 0.0
+      max_images: 3
+      # 320px long side is ~1/4 the tokens of the 640x480 frame,
+      # which is what pays for 12 turns instead of 4. Successful
+      # collections were measured on turns 2,3,5,5,8,14,14,17,26,36:
+      # a four-turn window saw two of them.
+      image_max_side: 320
+      # One picture per turn, and 8 turns, because the whole trajectory is
+      # concatenated into a single prompt. A 640x480 frame costs ~380 tokens
+      # after the vision merge, so the harness's usual five-per-turn over 20
+      # turns is ~38k image tokens against an 8k budget. When the prompt is
+      # truncated the image tokens go with it, but multi_modal_data still
+      # lists every image, and get_rope_index then walks one grid too many:
+      #   RuntimeError: shape mismatch: value tensor of shape [3, 8145]
+      #   cannot be broadcast to indexing result of shape [3, 7765]
+      # -- a difference of exactly one image. This is an image budget, not a
+      # cosmetic default.
+      album_root: /data/albums/paris_streets_v2/citycore-paris

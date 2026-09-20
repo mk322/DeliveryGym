@@ -1,0 +1,101 @@
+{
+  "schema": "embodiedbench/validated-delivery-region/v1",
+  "pool_id": "paris-pixel-goal-local-entrances",
+  "version": 1,
+  "scene": "/Game/CityCore_Paris/Scenes/ParisCity_FinalBlueprints",
+  "region": {
+    "name": "paris_pixel_goal_validated_order_pool_v1",
+    "nav_bounds_center_cm": [-5200.0, -7100.0, 100.0],
+    "nav_bounds_extent_cm": [3000.0, 5000.0, 300.0]
+  },
+  "validation": {
+    "source_path": "../../vendor/vagen/vagen/envs/deliverybench/maps/citycore-paris/buildings.json",
+    "source_sha256": "6041b78b90bd2f98deff4a3b5f413f848acff173df9a1df42dd4d08e96791601",
+    "min_door_anchor_cm": 50.0,
+    "max_door_anchor_cm": 200.0,
+    "max_navmesh_adjustment_cm": 25.0,
+    "max_entrance_connector_cm": 400.0,
+    "max_nav_path_deviation_cm": 150.0,
+    "max_nav_path_endpoint_error_cm": 100.0,
+    "max_spawn_displacement_cm": 50.0
+  },
+  "spawns": [
+    {
+      "id": "spawn_south",
+      "node_id": "pixelgoal-pool-spawn",
+      "z_cm": 90.0,
+      "yaw_deg": 90.0,
+      "verified": true,
+      "max_navmesh_adjustment_cm": 25.0
+    }
+  ],
+  "nodes": [
+    {"id": "pixelgoal-pool-rear-context", "x_cm": -5934.8349, "y_cm": -10700.0, "street_index": 21, "role": "context"},
+    {"id": "pixelgoal-pool-spawn", "x_cm": -5934.8349, "y_cm": -9700.0, "street_index": 21, "role": "spawn"},
+    {"id": "pixelgoal-pool-south-1", "x_cm": -5934.8349, "y_cm": -8700.0, "street_index": 21, "role": "route"},
+    {"id": "pixelgoal-pool-south-2", "x_cm": -5934.8349, "y_cm": -7900.0, "street_index": 21, "role": "route"},
+    {"id": "pixelgoal-pool-south-3", "x_cm": -5934.8349, "y_cm": -7000.0, "street_index": 21, "role": "route"},
+    {"id": "pixelgoal-pool-south-4", "x_cm": -5934.8349, "y_cm": -6100.0, "street_index": 21, "role": "route"},
+    {"id": "pixelgoal-pool-south-5", "x_cm": -5934.8349, "y_cm": -5200.0, "street_index": 21, "role": "route"},
+    {"id": "pixelgoal-pool-south-6", "x_cm": -5934.8349, "y_cm": -4300.0, "street_index": 21, "role": "route"},
+    {"id": "pixelgoal-pool-pre-corner", "x_cm": -5950.0, "y_cm": -4000.0, "street_index": 21, "role": "route"},
+    {"id": "pixelgoal-pool-corner", "x_cm": -5950.0, "y_cm": -3200.0, "street_index": 21, "role": "corner"},
+    {"id": "pixelgoal-pool-crossing-entry", "x_cm": -5704.827975050328, "y_cm": -2935.666851566335, "street_index": 2, "role": "crossing_entry"},
+    {"id": "pixelgoal-pool-crossing-centre", "x_cm": -5406.915006050115, "y_cm": -2935.666851566335, "street_index": 2, "role": "crossing"},
+    {"id": "pixelgoal-pool-crossing-exit", "x_cm": -5109.002037049902, "y_cm": -2935.666851566335, "street_index": 2, "role": "crossing_exit"},
+    {"id": "pixelgoal-pool-east-bend", "x_cm": -4870.0, "y_cm": -3050.0, "street_index": 2, "role": "sidewalk_turn"},
+    {"id": "stop-paix-3-anchor", "x_cm": -6135.510347572655, "y_cm": -6051.733704805875, "street_index": 2, "role": "entrance_connector"},
+    {"id": "stop-botzaris-2-anchor", "x_cm": -5982.400490336791, "y_cm": -3889.7430618569906, "street_index": 44, "role": "entrance_connector"}
+  ],
+  "edges": [
+    {"a": "pixelgoal-pool-rear-context", "b": "pixelgoal-pool-spawn", "kind": "sidewalk", "verified": true, "source": "live rear-view continuity audit"},
+    {"a": "pixelgoal-pool-spawn", "b": "pixelgoal-pool-south-1", "kind": "sidewalk", "verified": true, "source": "live straight-corridor rollout"},
+    {"a": "pixelgoal-pool-south-1", "b": "pixelgoal-pool-south-2", "kind": "sidewalk", "verified": true, "source": "live straight-corridor rollout"},
+    {"a": "pixelgoal-pool-south-2", "b": "pixelgoal-pool-south-3", "kind": "sidewalk", "verified": true, "source": "live straight-corridor rollout"},
+    {"a": "pixelgoal-pool-south-3", "b": "pixelgoal-pool-south-4", "kind": "sidewalk", "verified": true, "source": "live straight-corridor rollout"},
+    {"a": "pixelgoal-pool-south-4", "b": "pixelgoal-pool-south-5", "kind": "sidewalk", "verified": true, "source": "live straight-corridor rollout"},
+    {"a": "pixelgoal-pool-south-5", "b": "pixelgoal-pool-south-6", "kind": "sidewalk", "verified": true, "source": "live straight-corridor rollout"},
+    {"a": "pixelgoal-pool-south-6", "b": "pixelgoal-pool-pre-corner", "kind": "sidewalk", "verified": true, "source": "live pedestrian-route v4 rollout"},
+    {"a": "stop-paix-3-anchor", "b": "pixelgoal-pool-south-4", "kind": "sidewalk", "verified": true, "source": "CITYCORE_Building_0254 entrance connector"},
+    {"a": "stop-botzaris-2-anchor", "b": "pixelgoal-pool-pre-corner", "kind": "sidewalk", "verified": true, "source": "CITYCORE_Building_0263 entrance connector"},
+    {"a": "pixelgoal-pool-pre-corner", "b": "pixelgoal-pool-corner", "kind": "sidewalk", "verified": true, "source": "live route-sync north pavement audit"},
+    {"a": "pixelgoal-pool-corner", "b": "pixelgoal-pool-crossing-entry", "kind": "sidewalk", "verified": true, "source": "live PR_Crossswalk_17 entry audit"},
+    {"a": "pixelgoal-pool-crossing-entry", "b": "pixelgoal-pool-crossing-centre", "kind": "marked_crossing", "verified": true, "source": "PR_Crossswalk_17 AABB centreline"},
+    {"a": "pixelgoal-pool-crossing-centre", "b": "pixelgoal-pool-crossing-exit", "kind": "marked_crossing", "verified": true, "source": "PR_Crossswalk_17 AABB centreline"},
+    {"a": "pixelgoal-pool-crossing-exit", "b": "pixelgoal-pool-east-bend", "kind": "sidewalk", "verified": true, "source": "live PR_Crossswalk_17 exit audit"}
+  ],
+  "stops": [
+    {
+      "id": "paix-3",
+      "building_id": "CITYCORE_Building_0254",
+      "street_index": 2,
+      "street_name": "Rue de la Paix",
+      "number": 3,
+      "door_cm": [-6212.74698345975, -5923.14715],
+      "handover_node_id": "stop-paix-3-anchor",
+      "poi_type": "building",
+      "roles": ["pickup", "dropoff"],
+      "entrance_source": "buildings.json entrance_yaw_deg=300.9915",
+      "entrance_verified": true,
+      "surface": "pavement",
+      "navmesh_verified": true,
+      "max_navmesh_adjustment_cm": 25.0
+    },
+    {
+      "id": "botzaris-2",
+      "building_id": "CITYCORE_Building_0263",
+      "street_index": 44,
+      "street_name": "Boulevard Botzaris",
+      "number": 2,
+      "door_cm": [-6123.27695, -3838.227791181587],
+      "handover_node_id": "stop-botzaris-2-anchor",
+      "poi_type": "building",
+      "roles": ["pickup", "dropoff"],
+      "entrance_source": "buildings.json entrance_yaw_deg=339.9137",
+      "entrance_verified": true,
+      "surface": "pavement",
+      "navmesh_verified": true,
+      "max_navmesh_adjustment_cm": 25.0
+    }
+  ]
+}

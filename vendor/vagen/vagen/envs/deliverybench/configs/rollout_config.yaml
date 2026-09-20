@@ -1,0 +1,117 @@
+# ─────────────────────────────────────────────────────────────────────────────
+# DeliveryBench rollout config (loaded by rollout_qwen.py).
+#
+# Two sections:
+#   rollout: how to run the rollout (backend/model/sampling/concurrency/logging)
+#   env    : DeliveryBenchEnvConfig fields (the task definition)
+#
+# Every setting is written explicitly here — rollout_qwen.py reads ONLY this file
+# (no hidden defaults / env-var fallbacks for these values). Override the path
+# with:  ROLLOUT_CONFIG=/path/to/config.yaml python -m vagen.envs.deliverybench.rollout_qwen
+# ─────────────────────────────────────────────────────────────────────────────
+
+rollout:
+  # backend: "vllm" | "sglang" | "openrouter"
+  backend: vllm
+
+  # OpenAI-compatible endpoints + served model names (only the active backend is used)
+  #   qwen3-vl-8b  -> http://localhost:8000/v1
+  #   qwen3.5-9b   -> http://localhost:8001/v1
+  vllm_model_name: qwen3-vl-8b
+  vllm_base_url: http://localhost:8000/v1
+  # vllm_base_url: http://localhost:8001/v1
+  # vllm_model_name: qwen3.5-9b
+  vllm_api_key: EMPTY
+
+  sglang_base_url: http://localhost:30000/v1
+  sglang_model_name: qwen3-vl-8b
+  sglang_api_key: EMPTY
+  sglang_grammar: false        # xgrammar JSON constraint (off: avoids TP all-reduce crash on old drivers)
+
+  openrouter_base_url: https://openrouter.ai/api/v1
+  openrouter_model_id: qwen/qwen3-8b
+  # openrouter key is read from the OPENROUTER_API_KEY / OPENAI_API_KEY env var (secret, not stored here)
+
+  # rollouts
+  num_rollouts: 8              # rollouts PER seed
+  seed_list: [42, 52]              # e.g. [42, 43, 44]; total rollouts = len(seed_list) * num_rollouts
+  max_steps: 20                # per-rollout turn cap (also caps env.max_steps)
+  concurrency: 32               # max rollouts in flight at once
+
+  # sampling
+  temperature: 0.8
+  top_p: 0.9
+  max_tokens: 2048
+  request_timeout: 120         # per-request HTTP timeout (s)
+
+  # robustness / history management
+  max_consecutive_api_failures: 3
+  image_turns_kept: 1          # only the most recent K user turns keep their images
+  context_token_threshold: 14000   # compress history above this estimate
+  chars_per_token: 4           # rough token estimator (compression trigger)
+  tokens_per_image: 3000       # Qwen3-VL high-res tile cost estimate
+
+  # trajectory metrics to report at the end (see benchmark.py CHECKS)
+  metrics:
+    - called_navigation        # % trajectories that successfully called NAVIGATE
+    - arrived_pickup           # % trajectories that successfully completed a PICKUP
+    - delivered                # % trajectories with >= 1 completed delivery
+
+env:
+  map_name: small-city-11
+  max_steps: 20                # kept in sync with rollout.max_steps by rollout_qwen.py
+  render_mode: vision
+  image_placeholder: <image>
+  enable_map_images: true
+  map_renderer: pil            # "pil" (no Qt dependency) | "qt"
+  prompt_format: free_think
+  format_reward: 0.0
+  success_reward: 1.0
+  delivery_reward: 0.5
+  use_example_in_sys_prompt: true
+  time_scale: 0.0
+  time_limit_hours: 2.0
+  map_poi_in_system_prompt: false
+  store_catalog_in_system_prompt: true
+  # ── Stage-1 mechanic flags ──
+  enable_battery: false
+  enable_walking_energy: false
+  enable_food_temperature: false
+  enable_food_smell: false
+  enable_food_fragility: false
+  enable_bag_compartments: false
+  enable_advanced_transport: false
+  enable_delivery_methods: false
+  enable_special_notes: false
+  enable_multi_agent: false
+  enabled_actions:
+    - VIEW_ORDERS
+    - ACCEPT_ORDER
+    - PICKUP
+    - DROP_OFF
+    - WAIT
+    - MOVE
+    - NAVIGATE
+  seed: null                   # env-internal seed; the rollout passes its own seed to reset()
+  enable_prep_time: false
+  initial_transport_mode: walk
+  deadline_multiplier: 1.5
+  max_orders_in_pool: 3
+  num_restaurants: 1
+  num_customers: 1
+  require_single_item: true
+  enable_earning_jitter: false
+  fixed_spawn_position: [-17.0, 256.58]
+  enable_waypoints: true
+  enable_fpv: true
+  fpv_dir: deliverybench_fpv/small-city-11
+  traffic_light_fpv_dir: deliverybench_fpv/small-city-11-new
+  fpv_yaw_offset_deg: 90.0
+  map_global_only: false
+  use_gmaps_renderer: true
+  gmaps_out_scale: 0.5
+  enable_pedestrian_traffic_lights: true
+  traffic_light_control_radius_cm: 2500.0
+  traffic_light_red_penalty_s: 15.0
+  traffic_light_red_energy_multiplier: 1.0
+  traffic_light_require_visible_signal_view: true

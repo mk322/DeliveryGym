@@ -1,0 +1,40 @@
+envs:
+  - name: DeliveryBench
+    n_envs: 32
+    data_source: deliverybench
+    seed: [10001, 10128, 1]
+    max_turns: 10
+    response_length_per_turn: 512
+    config:
+      map_name: medium-city-22
+      render_mode: text
+      max_steps: 15
+      prompt_format: free_think
+      format_reward: 0
+      delivery_reward: 1
+      enable_map_images: true
+      map_renderer: pil
+      map_poi_in_system_prompt: true
+      # Stage 1 config
+      enable_battery: false
+      enable_walking_energy: false
+      enable_food_temperature: false
+      enable_food_smell: false
+      enable_food_fragility: false
+      enable_bag_compartments: false
+      enable_advanced_transport: false
+      enable_delivery_methods: false
+      enable_special_notes: false
+      enable_multi_agent: false
+      enable_prep_time: false
+      max_orders_in_pool: 3
+      num_restaurants: 1
+      num_customers: 1
+      require_single_item: true
+      enabled_actions:
+        - VIEW_ORDERS
+        - ACCEPT_ORDER
+        - MOVE
+        - PICKUP
+        - DROP_OFF
+        - WAIT

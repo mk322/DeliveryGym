@@ -1,0 +1,60 @@
+cff-version: 1.2.0
+title: "DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum"
+message: "If you use DeliveryGym, please cite the paper."
+type: software
+authors:
+  - family-names: Kang
+    given-names: Haoqiang
+  - family-names: Zhang
+    given-names: Yiming
+  - family-names: Guo
+    given-names: Yiyang
+  - family-names: Li
+    given-names: Chuying
+  - family-names: Shen
+    given-names: Jianzhi
+  - family-names: Xu
+    given-names: Tianruo Rose
+  - family-names: Ye
+    given-names: Xiaokang
+  - family-names: Qin
+    given-names: Lianhui
+version: 0.1.0
+date-released: 2026-09-12
+license: MIT
+repository-code: "https://github.com/mk322/DeliveryGym"
+identifiers:
+  - type: other
+    value: "arXiv:2609.19801"
+    description: The arXiv preprint of the DeliveryGym paper
+abstract: >
+  A visual courier benchmark and RL environment over rendered cities:
+  multi-turn vision-language navigation, pickups and deliveries against a
+  clock, with pedestrian signals, road obstacles, per-city photograph albums,
+  a measurement-verified signal legibility gate, and a live-engine any-point
+  (pixel-goal) navigation track. Includes GRPO training infrastructure and
+  reward, curriculum and scaling experiment suites.
+preferred-citation:
+  type: article
+  title: "DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum"
+  year: 2026
+  month: 9
+  journal: "arXiv preprint arXiv:2609.19801"
+  url: "https://arxiv.org/abs/2609.19801"
+  authors:
+    - family-names: Kang
+      given-names: Haoqiang
+    - family-names: Zhang
+      given-names: Yiming
+    - family-names: Guo
+      given-names: Yiyang
+    - family-names: Li
+      given-names: Chuying
+    - family-names: Shen
+      given-names: Jianzhi
+    - family-names: Xu
+      given-names: Tianruo Rose
+    - family-names: Ye
+      given-names: Xiaokang
+    - family-names: Qin
+      given-names: Lianhui

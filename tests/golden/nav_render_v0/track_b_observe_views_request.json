@@ -1,0 +1,14 @@
+{
+  "camera": {
+    "fov_deg": 90.0,
+    "height": 480,
+    "width": 640
+  },
+  "episode_id": "courier-citycore-paris-s5-embodied",
+  "protocol": "nav-render/v0",
+  "return_mode": "base64",
+  "views": [
+    "front",
+    "rear"
+  ]
+}

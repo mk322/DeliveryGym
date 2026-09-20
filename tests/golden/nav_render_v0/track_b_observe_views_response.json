@@ -1,0 +1,35 @@
+{
+  "capture_group_id": "view-pair-17",
+  "pose": {
+    "x_cm": 0.0,
+    "y_cm": 0.0,
+    "yaw_deg": 90.0,
+    "z_cm": 100.0
+  },
+  "views": [
+    {
+      "camera_intrinsics_id": "cam-640x480-fov90",
+      "camera_snapshot_id": "snapshot-front-17",
+      "height": 480,
+      "path": null,
+      "png_base64": "ZnJvbnQ=",
+      "sha256": "1111111111111111111111111111111111111111111111111111111111111111",
+      "status": "ok",
+      "view": "front",
+      "width": 640,
+      "yaw_offset_deg": 0.0
+    },
+    {
+      "camera_intrinsics_id": "cam-640x480-fov90",
+      "camera_snapshot_id": "snapshot-rear-17",
+      "height": 480,
+      "path": null,
+      "png_base64": "cmVhcg==",
+      "sha256": "2222222222222222222222222222222222222222222222222222222222222222",
+      "status": "ok",
+      "view": "rear",
+      "width": 640,
+      "yaw_offset_deg": 180.0
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+[
+  {
+    "id": "energy_drink",
+    "name": "Energy Drink",
+    "price": 6.0,
+    "function": "Instantly restores half of your personal energy."
+  },
+  {
+    "id": "escooter_battery_pack",
+    "name": "EScooter Battery Pack",
+    "price": 10.0,
+    "function": "Instantly fully recharges your e-scooter battery, but you must be near the scooter."
+  },
+  {
+    "id": "ice_pack",
+    "name": "Ice Pack",
+    "price": 1.5,
+    "function": "Keeps a selected insulated-bag compartment at -8°C for the rest of the run; consumes one pack from inventory."
+  },
+  {
+    "id": "heat_pack",
+    "name": "Heat Pack",
+    "price": 1.5,
+    "function": "Keeps a selected insulated-bag compartment at 60°C for the rest of the run; consumes one pack from inventory."
+  }
+]

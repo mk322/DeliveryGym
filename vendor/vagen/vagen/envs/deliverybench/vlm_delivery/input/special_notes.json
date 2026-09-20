@@ -1,0 +1,43 @@
+{
+  "I'm in a meeting, please don't disturb me during delivery": ["leave_at_door"],
+  "Let me know when you arrive": ["knock", "hand_to_customer", "call"],
+  "Please knock softly when you arrive": ["knock"],
+  "Please call me when you arrive": ["call"],
+  "If I'm not home, leave it at the door": ["leave_at_door", "knock"],
+  "I'm waiting at the dorm entrance": ["hand_to_customer"],
+  "Baby is sleeping, please don't knock": ["leave_at_door"],
+
+  "You can leave it by the door, thank you": ["leave_at_door"],
+  "No need to knock, you can just drop it off": ["leave_at_door"],
+  "Please leave it outside, I'm busy": ["leave_at_door"],
+  "Please leave the food at my door when you get here": ["leave_at_door"],
+  "Drop it at the doorstep": ["leave_at_door"],
+  "Doorbell is broken, just leave it there": ["leave_at_door"],
+  "I’ll pick it up at the door, no need to knock": ["leave_at_door"],
+
+  "Call me when you arrive": ["call"],
+  "Please give me a call on arrival": ["call"],
+  "Phone is preferred, please call when you're here": ["call"],
+  "Don't knock, please call instead": ["call"],
+  "Please call instead of knocking": ["call"],
+
+  "Knock on the door when you arrive": ["knock"],
+  "Knock or call me when you're here": ["knock", "call"],
+  "Kindly knock when the delivery is here": ["knock"],
+
+  "I'll meet you outside": ["hand_to_customer"],
+  "I will come down to pick it up": ["hand_to_customer"],
+  "I'm waiting downstairs": ["hand_to_customer"],
+  "You can hand it to me directly": ["hand_to_customer"],
+  "I'll grab it from you at the door": ["hand_to_customer"],
+  "Please pass it to me directly": ["hand_to_customer"],
+  "I'm outside the building": ["hand_to_customer"],
+
+  "If I don't answer, just leave it at the door": ["leave_at_door", "knock"],
+  "If no one responds, leave it at the door": ["leave_at_door", "knock"],
+  "If I'm not downstairs, please leave it": ["leave_at_door", "knock"],
+
+  "Please don’t call me, just knock": ["knock"],
+  "Please don't call or knock, leave it quietly": ["leave_at_door"],
+  "Don't disturb me, just leave it quietly": ["leave_at_door"]
+}

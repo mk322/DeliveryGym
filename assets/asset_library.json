@@ -1,0 +1,181 @@
+{
+  "schema": "embodiedbench/asset_library/v0.1",
+  "built_from": [
+    "citycore-paris",
+    "large-city-26",
+    "large-city-28",
+    "large-city-30",
+    "medium-city-18",
+    "medium-city-20",
+    "medium-city-22",
+    "small-city-11",
+    "small-city-13",
+    "small-city-15"
+  ],
+  "types": [
+    "building",
+    "bus_station",
+    "car_rental",
+    "charging_station",
+    "hospital",
+    "rest_area",
+    "restaurant",
+    "store"
+  ],
+  "templates": [
+    {
+      "poi_type": "building",
+      "instance_name": "BP_Building_CityCore_C",
+      "kind": "building",
+      "default_yaw_deg": 30.0,
+      "observed_yaws": [
+        0.0,
+        9.4,
+        10.0,
+        12.0,
+        14.6,
+        19.4,
+        20.6,
+        23.8
+      ],
+      "source_map": "citycore-paris",
+      "source_sha256": "a2dbb2e7d94d99760cdd9135e6e1e949768fc21826fd1894add12efc002c1a40",
+      "observed_count": 414,
+      "bbox_cm": [
+        1753.79,
+        1761.68,
+        2500.04
+      ]
+    },
+    {
+      "poi_type": "bus_station",
+      "instance_name": "POI_BusStation",
+      "kind": "point",
+      "default_yaw_deg": 270.0,
+      "observed_yaws": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "source_map": "large-city-26",
+      "source_sha256": "f9beafdd06595bde0d61b071b030bc915f5345cb75aae86806b2d526a1d1f55e",
+      "observed_count": 8
+    },
+    {
+      "poi_type": "car_rental",
+      "instance_name": "BP_Building_36_C",
+      "kind": "building",
+      "default_yaw_deg": 180.0,
+      "observed_yaws": [
+        0.0,
+        180.0
+      ],
+      "source_map": "medium-city-18",
+      "source_sha256": "8f2814c3796fc9d7ea65038cbb3ce01d54b9055ccb5575fc8a9e17a1e474905b",
+      "observed_count": 2,
+      "bbox_cm": [
+        1424.99,
+        2537.26,
+        4755.33
+      ]
+    },
+    {
+      "poi_type": "charging_station",
+      "instance_name": "POI_ChargingStation_Road",
+      "kind": "point",
+      "default_yaw_deg": 90.0,
+      "observed_yaws": [
+        0.0,
+        90.0,
+        180.0,
+        270.0
+      ],
+      "source_map": "large-city-26",
+      "source_sha256": "f9beafdd06595bde0d61b071b030bc915f5345cb75aae86806b2d526a1d1f55e",
+      "observed_count": 29
+    },
+    {
+      "poi_type": "hospital",
+      "instance_name": "BP_Building_32_C",
+      "kind": "building",
+      "default_yaw_deg": 270.0,
+      "observed_yaws": [
+        270.0
+      ],
+      "source_map": "large-city-26",
+      "source_sha256": "f9beafdd06595bde0d61b071b030bc915f5345cb75aae86806b2d526a1d1f55e",
+      "observed_count": 1,
+      "bbox_cm": [
+        5829.11,
+        3233.19,
+        14507.71
+      ]
+    },
+    {
+      "poi_type": "rest_area",
+      "instance_name": "BP_Building_114_C",
+      "kind": "building",
+      "default_yaw_deg": 90.0,
+      "observed_yaws": [
+        90.0
+      ],
+      "source_map": "large-city-26",
+      "source_sha256": "f9beafdd06595bde0d61b071b030bc915f5345cb75aae86806b2d526a1d1f55e",
+      "observed_count": 1,
+      "bbox_cm": [
+        6663.9,
+        9294.53,
+        6054.4
+      ]
+    },
+    {
+      "poi_type": "restaurant",
+      "instance_name": "BP_Building_CityCore_C",
+      "kind": "building",
+      "default_yaw_deg": 270.0,
+      "observed_yaws": [
+        30.3,
+        50.1,
+        66.0,
+        85.9,
+        120.0,
+        120.1,
+        199.7,
+        225.0
+      ],
+      "source_map": "citycore-paris",
+      "source_sha256": "a2dbb2e7d94d99760cdd9135e6e1e949768fc21826fd1894add12efc002c1a40",
+      "observed_count": 18,
+      "bbox_cm": [
+        1660.73,
+        1885.48,
+        2559.78
+      ]
+    },
+    {
+      "poi_type": "store",
+      "instance_name": "BP_Building_CityCore_C",
+      "kind": "building",
+      "default_yaw_deg": 170.0,
+      "observed_yaws": [
+        30.0,
+        45.0,
+        120.1,
+        135.4,
+        170.0,
+        210.0,
+        270.0,
+        346.3
+      ],
+      "source_map": "citycore-paris",
+      "source_sha256": "a2dbb2e7d94d99760cdd9135e6e1e949768fc21826fd1894add12efc002c1a40",
+      "observed_count": 11,
+      "bbox_cm": [
+        1808.35,
+        1777.59,
+        2649.09
+      ]
+    }
+  ]
+}
