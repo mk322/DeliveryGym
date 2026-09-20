@@ -190,10 +190,8 @@
   title={${D.meta.title}},
   author={${D.meta.authors.join(' and ')}},
   year={2026},
-  eprint={2609.19801},
-  archivePrefix={arXiv},
-  primaryClass={cs.LG},
-  url={${D.meta.paper}}
+  howpublished={Project website},
+  url={https://mk322.github.io/DeliveryGym/}
 }`;
   $('#bibtex').textContent=bibtex;
   $('#copy-citation').addEventListener('click',async()=>{

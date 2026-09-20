@@ -16,16 +16,16 @@
   <meta name="twitter:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
   <title>DeliveryGym — An Embodied Agent RL Environment</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css">
-  <script src="results-data.js" defer></script>
-  <script src="app.js" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260919-2">
+  <script src="results-data.js?v=20260919-2" defer></script>
+  <script src="app.js?v=20260919-2" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <nav class="site-nav" aria-label="Page navigation">
   <a class="wordmark" href="#top"><span class="brand-mark" aria-hidden="true">D</span> DeliveryGym</a>
   <div><a href="#demo">Demo</a><a href="#task">Task</a><a href="#adaptive">Adaptive Curriculum</a><a href="#results">Results</a></div>
-  <a class="nav-link" href="https://arxiv.org/abs/2609.19801">Paper ↗</a>
+  <a class="nav-link" href="https://github.com/mk322/DeliveryGym">GitHub ↗</a>
 </nav>
 
 <main id="main">
@@ -36,7 +36,7 @@
     <p class="hero-description">Train embodied agents across complete courier shifts in a UE5-backed world—with persistent consequences, simulator-verifiable rewards, and a curriculum that adapts to the agent’s changing weaknesses.</p>
     <p class="authors"><span>Haoqiang Kang<sup>1</sup></span><span>Yiming Zhang<sup>2</sup></span><span>Yiyang Guo<sup>1</sup></span><span>Chuying Li<sup>1</sup></span><span>Jianzhi Shen<sup>3</sup></span><span>Tianruo Rose Xu<sup>4</sup></span><span>Xiaokang Ye<sup>1</sup></span><span><a href="https://lianhui.ucsd.edu/">Lianhui Qin</a><sup>1</sup></span></p>
     <p class="affiliations"><span><sup>1</sup> UC San Diego</span><span><sup>2</sup> Independent</span><span><sup>3</sup> Johns Hopkins University</span><span><sup>4</sup> Cornell University</span></p>
-    <div class="resource-links"><a class="button primary" href="https://arxiv.org/abs/2609.19801">Paper</a><a class="button" href="https://github.com/mk322/DeliveryGym">Code &amp; Data</a><a class="button" href="#demo">View Demo</a></div>
+    <div class="resource-links"><a class="button primary" href="#citation">Citation</a><a class="button" href="https://github.com/mk322/DeliveryGym">Code &amp; Data</a><a class="button" href="#demo">View Demo</a></div>
     <div class="hero-stats" aria-label="Headline results"><div><strong>13</strong><span>city maps</span></div><div><strong>+54.3%</strong><span>test income with RL</span></div><div><strong>+16.5%</strong><span>test income with adaptive curriculum</span></div></div>
   </header>
 
@@ -95,7 +95,7 @@
     <div class="section-intro"><p class="eyebrow">Evaluation</p><h2 id="results-title">Inspect the evidence</h2><p>Compare reward learning, curriculum strategies, scaling studies, and the gap between single-order execution and complete-shift planning.</p></div>
     <div class="result-tabs" role="tablist" aria-label="Results perspectives"><button id="tab-learn" role="tab" aria-controls="results-panel" aria-selected="true" data-view="learn">Reward learning</button><button id="tab-adapt" role="tab" aria-controls="results-panel" aria-selected="false" tabindex="-1" data-view="adapt">Adaptive curriculum</button><button id="tab-scale" role="tab" aria-controls="results-panel" aria-selected="false" tabindex="-1" data-view="scale">Scaling</button><button id="tab-beyond" role="tab" aria-controls="results-panel" aria-selected="false" tabindex="-1" data-view="beyond">Long-horizon gap</button></div>
     <div id="results-panel" role="tabpanel" aria-labelledby="tab-learn" tabindex="0"><div class="explorer-top"><h3 id="finding"></h3><div class="segmented" id="view-controls" role="group" aria-label="Comparison options"></div></div><div class="explorer-body"><div class="chart-area"><p class="chart-label" id="chart-label"></p><div id="chart" aria-label="Interactive results chart"></div><p class="chart-help">Hover or focus to inspect. Click or press Enter to pin a selection.</p></div><aside class="readout" aria-live="polite" aria-atomic="true"><p class="eyebrow" id="selection-label"></p><strong id="selection-value"></strong><p id="selection-delta"></p><p id="selection-explanation"></p><p class="pin-state" id="pin-state"></p></aside></div><p class="conditions" id="conditions"></p><details id="source-figure"><summary>Explore the original paper figure <span aria-hidden="true">↗</span></summary><figure><button class="image-button" id="source-zoom"><img id="source-image" loading="lazy" alt=""></button><figcaption id="source-caption"></figcaption></figure></details></div>
-    <noscript><p>Enable JavaScript to explore the reported results. All results are also available in the <a href="https://arxiv.org/abs/2609.19801">paper</a>.</p></noscript>
+    <noscript><p>Enable JavaScript to explore the reported results and source figures.</p></noscript>
   </div></section>
 
   <section class="section wrap benchmark" aria-labelledby="benchmark-title"><div class="section-intro row"><div><p class="eyebrow">Benchmark</p><h2 id="benchmark-title">Training helps. There is further to go.</h2></div><div class="segmented" role="group" aria-label="Movement interface"><button data-mode="waypoint" aria-pressed="true">Waypoint</button><button data-mode="anypoint" aria-pressed="false">Any-Point</button></div></div><p id="table-protocol" class="table-protocol"></p><div class="table-scroll" tabindex="0" role="region" aria-label="Benchmark results; scroll horizontally on small screens"><table><caption class="sr-only">Model performance on matched test shifts</caption><thead><tr><th scope="col">Agent / base model</th><th scope="col">Net income ↑<small>USD / shift</small></th><th scope="col">Delivered ↑<small>orders / shift</small></th><th scope="col">On time ↑<small>% of handoffs</small></th><th scope="col">Red light ↓<small>events / shift</small></th><th scope="col">Obstacle ↓<small>events / shift</small></th></tr></thead><tbody id="benchmark-body"></tbody></table></div><p class="table-takeaway" id="table-takeaway" aria-live="polite"></p><div class="table-notes"><p><span class="oracle">Oracle</span> is a simulator-assisted search reference with access to cloned simulator branches, not a guarantee of global optimality.</p><p id="missing-note">“—” means not reported for the selected policy on test. Validation safety and service values are not substituted.</p></div></section>
@@ -103,7 +103,7 @@
   <section id="citation" class="section citation section-tint" aria-labelledby="citation-title"><div class="wrap reading-width"><div class="citation-header"><div><p class="eyebrow">Citation</p><h2 id="citation-title">Build on DeliveryGym</h2></div><button id="copy-citation" class="button">Copy BibTeX</button></div><pre><code id="bibtex"></code></pre><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></div></section>
 </main>
 
-<footer><div class="wrap"><a class="wordmark" href="#top"><span class="brand-mark" aria-hidden="true">D</span> DeliveryGym</a><p>An embodied agent RL environment · UC San Diego and collaborators · 2026</p><div><a href="https://arxiv.org/abs/2609.19801">Paper</a><a href="https://github.com/mk322/DeliveryGym">GitHub</a><a href="https://deliverybench.github.io/">DeliveryBench</a></div></div></footer>
+<footer><div class="wrap"><a class="wordmark" href="#top"><span class="brand-mark" aria-hidden="true">D</span> DeliveryGym</a><p>An embodied agent RL environment · UC San Diego and collaborators · 2026</p><div><a href="#citation">Citation</a><a href="https://github.com/mk322/DeliveryGym">GitHub</a><a href="https://deliverybench.github.io/">DeliveryBench</a></div></div></footer>
 <dialog id="image-dialog" aria-label="Enlarged paper figure"><div class="dialog-toolbar"><p>Paper figure</p><a id="full-image" href="assets/overview.png" target="_blank" rel="noopener">Open full resolution ↗</a><button id="close-dialog" aria-label="Close enlarged figure">Close ×</button></div><div class="dialog-image-scroll"><img id="dialog-image" alt=""></div></dialog>
 </body>
 </html>

@@ -4,7 +4,7 @@
 window.DELIVERYGYM = {
   meta: {
     title: 'DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum',
-    paper: 'https://arxiv.org/abs/2609.19801', code: 'https://github.com/mk322/DeliveryGym',
+    code: 'https://github.com/mk322/DeliveryGym',
     authors: ['Haoqiang Kang', 'Yiming Zhang', 'Yiyang Guo', 'Chuying Li', 'Jianzhi Shen', 'Tianruo Rose Xu', 'Xiaokang Ye', 'Lianhui Qin'],
     year: 2026, youtubeId: '',
     checked: '2026-09-19',
