@@ -3,16 +3,16 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="DeliveryGym is a verifiable 3D reinforcement-learning environment that turns embodied interaction in UE5 into online training experience.">
+  <meta name="description" content="DeliveryGym is an adaptive UE5 reinforcement-learning environment for embodied RSI and delivery-agent training.">
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mk322.github.io/DeliveryGym/">
-  <meta property="og:title" content="DeliveryGym — Turn embodied interaction into learning">
-  <meta property="og:description" content="Executable world dynamics, simulator-native verification, online RL, and adaptive task generation for embodied agents.">
+  <meta property="og:title" content="DeliveryGym — An Adaptive RL Environment for Embodied RSI">
+  <meta property="og:description" content="A UE5 delivery-agent training environment with executable dynamics, grounded verification, online RL, and adaptive task generation.">
   <meta property="og:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="DeliveryGym — An Embodied Agent RL Environment">
-  <meta name="twitter:description" content="Turn embodied interaction into learning.">
+  <meta name="twitter:description" content="An adaptive RL environment for embodied RSI.">
   <meta name="twitter:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
   <title>DeliveryGym — An Embodied Agent RL Environment</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -29,10 +29,10 @@
 
 <main id="main">
   <header class="hero wrap" id="top">
-    <p class="rsi-line"><span aria-hidden="true">↻</span> Turn embodied interaction into learning.</p>
+    <p class="rsi-line"><span aria-hidden="true">↻</span> An adaptive RL environment for embodied RSI</p>
     <p class="eyebrow">A verifiable 3D RL environment for embodied agents</p>
     <h1><span>DeliveryGym:</span> An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum</h1>
-    <p class="hero-description">DeliveryGym turns a UE5 city into an online RL environment: agents act through tools, the simulator executes state transitions, event traces verify outcomes, and adaptive tasks target the policy’s current weaknesses.</p>
+    <p class="hero-description">DeliveryGym is a UE5 training environment for delivery agents: actions execute in the world, simulator events ground RL feedback, and adaptive tasks change what the policy practices as it improves.</p>
     <p class="authors"><span>Haoqiang Kang<sup>1</sup></span><span>Yiming Zhang<sup>2</sup></span><span>Yiyang Guo<sup>1</sup></span><span>Chuying Li<sup>1</sup></span><span>Jianzhi Shen<sup>3</sup></span><span>Tianruo Rose Xu<sup>4</sup></span><span>Xiaokang Ye<sup>1</sup></span><span>Lianhui Qin<sup>1</sup></span></p>
     <p class="affiliations"><span><sup>1</sup> UC San Diego</span><span><sup>2</sup> Independent</span><span><sup>3</sup> Johns Hopkins University</span><span><sup>4</sup> Cornell University</span></p>
     <div class="resource-links"><a class="button primary" href="https://arxiv.org/abs/2609.19801">Paper</a><a class="button" href="https://github.com/mk322/DeliveryGym">Code</a><a class="button" href="#demo">Demo</a></div>
@@ -79,7 +79,7 @@
   </section>
 
   <section id="adaptive" class="section adaptive-section" aria-labelledby="adaptive-title"><div class="wrap">
-    <div class="section-intro"><p class="eyebrow">Adaptive curriculum</p><h2 id="adaptive-title">Training tasks adapt as the policy improves</h2><p>Fixed training probes expose current failures. DeliveryGym converts those failures into a weakness profile and samples feasible tasks that target the capabilities limiting the current policy.</p></div>
+    <div class="section-intro"><p class="eyebrow">Adaptive curriculum</p><h2 id="adaptive-title">Training tasks adapt as the policy improves</h2><p>This makes the environment the adaptive engine of embodied RSI. Fixed training probes expose current failures; DeliveryGym converts them into a weakness profile and generates feasible tasks that target the capabilities limiting the current policy.</p></div>
     <div class="adaptive-loop" aria-label="Adaptive curriculum loop"><article><span>1</span><h3>Probe</h3><p>Measure traffic, recovery, and multi-order skills.</p></article><b aria-hidden="true">→</b><article><span>2</span><h3>Diagnose</h3><p>Update weights from simulator-verified failures.</p></article><b aria-hidden="true">→</b><article><span>3</span><h3>Generate</h3><p>Sample feasible tasks near the capability frontier.</p></article><b aria-hidden="true">→</b><article><span>4</span><h3>Train</h3><p>Collect new rollouts and refresh the probes.</p></article></div>
     <div class="adaptive-result"><figure class="paper-figure"><button class="image-button" data-zoom="assets/figure8_adaptive_reward.png" aria-label="Enlarge adaptive curriculum results"><img src="assets/figure8_adaptive_reward.png" loading="lazy" alt="Adaptive curriculum validation curves and training-probe results."></button><figcaption>Adaptive curriculum results. <a href="assets/figure8_adaptive_reward.pdf">View original PDF ↗</a></figcaption></figure><div class="result-callout"><p class="eyebrow">Matched test result</p><strong>+16.5%</strong><h3>net income</h3><p>Adaptive curriculum versus uniform sampling under the same rollout budget.</p><small>Training experience adapts; the evaluation suite stays fixed.</small></div></div>
   </div></section>
