@@ -38,7 +38,7 @@ The diagnostics explorer preserves the integer percentage labels printed in the 
 
 ## Demo film
 
-`assets/deliverygym-demo.mp4` is the 90-second, 1080p launch film used by the native HTML video player. It begins with why an embodied RL environment must provide executable transitions and grounded feedback, follows a complete courier trajectory, then explains the training loop, constraints, adaptive curriculum, measured gains, and scaling. `assets/video-poster.jpg` is its poster. Re-render the source in `../demo/remotion`, mux the approved audio track, and replace the MP4 at the same path to update playback and the download link.
+`assets/deliverygym-demo.mp4` is the 106-second, 1080p demo used by the native HTML video player. The opening asks whether RL can teach an embodied agent to deliver food in Paris, shows orders and six constraints, illustrates a humanoid courier trajectory with traffic/closure counterfactuals, then explains profit-based RL and the measured improvement. Adaptive environment, scaling and closing follow. The street reconstruction uses generated photographic background plates and animated 3D actors; it is not recorded UE gameplay. See `../demo/remotion/PRODUCTION-v6.md` for asset provenance and reproduction. `assets/video-poster.jpg` is its poster.
 
 ## Refresh figures
 
