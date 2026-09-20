@@ -7,17 +7,17 @@
   <meta name="theme-color" content="#ffffff">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://mk322.github.io/DeliveryGym/">
-  <meta property="og:title" content="DeliveryGym — An RL Environment for Embodied Agents">
+  <meta property="og:title" content="DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum">
   <meta property="og:description" content="A UE5 delivery-agent training environment with executable dynamics, grounded verification, online RL, and adaptive task generation.">
   <meta property="og:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="DeliveryGym — An Embodied Agent RL Environment">
+  <meta name="twitter:title" content="DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum">
   <meta name="twitter:description" content="An adaptive RL environment for embodied RSI.">
   <meta name="twitter:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
-  <title>DeliveryGym — An Embodied Agent RL Environment</title>
+  <title>DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260919-6">
-  <script src="app.js?v=20260919-3" defer></script>
+  <link rel="stylesheet" href="styles.css?v=20260920-7">
+  <script src="app.js?v=20260920-4" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
@@ -30,7 +30,7 @@
 <main id="main">
   <header class="hero wrap" id="top">
     <p class="rsi-line"><span aria-hidden="true">↻</span> Adaptive environments. Improving embodied agents.</p>
-    <h1><span class="project-name">DeliveryGym</span>An RL Environment<br>for Embodied Agents</h1>
+    <h1><span>DeliveryGym:</span> An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum</h1>
     <p class="hero-description">Train delivery agents in UE5. Learn from verified outcomes.<br class="desktop-break"> Adapt the next task to the agent’s weaknesses—toward embodied RSI.</p>
     <p class="authors"><span>Haoqiang Kang<sup>1</sup></span><span>Yiming Zhang<sup>2</sup></span><span>Yiyang Guo<sup>1</sup></span><span>Chuying Li<sup>1</sup></span><span>Jianzhi Shen<sup>3</sup></span><span>Tianruo Rose Xu<sup>4</sup></span><span>Xiaokang Ye<sup>1</sup></span><span>Lianhui Qin<sup>1</sup></span></p>
     <p class="affiliations"><span><sup>1</sup> UC San Diego</span><span><sup>2</sup> Independent</span><span><sup>3</sup> Johns Hopkins University</span><span><sup>4</sup> Cornell University</span></p>
@@ -58,15 +58,14 @@
   </div></section>
 
   <section id="adaptive" class="section adaptive-section" aria-labelledby="adaptive-title"><div class="wrap">
-    <div class="section-intro"><p class="eyebrow">Adaptive environment for embodied RSI</p><h2 id="adaptive-title">Adapt the next task to the agent’s weaknesses</h2><p>Can the environment make RL more effective? DeliveryGym evaluates the current policy, identifies weak capabilities, and generates feasible tasks that target them. Policy improvement changes the next round of training—an environment-driven loop toward embodied recursive self-improvement (RSI).</p></div>
+    <div class="section-intro"><p class="eyebrow">Adaptive curriculum</p><h2 id="adaptive-title">Adaptive environment for embodied RSI</h2><p>Can the environment make RL more effective? DeliveryGym evaluates the current policy, identifies weak capabilities, and generates feasible tasks that target them. Policy improvement changes the next round of training—an environment-driven loop toward embodied recursive self-improvement (RSI).</p></div>
     <div class="adaptive-loop" aria-label="Adaptive environment loop"><article><span>1</span><h3>Evaluate</h3><p>Run the current policy on fixed training probes.</p></article><b aria-hidden="true">→</b><article><span>2</span><h3>Diagnose</h3><p>Convert simulator-verified failures into a weakness profile.</p></article><b aria-hidden="true">→</b><article><span>3</span><h3>Generate</h3><p>Create feasible shifts that target the weakest capability.</p></article><b aria-hidden="true">→</b><article><span>4</span><h3>Continue RL</h3><p>Train on new rollouts, then evaluate the policy again.</p></article></div>
-    <p class="adaptive-example"><strong>Example · obstacle recovery.</strong> Repeated blocked moves reveal a weakness. The next training tasks provide feasible detours around closures; RL rewards successful recovery. The policy is then evaluated again to decide what to practice next.</p>
     <h3 class="result-heading">Adaptive practice improves learning under the same budget</h3>
     <div class="adaptive-result"><figure class="paper-figure"><button class="image-button" data-zoom="assets/figure8_adaptive_reward.png" aria-label="Enlarge adaptive curriculum results"><img src="assets/figure8_adaptive_reward.png" loading="lazy" alt="Adaptive curriculum validation curves and training-probe results."></button><figcaption>Adaptive curriculum results. <a href="assets/figure8_adaptive_reward.pdf">View original PDF ↗</a></figcaption></figure><div class="result-callout"><p class="eyebrow">Matched test result</p><strong>+16.5%</strong><h3>net income</h3><p>Adaptive curriculum versus uniform sampling under the same rollout budget.</p><small>Training experience adapts; the evaluation suite stays fixed.</small></div></div>
   </div></section>
 
   <section id="scaling" class="section wrap" aria-labelledby="scaling-title">
-    <div class="section-intro"><p class="eyebrow">Scaling experience</p><h2 id="scaling-title">Scale tasks and maps, not the rollout budget</h2><p>First, expand the task configurations. Then, expand the training maps. Both improve validation income while holding the training budget at 2,400 trajectories in each study.</p></div>
+    <div class="section-intro"><p class="eyebrow">Task and map scalability</p><h2 id="scaling-title">A scalable environment for embodied RL</h2><p>DeliveryGym scales RL training across diverse task configurations and city maps. Expanding both dimensions produces stronger delivery policies, with gains demonstrated under a fixed budget of 2,400 training trajectories in each study.</p></div>
     <div class="scaling-summary"><article><span>01 · Task scaling</span><strong>200 → 144k</strong><p>available training configurations</p><b>+47% validation income</b><small>2,400 trajectories fixed</small></article><article><span>02 · Map scaling</span><strong>1 → 8</strong><p>training city maps</p><b>+61% validation income</b><small>2,400 trajectories fixed</small></article></div>
     <figure class="paper-figure wide"><button class="image-button" data-zoom="assets/figure7_environment_scaling.png" aria-label="Enlarge task and environment scaling results"><img src="assets/figure7_environment_scaling.png" loading="lazy" alt="Validation income as available task configurations and training maps increase under a fixed rollout budget."></button><figcaption>Task and environment scaling under a fixed interaction budget. <a href="assets/figure7_environment_scaling.pdf">View original PDF ↗</a></figcaption></figure>
   </section>

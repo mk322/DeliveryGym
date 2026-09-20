@@ -21,12 +21,11 @@
   });
   dialog.addEventListener('close',()=>opener?.focus());
 
-  const bibtex=`@misc{kang2026deliverygym,
+  const bibtex=`@article{kang2026deliverygym,
   title={DeliveryGym: An RL Environment for Long-Horizon Embodied Agent Planning with Adaptive Curriculum},
-  author={Haoqiang Kang and Yiming Zhang and Yiyang Guo and Chuying Li and Jianzhi Shen and Tianruo Rose Xu and Xiaokang Ye and Lianhui Qin},
-  year={2026},
-  howpublished={Project website},
-  url={https://mk322.github.io/DeliveryGym/}
+  author={Kang, Haoqiang and Zhang, Yiming and Guo, Yiyang and Li, Chuying and Shen, Jianzhi and Xu, Tianruo Rose and Ye, Xiaokang and Qin, Lianhui},
+  journal={arXiv preprint arXiv:2609.19801},
+  year={2026}
 }`;
   $('#bibtex').textContent=bibtex;
   $('#copy-citation').addEventListener('click',async()=>{

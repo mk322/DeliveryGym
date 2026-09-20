@@ -39,7 +39,13 @@ dialog{width:1400px;max-width:96vw;max-height:92vh;padding:0;border:1px solid va
 @media(prefers-reduced-motion:reduce){:root{scroll-behavior:auto}*,*::before,*::after{transition:none!important;animation:none!important}}
 
 /* A compact opening and a single, ordered research story. */
-.hero h1{max-width:960px;font-size:clamp(42px,5vw,66px);letter-spacing:-.045em}.hero h1 .project-name{display:block;margin-bottom:19px;font-size:.64em;letter-spacing:-.04em;color:var(--blue)}
-.rsi-line{padding:0;border:0;background:transparent;font-size:13px;letter-spacing:.02em}.rsi-line span{display:none}.hero-description{max-width:770px;font-size:18px}.section-intro{max-width:860px}.section-intro h2{max-width:850px}.adaptive-example{max-width:900px;margin:0 0 44px;padding:22px 25px;border-left:3px solid var(--purple);background:#fff;font-size:15px;line-height:1.75}.adaptive-example strong{color:var(--ink)}.result-heading{margin-bottom:23px;font-size:24px}.adaptive-loop p{font-size:13px}.paper-figure figcaption{font-size:12px}.video-shell{box-shadow:0 8px 28px rgba(31,48,63,.08)}.video-meta{font-size:11px}.scaling-summary p,.scaling-summary small{font-size:13px}.result-callout small{font-size:12px}
-@media(max-width:620px){.hero h1{font-size:36px}.hero h1 .project-name{font-size:28px;margin-bottom:16px}.hero-description{font-size:15px}.desktop-break{display:none}.rsi-line{font-size:11px}.hero{padding-block:32px}.authors{gap:3px 12px}.paper-figure figcaption{font-size:10px}.result-heading{font-size:22px}.adaptive-example{font-size:14px;padding:18px}.affiliations{font-size:10px}}
+.hero h1{max-width:960px;font-size:clamp(42px,5vw,66px);letter-spacing:-.045em}
+.rsi-line{padding:0;border:0;background:transparent;font-size:13px;letter-spacing:.02em}.rsi-line span{display:none}.hero-description{max-width:770px;font-size:18px}.section-intro{max-width:860px}.section-intro h2{max-width:850px}.result-heading{margin-bottom:23px;font-size:24px}.adaptive-loop p{font-size:13px}.paper-figure figcaption{font-size:12px}.video-shell{box-shadow:0 8px 28px rgba(31,48,63,.08)}.video-meta{font-size:11px}.scaling-summary p,.scaling-summary small{font-size:13px}.result-callout small{font-size:12px}
+@media(max-width:620px){.hero h1{font-size:36px}.hero-description{font-size:15px}.desktop-break{display:none}.rsi-line{font-size:11px}.hero{padding-block:32px}.authors{gap:3px 12px}.paper-figure figcaption{font-size:10px}.result-heading{font-size:22px}.affiliations{font-size:10px}}
 @media(max-height:760px) and (min-width:851px){.hero{padding-block:32px}.hero h1{font-size:52px}.rsi-line{margin-bottom:18px}.hero-description{margin-top:18px}.authors{margin-top:20px}.resource-links{margin-top:20px}}
+
+/* Formal paper title, kept within the complete first-screen introduction. */
+.hero h1{max-width:1040px;font-size:clamp(38px,4.35vw,58px);line-height:1.12;letter-spacing:-.035em}.hero h1 span{font-weight:800}
+@media(max-width:620px){.hero h1{font-size:32px;line-height:1.13}.hero{padding-block:28px}.hero-description{font-size:14px;line-height:1.6}}
+@media(max-height:760px) and (min-width:851px){.hero h1{font-size:48px}}
+@media(max-height:740px) and (max-width:620px){.hero h1{font-size:28px}.hero{padding-block:20px}.rsi-line{margin-bottom:15px}.hero-description{margin-top:15px;font-size:13px}.authors{margin-top:18px;font-size:11px}.resource-links{margin-top:18px}}
