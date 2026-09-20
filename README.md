@@ -38,7 +38,7 @@ The diagnostics explorer preserves the integer percentage labels printed in the 
 
 ## Demo film
 
-`assets/deliverygym-demo.mp4` is the 106-second, 1080p demo used by the native HTML video player. The opening asks whether RL can teach an embodied agent to deliver food in Paris, shows orders and six constraints, illustrates a humanoid courier trajectory with traffic/closure counterfactuals, then explains profit-based RL and the measured improvement. Adaptive environment, scaling and closing follow. The street reconstruction uses generated photographic background plates and animated 3D actors; it is not recorded UE gameplay. See `../demo/remotion/PRODUCTION-v6.md` for asset provenance and reproduction. `assets/video-poster.jpg` is its poster.
+`assets/deliverygym-demo.mp4` is the 129-second, 1080p demo used by the native HTML video player. The revised opening asks whether an embodied agent can deliver food in Paris and earn money, presents four orders and intrinsic task constraints in one city interface, and follows order A in a continuous 42-second first-person reconstruction. The same coordinates drive city markers, building entrances, the route and navigation. A Fig. 2-inspired multi-turn RL loop explains verified net-income rewards and policy updates before showing the measured improvement. Adaptive environment, scaling and closing follow. The city, camera, humanoid hands and parcel are authored 3D; materials and NPC cutouts use generated imagery. It is not recorded UE gameplay. See `../demo/remotion/PRODUCTION-v7.md` for asset provenance and reproduction. `assets/video-poster.jpg` is its poster.
 
 ## Refresh figures
 
