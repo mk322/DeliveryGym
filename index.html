@@ -16,14 +16,14 @@
   <meta name="twitter:image" content="https://mk322.github.io/DeliveryGym/assets/og.png">
   <title>DeliveryGym — An Embodied Agent RL Environment</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="stylesheet" href="styles.css?v=20260919-4">
+  <link rel="stylesheet" href="styles.css?v=20260919-5">
   <script src="app.js?v=20260919-3" defer></script>
 </head>
 <body>
 <a class="skip-link" href="#main">Skip to content</a>
 <nav class="site-nav" aria-label="Page navigation">
   <a class="wordmark" href="#top"><span class="brand-mark" aria-hidden="true">D</span> DeliveryGym</a>
-  <div><a href="#demo">Demo</a><a href="#environment">Environment</a><a href="#adaptive">Adaptive Curriculum</a><a href="leaderboard.html">Leaderboard</a></div>
+  <div><a href="#demo">Demo</a><a href="#task">Task</a><a href="#training">RL Training</a><a href="#adaptive">Adaptive RSI</a><a href="#scaling">Scaling</a><a href="leaderboard.html">Leaderboard</a></div>
   <a class="nav-link" href="https://arxiv.org/abs/2609.19801">Paper ↗</a>
 </nav>
 
@@ -38,57 +38,36 @@
   </header>
 
   <section id="demo" class="section wrap" aria-labelledby="demo-title">
-    <div class="section-intro centered"><p class="eyebrow">Demo</p><h2 id="demo-title">From embodied action to policy improvement</h2><p>Follow a delivery trajectory through tool use, UE5 state transitions, simulator verification, online RL, adaptive task generation, and environment scaling.</p></div>
+    <div class="section-intro centered"><p class="eyebrow">Demo</p><h2 id="demo-title">One delivery, from order to verified outcome</h2><p>See a delivery agent select an order, collect food, navigate traffic and roadblocks, and complete the handoff while the environment tracks every consequence.</p></div>
     <div class="video-shell"><video controls playsinline preload="metadata" poster="assets/video-poster.jpg" aria-label="DeliveryGym demo film"><source src="assets/deliverygym-demo.mp4" type="video/mp4">Your browser does not support embedded video. <a href="assets/deliverygym-demo.mp4">Download the MP4.</a></video><div class="video-meta"><span>01:30 · 1080p</span><a href="assets/deliverygym-demo.mp4" download>Download MP4 ↓</a></div></div>
   </section>
 
-  <section id="environment" class="section section-tint" aria-labelledby="environment-title"><div class="wrap">
-    <div class="section-intro centered narrow"><p class="eyebrow">Why an RL environment?</p><h2 id="environment-title">A benchmark measures behavior. An RL environment improves it.</h2><p>Learning requires more than a task and a score. The environment must define observations, executable actions, state transitions, and grounded feedback that can support repeated policy updates.</p></div>
-    <div class="innovation-grid four">
-      <article><span class="innovation-icon">▶</span><h3>Executable dynamics</h3><p>UE5 determines how each tool action changes location, time, resources, traffic, orders, and the next observation.</p></article>
-      <article><span class="innovation-icon">✓</span><h3>Native verification</h3><p>Simulator events verify outcomes, costs, and safety without action labels or an LLM judge.</p></article>
-      <article><span class="innovation-icon">↗</span><h3>Online RL system</h3><p>Resettable parallel workers, batched inference, and complete trajectories support repeated policy improvement.</p></article>
-      <article class="featured"><span class="innovation-icon">↻</span><h3>Adaptive tasks</h3><p>Training configurations shift toward measured weaknesses while evaluation remains fixed.</p></article>
-    </div>
+  <section id="task" class="section section-tint" aria-labelledby="task-title"><div class="wrap">
+    <div class="section-intro"><p class="eyebrow">Task · Figure 1</p><h2 id="task-title">A continuous courier shift in a changing city</h2><p>The agent chooses among overlapping orders, collects food, navigates to customers, and preserves time, energy, money, food condition, location, and safety for what comes next.</p></div>
+    <figure class="paper-figure wide"><button class="image-button" data-zoom="assets/overview.png" aria-label="Enlarge the DeliveryGym task overview"><img src="assets/overview.png" width="1706" height="922" alt="DeliveryGym courier task overview with four food orders, Paris routes, persistent constraints, an event trace, and simulator verification." loading="lazy"></button><figcaption>DeliveryGym task overview. <span>Open full figure ↗</span></figcaption></figure>
   </div></section>
 
-  <section class="section wrap" aria-labelledby="task-title">
-    <div class="section-intro"><p class="eyebrow">Embodied task</p><h2 id="task-title">A courier task designed for learning</h2><p>The agent receives multimodal context, chooses a structured tool action, observes the executed consequence, and continues from the resulting state.</p></div>
-    <div class="task-layout">
-      <figure class="paper-figure"><button class="image-button" data-zoom="assets/overview.png" aria-label="Enlarge the DeliveryGym task overview"><img src="assets/overview.png" width="1706" height="922" alt="DeliveryGym courier task overview with order decisions, navigation, delivery, recovery, and persistent constraints." loading="lazy"></button><figcaption>DeliveryGym task overview. <span>Open full figure ↗</span></figcaption></figure>
-      <div class="turn-flow" aria-label="Agent-environment interaction">
-        <article><span>01</span><div><h3>Observe</h3><p>Egocentric RGB, route map, orders, resources, and prior action result.</p></div></article>
-        <article><span>02</span><div><h3>Act</h3><p>Select orders, navigate, collect, deliver, wait, rest, or recharge.</p></div></article>
-        <article><span>03</span><div><h3>Transition</h3><p>UE5 executes the action and updates physical and operational state.</p></div></article>
-        <article><span>04</span><div><h3>Verify</h3><p>Event traces produce grounded rewards and the next training transition.</p></div></article>
-      </div>
-    </div>
+  <section id="training" class="section wrap" aria-labelledby="training-title">
+    <div class="section-intro"><p class="eyebrow">RL training loop · Figure 2</p><h2 id="training-title">Executed consequences become RL experience</h2><p>The policy observes the current shift, takes a tool action, and receives the resulting UE5 state. Simulator events produce grounded rewards for online policy updates.</p></div>
+    <figure class="paper-figure wide"><button class="image-button" data-zoom="assets/figure2_framework.png" aria-label="Enlarge the DeliveryGym training framework"><img src="assets/figure2_framework.png" width="1900" height="1183" loading="lazy" alt="DeliveryGym framework: observations, multi-turn rollout, verifiable rewards, policy update, and adaptive curriculum."></button><figcaption>DeliveryGym RL training loop. <a href="assets/figure2_framework.pdf">View original PDF ↗</a></figcaption></figure>
   </section>
 
-  <section class="section section-tint" aria-labelledby="architecture-title"><div class="wrap">
-    <div class="section-intro"><p class="eyebrow">Training loop</p><h2 id="architecture-title">From executable consequence to policy update</h2><p>Each component exists to turn embodied interaction into usable RL experience.</p></div>
-    <figure class="paper-figure wide"><button class="image-button" data-zoom="assets/figure2_framework.png" aria-label="Enlarge the DeliveryGym training framework"><img src="assets/figure2_framework.png" width="1900" height="1183" loading="lazy" alt="DeliveryGym framework: observations, multi-turn rollout, verifiable rewards, policy update, and adaptive curriculum."></button><figcaption>DeliveryGym training framework. <a href="assets/figure2_framework.pdf">View original PDF ↗</a></figcaption></figure>
-    <div class="process-flow" aria-label="Static training loop summary"><div><span>01</span><b>Observation</b><small>RGB · map · state</small></div><i>→</i><div><span>02</span><b>Tool action</b><small>one validated action</small></div><i>→</i><div><span>03</span><b>UE5 transition</b><small>executed world change</small></div><i>→</i><div><span>04</span><b>Event verifier</b><small>grounded reward</small></div><i>→</i><div class="accent"><span>05</span><b>Policy update</b><small>new behavior</small></div></div>
+  <section id="training-results" class="section section-tint" aria-labelledby="training-results-title"><div class="wrap">
+    <div class="section-intro"><p class="eyebrow">RL training results</p><h2 id="training-results-title">Training improves the policy on fixed test shifts</h2><p>Learning from complete, simulator-verified trajectories improves delivery decisions under the same persistent constraints used at evaluation.</p></div>
+    <div class="adaptive-result rl-result"><figure class="paper-figure"><button class="image-button" data-zoom="assets/figure5_reward_design.png" aria-label="Enlarge the online RL training results"><img src="assets/figure5_reward_design.png" loading="lazy" alt="Online RL validation curves and the effect of safety-aware rewards."></button><figcaption>Online RL training results. <a href="assets/figure5_reward_design.pdf">View original PDF ↗</a></figcaption></figure><div class="result-callout"><p class="eyebrow">Fixed test result</p><strong>+54.3%</strong><h3>net income</h3><p>Safety-aware RL versus the initialized Qwen3-VL-4B policy.</p><small>The environment computes returns from executed payments, costs, deadlines, food condition, and safety events.</small></div></div>
   </div></section>
-
-  <section class="section wrap" aria-labelledby="constraints-title">
-    <div class="section-intro"><p class="eyebrow">Delayed consequences</p><h2 id="constraints-title">Every action changes what is possible next</h2><p>Coupled constraints make the simulator transition and trajectory-level reward essential for learning.</p></div>
-    <div class="constraint-grid"><article><span>01</span><h3>Time</h3><p>One clock connects current actions to later commitments.</p></article><article><span>02</span><h3>Energy</h3><p>Movement and recovery change future mobility.</p></article><article><span>03</span><h3>Money</h3><p>Costs and penalties reduce net income.</p></article><article><span>04</span><h3>Food</h3><p>Delay and handling affect delivery value.</p></article><article><span>05</span><h3>Safety</h3><p>Signals and obstacles constrain valid progress.</p></article><article><span>06</span><h3>Distance</h3><p>Location changes which opportunities remain feasible.</p></article></div>
-  </section>
 
   <section id="adaptive" class="section adaptive-section" aria-labelledby="adaptive-title"><div class="wrap">
-    <div class="section-intro"><p class="eyebrow">Adaptive curriculum</p><h2 id="adaptive-title">Training tasks adapt as the policy improves</h2><p>This makes the environment the adaptive engine of embodied RSI. Fixed training probes expose current failures; DeliveryGym converts them into a weakness profile and generates feasible tasks that target the capabilities limiting the current policy.</p></div>
-    <div class="adaptive-loop" aria-label="Adaptive curriculum loop"><article><span>1</span><h3>Probe</h3><p>Measure traffic, recovery, and multi-order skills.</p></article><b aria-hidden="true">→</b><article><span>2</span><h3>Diagnose</h3><p>Update weights from simulator-verified failures.</p></article><b aria-hidden="true">→</b><article><span>3</span><h3>Generate</h3><p>Sample feasible tasks near the capability frontier.</p></article><b aria-hidden="true">→</b><article><span>4</span><h3>Train</h3><p>Collect new rollouts and refresh the probes.</p></article></div>
+    <div class="section-intro"><p class="eyebrow">Adaptive environment for embodied RSI</p><h2 id="adaptive-title">The environment changes what the policy practices next</h2><p>Training-only probes evaluate traffic compliance, obstacle recovery, and multi-order planning. DeliveryGym identifies the weakest capability, increases targeted practice, verifies that each generated shift remains feasible, and continues online RL.</p></div>
+    <div class="adaptive-loop" aria-label="Adaptive environment loop"><article><span>1</span><h3>Evaluate</h3><p>Run the current policy on fixed training probes.</p></article><b aria-hidden="true">→</b><article><span>2</span><h3>Diagnose</h3><p>Convert simulator-verified failures into a weakness profile.</p></article><b aria-hidden="true">→</b><article><span>3</span><h3>Generate</h3><p>Create feasible shifts that target the weakest capability.</p></article><b aria-hidden="true">→</b><article><span>4</span><h3>Continue RL</h3><p>Train on new rollouts, then evaluate the policy again.</p></article></div>
     <div class="adaptive-result"><figure class="paper-figure"><button class="image-button" data-zoom="assets/figure8_adaptive_reward.png" aria-label="Enlarge adaptive curriculum results"><img src="assets/figure8_adaptive_reward.png" loading="lazy" alt="Adaptive curriculum validation curves and training-probe results."></button><figcaption>Adaptive curriculum results. <a href="assets/figure8_adaptive_reward.pdf">View original PDF ↗</a></figcaption></figure><div class="result-callout"><p class="eyebrow">Matched test result</p><strong>+16.5%</strong><h3>net income</h3><p>Adaptive curriculum versus uniform sampling under the same rollout budget.</p><small>Training experience adapts; the evaluation suite stays fixed.</small></div></div>
   </div></section>
 
-  <section class="section wrap" aria-labelledby="scaling-title">
+  <section id="scaling" class="section wrap" aria-labelledby="scaling-title">
     <div class="section-intro"><p class="eyebrow">Scaling experience</p><h2 id="scaling-title">Diversity makes a fixed interaction budget more useful</h2><p>Expanding task configurations and training maps improves performance without collecting more trajectories in each controlled study.</p></div>
     <div class="scaling-summary"><article><span>Task diversity</span><strong>200 → 144k</strong><p>available training configurations</p><b>+47% income</b><small>2,400 trajectories fixed</small></article><article><span>Environment diversity</span><strong>1 → 8</strong><p>training city maps</p><b>+61% income</b><small>2,400 trajectories fixed</small></article></div>
     <figure class="paper-figure wide"><button class="image-button" data-zoom="assets/figure7_environment_scaling.png" aria-label="Enlarge task and environment scaling results"><img src="assets/figure7_environment_scaling.png" loading="lazy" alt="Validation income as available task configurations and training maps increase under a fixed rollout budget."></button><figcaption>Task and environment scaling under a fixed interaction budget. <a href="assets/figure7_environment_scaling.pdf">View original PDF ↗</a></figcaption></figure>
   </section>
-
-  <section class="section leaderboard-cta section-tint" aria-labelledby="leaderboard-title"><div class="wrap"><div><p class="eyebrow">Leaderboard</p><h2 id="leaderboard-title">Compare embodied agents under one fixed protocol</h2><p>Six foundation models, two movement interfaces, 130 replayable tasks, and simulator-verified metrics.</p></div><a class="button primary" href="leaderboard.html">Open leaderboard →</a></div></section>
 
   <section id="citation" class="section citation" aria-labelledby="citation-title"><div class="wrap reading-width"><div class="citation-header"><div><p class="eyebrow">Citation</p><h2 id="citation-title">Build on DeliveryGym</h2></div><button id="copy-citation" class="button">Copy BibTeX</button></div><pre><code id="bibtex"></code></pre><p class="copy-feedback" id="copy-feedback" role="status" aria-live="polite"></p></div></section>
 </main>
