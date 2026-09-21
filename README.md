@@ -38,7 +38,7 @@ The diagnostics explorer preserves the integer percentage labels printed in the 
 
 ## Demo film
 
-`assets/deliverygym-demo.mp4` is the 129-second, 1080p demo used by the native HTML video player. The revised opening asks whether an embodied agent can deliver food in Paris and earn money, presents four orders and intrinsic task constraints in one city interface, and follows order A in a continuous 42-second first-person reconstruction. The same coordinates drive city markers, building entrances, the route and navigation. A Fig. 2-inspired multi-turn RL loop explains verified net-income rewards and policy updates before showing the measured improvement. Adaptive environment, scaling and closing follow. The city, camera, humanoid hands and parcel are authored 3D; materials and NPC cutouts use generated imagery. It is not recorded UE gameplay. See `../demo/remotion/PRODUCTION-v7.md` for asset provenance and reproduction. `assets/video-poster.jpg` is its poster.
+`assets/deliverygym-demo.mp4` is the complete 90-second, 1080p demo used by the native HTML video player. It presents four orders with explicit Collect / Deliver markers and six intrinsic constraints, follows a continuous first-person delivery with brief counterfactual safety outcomes, explains the Fig. 2-style online RL loop and measured results, then shows an adaptive environment running case and task/map scaling. Full-screen animated maps introduce each scaling curve. The main trajectory and safety insets are authored 3D reconstructions, not recorded UE policy rollouts. The map imagery is generated; the training and scaling results come from the released paper. See `../demo/remotion/PRODUCTION-v8.md` and `../demo/remotion/public/v8/prompts.json` for provenance and reproduction. `assets/video-poster.jpg` is its poster.
 
 ## Refresh figures
 
@@ -48,7 +48,7 @@ The diagnostics explorer preserves the integer percentage labels printed in the 
 pdftoppm -png -singlefile -scale-to 2200 assets/figure2_framework.pdf assets/figure2_framework
 ```
 
-Update image dimensions if the source aspect ratio changes. Do not substitute the unused `Figure2_framework.png`, draft figures, estimated figures, archived text, or video-source assets. Author homepage links require evidence of identity; only Lianhui Qin currently has a link verified through the DeliveryBench reference website.
+Update image dimensions if the source aspect ratio changes. Do not substitute the unused `Figure2_framework.png`, draft figures, estimated figures, archived text, or video-source assets. Author names remain unlinked, including Lianhui Qin, per the project preference.
 
 ## Validation status
 
