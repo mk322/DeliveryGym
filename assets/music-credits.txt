@@ -1,0 +1,14 @@
+DeliveryGym demo v11.1 — music credit
+
+“What About Action?” — Diego Nava
+Source: Mixkit, item 474
+https://mixkit.co/free-stock-music/tag/corporate/
+License: Mixkit Stock Music Free License
+https://mixkit.co/license/modal/musicFree/
+
+Used as background music synchronized to the DeliveryGym demo.
+The source recording remains the artist’s work. It is not covered by the
+DeliveryGym repository’s software license. Only the finished video is
+published here; no standalone music file is redistributed.
+
+Retrieved 2026-09-21. Original quiet street cues retained.
