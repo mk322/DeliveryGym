@@ -18,7 +18,7 @@ Then visit `http://127.0.0.1:8765/website/`. Stop with Ctrl+C. Copying BibTeX re
 | --- | --- |
 | `index.html` | Page structure, authors, affiliations, overview text, resource links |
 | `styles.css` | Responsive layout, chart styles, research color palette, reduced-motion rules |
-| `leaderboard.html`, `leaderboard.js` | Dedicated Waypoint/Any-Point leaderboard and trained-policy comparison |
+| `leaderboard.html`, `leaderboard.js` | Dedicated Waypoint/Any-Point benchmark table and expandable evaluation details |
 | `results-data.js` | Authoritative numerical dataset; source labels, splits, units, and comparison conditions |
 | `app.js` | Accessible figure dialog and citation copy |
 | `assets/` | Launch-film MP4 and poster, hero/social artwork, exact source overview, rendered active paper figures, original figure PDFs, favicon |
@@ -29,12 +29,12 @@ Then visit `http://127.0.0.1:8765/website/`. Stop with Ctrl+C. Copying BibTeX re
 ## Maintain results
 
 1. Read the current active content of `../paper/main.tex`, excluding `%` comments and `\iffalse` branches. The eight-author commented block is the explicitly requested exception for author attribution.
-2. Update `results-data.js`; it drives the explorer and benchmark table. Benchmark tuples are `[income, delivered, onTime, redLight, obstacle]`. Null means unreported, never zero. The selected-policy test table has the historical label `tab:final-test-estimates`, but is active and reports the measured values used by the current paper.
+2. Update `results-data.js`; it drives the benchmark table. Benchmark tuples are `[income, delivered, onTime, redLight, obstacle]`. Null means unreported, never zero. The selected-policy test table has the historical label `tab:final-test-estimates`, but is active and reports the measured values used by the current paper.
 3. Keep reward experiments, curriculum experiments, training probes, and validation scaling separate. Never multiply/add the two headline percentages, import validation service/safety values into test rows, or invent Any-Point RL results.
 4. Update source metadata and comparison text if the protocol changes. Do not infer training curve points from plotted lines. Display original curves with their validation label.
 5. Run `node tests/check-static.cjs` from `website`, then perform the manual checks in `docs/PLAN.md` when requested.
 
-The diagnostics explorer preserves the integer percentage labels printed in the active original figure (e.g. 76%), rather than replacing them with recalculated decimals. Relative gains elsewhere are calculated from the reported means. The scaling chart uses equally spaced discrete conditions and explicitly labels this; it does not imply linear task-pool spacing or interpolate unreported data.
+Relative gains use the reported means. Figures are the original paper results; validation curves, training probes, and test callouts retain their distinct labels. The navigation contains only Project and Leaderboard; RL training results appear on the project page. Evaluation details on the leaderboard are collapsed by default.
 
 ## Demo film
 
